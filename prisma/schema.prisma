@@ -1,0 +1,65 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Character {
+  id Int @id @default(autoincrement())
+  name String @db.VarChar(30) @unique
+  figures Figure[] 
+}
+
+model Element {
+  id Int @id @default(autoincrement())
+  element String @db.VarChar(10)
+  figures Figure[]
+}
+
+model Game {
+  id Int @id @default(autoincrement())
+  title String @db.VarChar(40) @unique
+  figures Figure[]
+  accesories Accessory[]
+}
+
+model Figure {
+  id String @id @default(cuid())
+  figName String @db.VarChar(50)
+  character Character @relation(fields: [characterId], references: [id])
+  characterId Int
+  element Element @relation(fields: [elementId], references: [id])
+  elementId Int
+  gameTitle Game @relation(fields: [gameId], references: [id])
+  gameId Int
+  type String
+  variation String
+  img String
+  rare Boolean
+  value Float
+  stock Int
+  damaged Damaged[]
+}
+
+model Accessory {
+  id String @id @default(cuid())
+  accName String @db.VarChar(50)
+  gameTitle Game @relation(fields: [gameId], references: [id])
+  gameId Int
+  condition String
+  value Float
+  stock Int
+}
+
+model Damaged {
+  id String @id @default(cuid())
+  figure Figure @relation(fields: [figureId], references: [id])
+  figureId String
+  stock Int
+}
