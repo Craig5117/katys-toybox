@@ -42,9 +42,9 @@ model Figure {
   variation String
   img String
   rare Boolean
-  value Float
+  value Decimal @db.Decimal(10, 2)
   stock Int
-  damaged Damaged[]
+  damaged Int
 }
 
 model Accessory {
@@ -54,12 +54,5 @@ model Accessory {
   gameId Int
   condition String
   value Float
-  stock Int
-}
-
-model Damaged {
-  id String @id @default(cuid())
-  figure Figure @relation(fields: [figureId], references: [id])
-  figureId String
   stock Int
 }
