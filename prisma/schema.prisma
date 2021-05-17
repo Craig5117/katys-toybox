@@ -31,6 +31,14 @@ model Game {
   sets Set[]
 }
 
+model Set {
+  id Int @id @default(autoincrement())
+  setName String @db.VarChar(30)
+  figures Figure[]
+  gameTitle Game @relation(fields: [gameId], references: [id])
+  gameId Int
+}
+
 model Figure {
   id String @id @default(cuid())
   figName String @db.VarChar(50)
@@ -40,8 +48,8 @@ model Figure {
   elementId Int
   gameTitle Game @relation(fields: [gameId], references: [id])
   gameId Int
-  setId Int
-  set Set @relation(fields: [setId], references: [id])
+  set Set? @relation(fields: [setId], references: [id])
+  setId Int?
   type String
   variation String
   img String
@@ -51,14 +59,6 @@ model Figure {
   damaged Int @default(value: 0)
   held Int @default(value: 0)
   dmgHeld Int @default(value: 0)
-}
-
-model Set {
-  id Int @id @default(autoincrement())
-  setName String @db.VarChar(30)
-  figures Figure[]
-  gameTitle Game @relation(fields: [gameId], references: [id])
-  gameId Int
 }
 
 model Accessory {

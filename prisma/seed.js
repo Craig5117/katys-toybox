@@ -2,7 +2,8 @@ const { PrismaClient } = require('@prisma/client');
 const characters = require('./characters');
 const games  = require('./games');
 const elements = require('./elements');
-const figures = require('./figures')
+const figures = require('./figures');
+const sets = require('./set')
 
 const prisma = new PrismaClient();
 
@@ -23,6 +24,12 @@ async function main() {
         let element = elements[i];
         await prisma.element.create({
             data: element
+        })
+    }
+    for (let i = 0; i < sets.length; ++i) {
+        let set = sets[i];
+        await prisma.set.create({
+            data: set
         })
     }
     for (let i = 0; i < figures.length; ++i) {
