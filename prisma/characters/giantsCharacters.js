@@ -1,66 +1,86 @@
 const giantsCharacters = [
     // giants
     {
-        name: "Bouncer"
+        name: "Bouncer",
+        gender: "m"
     },
     {
-        name: "Crusher"
+        name: "Crusher",
+        gender: "m"
     },
     {
-        name: "Tree Rex"
+        name: "Tree Rex",
+        gender: "m"
     },
     {
-        name: "Hot Head"
+        name: "Hot Head",
+        gender: "m"
     },
     {
-        name: "Swarm"
+        name: "Swarm",
+        gender: "m"
     },
     {
-        name: "Eye Brawl"
+        name: "Eye Brawl",
+        gender: "m"
     },
     {
-        name: "Thumpback"
+        name: "Thumpback",
+        gender: "m"
     },
     {
-        name: "Ninjini"
+        name: "Ninjini",
+        gender: "f"
     },
     // giants standard
     {
-        name: "Shroom Boom"
+        name: "Shroom Boom",
+        gender: "m"
     },
     {
-        name: "Jet Vac"
+        name: "Jet Vac",
+        gender: "m"
     },
     {
-        name: "Pop Fizz"
+        name: "Pop Fizz",
+        gender: "m"
     },
     {
-        name: "Fright Rider"
+        name: "Fright Rider",
+        gender: "m"
     },
     {
-        name: "Flashwing"
+        name: "Flashwing",
+        gender: "f"
     },
     {
-        name: "Chill"
+        name: "Chill",
+        gender: "f"
     },
     {
-        name: "Sprocket"
+        name: "Sprocket",
+        gender: "f"
     },
     {
-        name: "Hot Dog"
+        name: "Hot Dog",
+        gender: "m"
     },
     // giants sidekicks
     {
-        name: "Barkley"
+        name: "Barkley",
+        gender: "m"
     },
     {
-        name: "Eye Small"
+        name: "Eye Small",
+        gender: "m"
     },
     {
-        name: "Mini Jini"
+        name: "Mini Jini",
+        gender: "f"
     },
     {
-        name: "Thumpling"
+        name: "Thumpling",
+        gender: "m"
     }
 ];
 

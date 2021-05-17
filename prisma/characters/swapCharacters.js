@@ -1,101 +1,133 @@
 const swapCharacters = [
     // swap force
     {
-        name: "Hoot Loop"
+        name: "Hoot Loop",
+        gender: "m"
     },
     {
-        name: "Trap Shadow"
+        name: "Trap Shadow",
+        gender: "m"
     },
     {
-        name: "Magna Charge"
+        name: "Magna Charge",
+        gender: "m"
     },
     {
-        name: "Spy Rise"
+        name: "Spy Rise",
+        gender: "m"
     },
     {
-        name: "Wash Buckler"
+        name: "Wash Buckler",
+        gender: "m"
     },
     {
-        name: "Freeze Blade"
+        name: "Freeze Blade",
+        gender: "m"
     },
     {
-        name: "Blast Zone"
+        name: "Blast Zone",
+        gender: "m"
     },
     {
-        name: "Fire Kraken"
+        name: "Fire Kraken",
+        gender: "m"
     },
     {
-        name: "Night Shift"
+        name: "Night Shift",
+        gender: "m"
     },
     {
-        name: "Rattle Shake"
+        name: "Rattle Shake",
+        gender: "m"
     },
     {
-        name: "Stink Bomb"
+        name: "Stink Bomb",
+        gender: "m"
     },
     {
-        name: "Grilla Drilla"
+        name: "Grilla Drilla",
+        gender: "m"
     },
     {
-        name: "Free Ranger"
+        name: "Free Ranger",
+        gender: "m"
     },
     {
-        name: "Boom Jet"
+        name: "Boom Jet",
+        gender: "m"
     },
     {
-        name: "Rubble Rouser"
+        name: "Rubble Rouser",
+        gender: "m"
     },
     {
-        name: "Doom Stone"
+        name: "Doom Stone",
+        gender: "m"
     },
     // swap force standard
     {
-        name: "Bumble Blast"
+        name: "Bumble Blast",
+        gender: "m"
     },
     {
-        name: "Countdown"
+        name: "Countdown",
+        gender: "m"
     },
     {
-        name: "Dune Bug"
+        name: "Dune Bug",
+        gender: "m"
     },
     {
-        name: "Fryno"
+        name: "Fryno",
+        gender: "m"
     },
     {
-        name: "Grim Creeper"
+        name: "Grim Creeper",
+        gender: "m"
     },
     {
-        name: "Pop Thorn"
+        name: "Pop Thorn",
+        gender: "m"
     },
     {
-        name: "Punk Shock"
+        name: "Punk Shock",
+        gender: "f"
     },
     {
-        name: "Rip Tide"
+        name: "Rip Tide",
+        gender: "m"
     },
     {
-        name: "Roller Brawl"
+        name: "Roller Brawl",
+        gender: "f"
     },
     {
-        name: "Scorp"
+        name: "Scorp",
+        gender: "m"
     },
     {
-        name: "Scratch"
+        name: "Scratch",
+        gender: "f"
     },
     {
-        name: "Slobber Tooth"
+        name: "Slobber Tooth",
+        gender: "m"
     },
     {
-        name: "Smolderdash"
+        name: "Smolderdash",
+        gender: "f"
     },
     {
-        name: "Star Strike"
+        name: "Star Strike",
+        gender: "f"
     },
     {
-        name: "Wind Up"
+        name: "Wind Up",
+        gender: "m"
     },
     {
-        name: "Zoo Lou"
+        name: "Zoo Lou",
+        gender: "m"
     }
 ];
 

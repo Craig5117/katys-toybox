@@ -1,304 +1,403 @@
 const trapCharacters = [
     // trap masters
     {
-        name: "Blastermind"
+        name: "Blastermind",
+        gender: "m"
     },
     {
-        name: "Bushwhack"
+        name: "Bushwhack",
+        gender: "m"
     },
     {
-        name: "Enigma"
+        name: "Enigma",
+        gender: "m"
     },
     {
-        name: "Gearshift"
+        name: "Gearshift",
+        gender: "f"
     },
     {
-        name: "Gusto"
+        name: "Gusto",
+        gender: "m"
     },
     {
-        name: "Head Rush"
+        name: "Head Rush",
+        gender: "f"
     },
     {
-        name: "Jawbreaker"
+        name: "Jawbreaker",
+        gender: "m"
     },
     {
-        name: "Ka-Boom"
+        name: "Ka-Boom",
+        gender: "m"
     },
     {
-        name: "Knight Light"
+        name: "Knight Light",
+        gender: "m"
     },
     {
-        name: "Knight Mare"
+        name: "Knight Mare",
+        gender: "f"
     },
     {
-        name: "Krypt King"
+        name: "Krypt King",
+        gender: "m"
     },
     {
-        name: "Lob-Star"
+        name: "Lob-Star",
+        gender: "m"
     },
     {
-        name: "Short Cut"
+        name: "Short Cut",
+        gender: "m"
     },
     {
-        name: "Snap Shot"
+        name: "Snap Shot",
+        gender: "m"
     },
     {
-        name: "Thunderbolt"
+        name: "Thunderbolt",
+        gender: "m"
     },
     {
-        name: "Tuff Luck"
+        name: "Tuff Luck",
+        gender: "f"
     },
     {
-        name: "Wallop"
+        name: "Wallop",
+        gender: "m"
     },
     {
-        name: "Wildfire"
+        name: "Wildfire",
+        gender: "m"
     },
     // traps
     {
-        name: "Air Hourglass"
+        name: "Air Hourglass",
+        gender: "n"
     },
     {
-        name: "Air Jughead"
+        name: "Air Jughead",
+        gender: "n"
     },
     {
-        name: "Air Screamer"
+        name: "Air Screamer",
+        gender: "n"
     },
     {
-        name: "Air Snake"
+        name: "Air Snake",
+        gender: "n"
     },
     {
-        name: "Air Sword"
+        name: "Air Sword",
+        gender: "n"
     },
     {
-        name: "Air Toucan"
+        name: "Air Toucan",
+        gender: "n"
     },
     {
-        name: "Dark Handstand"
+        name: "Dark Handstand",
+        gender: "n"
     },
     {
-        name: "Dark Spider"
+        name: "Dark Spider",
+        gender: "n"
     },
     {
-        name: "Dark Sword"
+        name: "Dark Sword",
+        gender: "n"
     },
     {
-        name: "Earth Hammer"
+        name: "Earth Hammer",
+        gender: "n"
     },
     {
-        name: "Earth Handstand"
+        name: "Earth Handstand",
+        gender: "n"
     },
     {
-        name: "Earth Hourglass"
+        name: "Earth Hourglass",
+        gender: "n"
     },
     {
-        name: "Earth Orb"
+        name: "Earth Orb",
+        gender: "n"
     },
     {
-        name: "Earth Totem"
+        name: "Earth Totem",
+        gender: "n"
     },
     {
-        name: "Earth Toucan"
+        name: "Earth Toucan",
+        gender: "n"
     },
     {
-        name: "Fire Captain's Hat"
+        name: "Fire Captain's Hat",
+        gender: "n"
     },
     {
-        name: "Fire Scepter"
+        name: "Fire Scepter",
+        gender: "n"
     },
     {
-        name: "Fire Screamer"
+        name: "Fire Screamer",
+        gender: "n"
     },
     {
-        name: "Fire Torch"
+        name: "Fire Torch",
+        gender: "n"
     },
     {
-        name: "Fire Totem"
+        name: "Fire Totem",
+        gender: "n"
     },
     {
-        name: "Fire Yawn"
+        name: "Fire Yawn",
+        gender: "n"
     },
     {
-        name: "Kaos Trap"
+        name: "Kaos Trap",
+        gender: "n"
     },
     {
-        name: "Life Hammer"
+        name: "Life Hammer",
+        gender: "n"
     },
     {
-        name: "Life Snake"
+        name: "Life Snake",
+        gender: "n"
     },
     {
-        name: "Life Sword"
+        name: "Life Sword",
+        gender: "n"
     },
     {
-        name: "Life Torch"
+        name: "Life Torch",
+        gender: "n"
     },
     {
-        name: "Life Toucan"
+        name: "Life Toucan",
+        gender: "n"
     },
     {
-        name: "Life Yawn"
+        name: "Life Yawn",
+        gender: "n"
     },
     {
-        name: "Light Owl"
+        name: "Light Owl",
+        gender: "n"
     },
     {
-        name: "Light Rocket"
+        name: "Light Rocket",
+        gender: "n"
     },
     {
-        name: "Light Yawn"
+        name: "Light Yawn",
+        gender: "n"
     },
     {
-        name: "Magic Axe"
+        name: "Magic Axe",
+        gender: "n"
     },
     {
-        name: "Magic Hourglass"
+        name: "Magic Hourglass",
+        gender: "n"
     },
     {
-        name: "Magic Log Holder"
+        name: "Magic Log Holder",
+        gender: "n"
     },
     {
-        name: "Magic Rocket"
+        name: "Magic Rocket",
+        gender: "n"
     },
     {
-        name: "Magic Skull"
+        name: "Magic Skull",
+        gender: "n"
     },
     {
-        name: "Magic Totem"
+        name: "Magic Totem",
+        gender: "n"
     },
     {
-        name: "Tech Angel"
+        name: "Tech Angel",
+        gender: "n"
     },
     {
-        name: "Tech Flying Helmet"
+        name: "Tech Flying Helmet",
+        gender: "n"
     },
     {
-        name: "Tech Hand"
+        name: "Tech Hand",
+        gender: "n"
     },
     {
-        name: "Tech Handstand"
+        name: "Tech Handstand",
+        gender: "n"
     },
     {
-        name: "Tech Scepter"
+        name: "Tech Scepter",
+        gender: "n"
     },
     {
-        name: "Tech Tiki"
+        name: "Tech Tiki",
+        gender: "n"
     },
     {
-        name: "Undead Axe"
+        name: "Undead Axe",
+        gender: "n"
     },
     {
-        name: "Undead Captain's Hat"
+        name: "Undead Captain's Hat",
+        gender: "n"
     },
     {
-        name: "Undead Hand"
+        name: "Undead Hand",
+        gender: "n"
     },
     {
-        name: "Undead Orb"
+        name: "Undead Orb",
+        gender: "n"
     },
     {
-        name: "Undead Skull"
+        name: "Undead Skull",
+        gender: "n"
     },
     {
-        name: "Undead Snake"
+        name: "Undead Snake",
+        gender: "n"
     },
     {
-        name: "Water Angel"
+        name: "Water Angel",
+        gender: "n"
     },
     {
-        name: "Water Axe"
+        name: "Water Axe",
+        gender: "n"
     },
     {
-        name: "Water Flying Helmet"
+        name: "Water Flying Helmet",
+        gender: "n"
     },
     {
-        name: "Water Jughead"
+        name: "Water Jughead",
+        gender: "n"
     },
     {
-        name: "Water Log Holder"
+        name: "Water Log Holder",
+        gender: "n"
     },
     {
-        name: "Water Tiki"
+        name: "Water Tiki",
+        gender: "n"
     },
     // trap standard
     {
-        name: "Bat Spin"
+        name: "Bat Spin",
+        gender: "f"
     },
     {
-        name: "Blackout"
+        name: "Blackout",
+        gender: "m"
     },
     {
-        name: "Blades"
+        name: "Blades",
+        gender: "m"
     },
     {
-        name: "Chopper"
+        name: "Chopper",
+        gender: "m"
     },
     {
-        name: "Cobra Cadabra"
+        name: "Cobra Cadabra",
+        gender: "m"
     },
     {
-        name: "Deja Vu"
+        name: "Deja Vu",
+        gender: "f"
     },
     {
-        name: "Echo"
+        name: "Echo",
+        gender: "f"
     },
     {
-        name: "Fist Bump"
+        name: "Fist Bump",
+        gender: "m"
     },
     {
-        name: "Fling Kong"
+        name: "Fling Kong",
+        gender: "m"
     },
     {
-        name: "Flip Wreck"
+        name: "Flip Wreck",
+        gender: "m"
     },
     {
-        name: "Food Fight"
+        name: "Food Fight",
+        gender: "m"
     },
     {
-        name: "Funny Bone"
+        name: "Funny Bone",
+        gender: "m"
     },
     {
-        name: "High Five"
+        name: "High Five",
+        gender: "m"
     },
     {
-        name: "Rocky Roll"
+        name: "Rocky Roll",
+        gender: "m"
     },
     {
-        name: "Spotlight"
+        name: "Spotlight",
+        gender: "f"
     },
     {
-        name: "Torch"
+        name: "Torch",
+        gender: "f"
     },
     {
-        name: "Trail Blazer"
+        name: "Trail Blazer",
+        gender: "m"
     },
     {
-        name: "Tread Head"
+        name: "Tread Head",
+        gender: "m"
     },
     // trap sidekicks
     {
-        name: "Bop"
+        name: "Bop",
+        gender: "m"
     },
     {
-        name: "Breeze"
+        name: "Breeze",
+        gender: "f"
     },
     {
-        name: "Drobit"
+        name: "Drobit",
+        gender: "m"
     },
     {
-        name: "Hijinx"
+        name: "Hijinx",
+        gender: "f"
     },
     {
-        name: "Pet Vac"
+        name: "Pet Vac",
+        gender: "m"
     },
     {
-        name: "Small Fry"
+        name: "Small Fry",
+        gender: "m"
     },
     {
-        name: "Spry"
+        name: "Spry",
+        gender: "m"
     },
     {
-        name: "Weerupter"
+        name: "Weerupter",
+        gender: "m"
     }
 ];
 

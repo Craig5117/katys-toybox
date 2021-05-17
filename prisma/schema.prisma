@@ -13,6 +13,7 @@ generator client {
 model Character {
   id Int @id @default(autoincrement())
   name String @db.VarChar(30) @unique
+  gender String @db.VarChar(1)
   figures Figure[] 
 }
 
@@ -27,6 +28,7 @@ model Game {
   title String @db.VarChar(40) @unique
   figures Figure[]
   accesories Accessory[]
+  sets Set[]
 }
 
 model Figure {
@@ -38,13 +40,25 @@ model Figure {
   elementId Int
   gameTitle Game @relation(fields: [gameId], references: [id])
   gameId Int
+  setId Int
+  set Set @relation(fields: [setId], references: [id])
   type String
   variation String
   img String
-  rare Boolean
+  rare Boolean @default(value: false)
   value Decimal @db.Decimal(10, 2)
-  stock Int
-  damaged Int
+  stock Int @default(value: 0)
+  damaged Int @default(value: 0)
+  held Int @default(value: 0)
+  dmgHeld Int @default(value: 0)
+}
+
+model Set {
+  id Int @id @default(autoincrement())
+  setName String @db.VarChar(30)
+  figures Figure[]
+  gameTitle Game @relation(fields: [gameId], references: [id])
+  gameId Int
 }
 
 model Accessory {

@@ -1,101 +1,133 @@
 const chargersCharacters = [
     // vehicles
     {
-        name: "Barrel Blaster"
+        name: "Barrel Blaster",
+        gender: "n"
     },
     {
-        name: "Burn-Cycle"
+        name: "Burn-Cycle",
+        gender: "n"
     },
     {
-        name: "Buzz Wing"
+        name: "Buzz Wing",
+        gender: "n"
     },
     {
-        name: "Clown Cruiser"
+        name: "Clown Cruiser",
+        gender: "n"
     },
     {
-        name: "Crypt Crusher"
+        name: "Crypt Crusher",
+        gender: "n"
     },
     {
-        name: "Dive Bomber"
+        name: "Dive Bomber",
+        gender: "n"
     },
     {
-        name: "Gold Rusher"
+        name: "Gold Rusher",
+        gender: "n"
     },
     {
-        name: "Hot Streak"
+        name: "Hot Streak",
+        gender: "n"
     },
     {
-        name: "Jet Stream"
+        name: "Jet Stream",
+        gender: "n"
     },
     {
-        name: "Reef Ripper"
+        name: "Reef Ripper",
+        gender: "n"
     },
     {
-        name: "Sea Shadow"
+        name: "Sea Shadow",
+        gender: "n"
     },
     {
-        name: "Shark Tank"
+        name: "Shark Tank",
+        gender: "n"
     },
     {
-        name: "Shield Striker"
+        name: "Shield Striker",
+        gender: "n"
     },
     {
-        name: "Sky Slicer"
+        name: "Sky Slicer",
+        gender: "n"
     },
     {
-        name: "Soda Skimmer"
+        name: "Soda Skimmer",
+        gender: "n"
     },
     {
-        name: "Splatter Splasher"
+        name: "Splatter Splasher",
+        gender: "n"
     },
     {
-        name: "Stealth Stinger"
+        name: "Stealth Stinger",
+        gender: "n"
     },
     {
-        name: "Sun Runner"
+        name: "Sun Runner",
+        gender: "n"
     },
     {
-        name: "Thump Truck"
+        name: "Thump Truck",
+        gender: "n"
     },
     {
-        name: "Tomb Buggy"
+        name: "Tomb Buggy",
+        gender: "n"
     },
     // chargers standard
     {
-        name: "Astroblast"
+        name: "Astroblast",
+        gender: "m"
     },
     {
-        name: "Dive-Clops"
+        name: "Dive-Clops",
+        gender: "m"
     },
     {
-        name: "Fiesta"
+        name: "Fiesta",
+        gender: "m"
     },
     {
-        name: "Bowser"
+        name: "Bowser",
+        gender: "m"
     },
     {
-        name: "High Volt"
+        name: "High Volt",
+        gender: "m"
     },
     {
-        name: "Nightfall"
+        name: "Nightfall",
+        gender: "f"
     },
     {
-        name: "Smash Hit"
+        name: "Smash Hit",
+        gender: "m"
     },
     {
-        name: "Spitfire"
+        name: "Spitfire",
+        gender: "m"
     },
     {
-        name: "Splat"
+        name: "Splat",
+        gender: "f"
     },
     {
-        name: "Stormblade"
+        name: "Stormblade",
+        gender: "f"
     },
     {
-        name: "Thrillipede"
+        name: "Thrillipede",
+        gender: "m"
     },
     {
-        name: "Donkey Kong"
+        name: "Donkey Kong",
+        gender: "m"
     }
 ];
 

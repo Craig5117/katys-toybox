@@ -1,143 +1,189 @@
 const imaginatorsCharacters = [
     // Senseis
     {
-        name: "Air Strike"
+        name: "Air Strike",
+        gender: "m"
     },
     {
-        name: "Ambush"
+        name: "Ambush",
+        gender: "m"
     },
     {
-        name: "Aurora"
+        name: "Aurora",
+        gender: "f"
     },
     {
-        name: "Barbella"
+        name: "Barbella",
+        gender: "f"
     },
     {
-        name: "Boom Bloom"
+        name: "Boom Bloom",
+        gender: "f"
     },
     {
-        name: "Buckshot"
+        name: "Buckshot",
+        gender: "m"
     },
     {
-        name: "Chain Reaction"
+        name: "Chain Reaction",
+        gender: "m"
     },
     {
-        name: "Chopscotch"
+        name: "Chopscotch",
+        gender: "f"
     },
     {
-        name: "Crash Bandicoot"
+        name: "Crash Bandicoot",
+        gender: "m"
     },
     {
-        name: "Dr. Neo Cortex"
+        name: "Dr. Neo Cortex",
+        gender: "m"
     },
     {
-        name: "Ember"
+        name: "Ember",
+        gender: "f"
     },
     {
-        name: "Flarewolf"
+        name: "Flarewolf",
+        gender: "m"
     },
     {
-        name: "King Pen"
+        name: "King Pen",
+        gender: "m"
     },
     {
-        name: "Mysticat"
+        name: "Mysticat",
+        gender: "m"
     },
     {
-        name: "Pit Boss"
+        name: "Pit Boss",
+        gender: "m"
     },
     {
-        name: "Ro-Bow"
+        name: "Ro-Bow",
+        gender: "m"
     },
     {
-        name: "Starcast"
+        name: "Starcast",
+        gender: "m"
     },
     {
-        name: "Tidepool"
+        name: "Tidepool",
+        gender: "f"
     },
     {
-        name: "Tri-Tip"
+        name: "Tri-Tip",
+        gender: "m"
     },
     {
-        name: "Wild Storm"
+        name: "Wild Storm",
+        gender: "m"
     },
     // Crystals
     {
-        name: "Air Angel"
+        name: "Air Angel",
+        gender: "n"
     },
     {
-        name: "Air Lantern"
+        name: "Air Lantern",
+        gender: "n"
     },
     {
-        name: "Dark Pyramid"
+        name: "Dark Pyramid",
+        gender: "n"
     },
     {
-        name: "Dark Reactor"
+        name: "Dark Reactor",
+        gender: "n"
     },
     {
-        name: "Dark Rune"
+        name: "Dark Rune",
+        gender: "n"
     },
     {
-        name: "Earth Armor"
+        name: "Earth Armor",
+        gender: "n"
     },
     {
-        name: "Earth Rocket"
+        name: "Earth Rocket",
+        gender: "n"
     },
     {
-        name: "Fire Acorn"
+        name: "Fire Acorn",
+        gender: "n"
     },
     {
-        name: "Fire Reactor"
+        name: "Fire Reactor",
+        gender: "n"
     },
     {
-        name: "Life Acorn"
+        name: "Life Acorn",
+        gender: "n"
     },
     {
-        name: "Life Claw"
+        name: "Life Claw",
+        gender: "n"
     },
     {
-        name: "Life Rocket"
+        name: "Life Rocket",
+        gender: "n"
     },
     {
-        name: "Life Rune"
+        name: "Life Rune",
+        gender: "n"
     },
     {
-        name: "Light Fanged"
+        name: "Light Fanged",
+        gender: "n"
     },
     {
-        name: "Light Rune"
+        name: "Light Rune",
+        gender: "n"
     },
     {
-        name: "Magic Claw"
+        name: "Magic Claw",
+        gender: "n"
     },
     {
-        name: "Magic Lantern"
+        name: "Magic Lantern",
+        gender: "n"
     },
     {
-        name: "Magic Pyramid"
+        name: "Magic Pyramid",
+        gender: "n"
     },
     {
-        name: "Tech Armor"
+        name: "Tech Armor",
+        gender: "n"
     },
     {
-        name: "Tech Reactor"
+        name: "Tech Reactor",
+        gender: "n"
     },
     {
-        name: "Undead Claw"
+        name: "Undead Claw",
+        gender: "n"
     },
     {
-        name: "Undead Fanged"
+        name: "Undead Fanged",
+        gender: "n"
     },
     {
-        name: "Undead Lantern"
+        name: "Undead Lantern",
+        gender: "n"
     },
     {
-        name: "Water Armor"
+        name: "Water Armor",
+        gender: "n"
     },
     {
-        name: "Water Fanged"
+        name: "Water Fanged",
+        gender: "n"
     },
     {
-        name: "Water Rocket"
+        name: "Water Rocket",
+        gender: "n"
     }
 ];
 

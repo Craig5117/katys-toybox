@@ -1,113 +1,149 @@
 const spyrosCharacters = [
     // spyro's standard
     {
-        name: "Bash"
+        name: "Bash",
+        gender: "m"
     },
     {
-        name: "Boomer"
+        name: "Boomer",
+        gender: "m"
     },
     {
-        name: "Camo"
+        name: "Camo",
+        gender: "m"
     },
     {
-        name: "Chop Chop"
+        name: "Chop Chop",
+        gender: "m"
     },
     {
-        name: "Cynder"
+        name: "Cynder",
+        gender: "f"
     },
     {
-        name: "Dino-Rang"
+        name: "Dino-Rang",
+        gender: "m"
     },
     {
-        name: "Double Trouble"
+        name: "Double Trouble",
+        gender: "m"
     },
     {
-        name: "Drill Sergeant"
+        name: "Drill Sergeant",
+        gender: "m"
     },
     {
-        name: "Drobot"
+        name: "Drobot",
+        gender: "m"
     },
     {
-        name: "Eruptor"
+        name: "Eruptor",
+        gender: "m"
     },
     {
-        name: "Flameslinger"
+        name: "Flameslinger",
+        gender: "m"
     },
     {
-        name: "Ghost Roaster"
+        name: "Ghost Roaster",
+        gender: "m"
     },
     {
-        name: "Gill Grunt"
+        name: "Gill Grunt",
+        gender: "m"
     },
     {
-        name: "Hex"
+        name: "Hex",
+        gender: "f"
     },
     {
-        name: "Ignitor"
+        name: "Ignitor",
+        gender: "m"
     },
     {
-        name: "Lightning Rod"
+        name: "Lightning Rod",
+        gender: "m"
     },
     {
-        name: "Prism Break"
+        name: "Prism Break",
+        gender: "m"
     },
     {
-        name: "Slam Bam"
+        name: "Slam Bam",
+        gender: "m"
     },
     {
-        name: "Sonic Boom"
+        name: "Sonic Boom",
+        gender: "f"
     },
     {
-        name: "Spyro"
+        name: "Spyro",
+        gender: "m"
     },
     {
-        name: "Stealth Elf"
+        name: "Stealth Elf",
+        gender: "f"
     },
     {
-        name: "Stump Smash"
+        name: "Stump Smash",
+        gender: "m"
     },
     {
-        name: "Sunburn"
+        name: "Sunburn",
+        gender: "m"
     },
     {
-        name: "Terrafin"
+        name: "Terrafin",
+        gender: "m"
     },
     {
-        name: "Trigger Happy"
+        name: "Trigger Happy",
+        gender: "m"
     },
     {
-        name: "Voodood"
+        name: "Voodood",
+        gender: "m"
     },
     {
-        name: "Warnado"
+        name: "Warnado",
+        gender: "m"
     },
     {
-        name: "Wham Shell"
+        name: "Wham Shell",
+        gender: "m"
     },
     {
-        name: "Whirlwind"
+        name: "Whirlwind",
+        gender: "f"
     },
     {
-        name: "Wrecking Ball"
+        name: "Wrecking Ball",
+        gender: "m"
     },
     {
-        name: "Zap"
+        name: "Zap",
+        gender: "m"
     },
     {
-        name: "Zook"
+        name: "Zook",
+        gender: "m"
     },
     // spyro's sidekicks
     {
-        name: "Gill Runt"
+        name: "Gill Runt",
+        gender: "m"
     },
     {
-        name: "Terrabite"
+        name: "Terrabite",
+        gender: "m"
     },
     {
-        name: "Trigger Snappy"
+        name: "Trigger Snappy",
+        gender: "m"
     },
     {
-        name: "Whisper Elf"
+        name: "Whisper Elf",
+        gender: "f"
     },
 ];
 
