@@ -34,7 +34,7 @@ const giantsCharacters = [
     },
     // giants standard
     {
-        name: "Shroom Boom",
+        name: "Shroomboom",
         gender: "m"
     },
     {

@@ -8,7 +8,7 @@ const giantsFigures = [
         type: "giant",
         variation: "series 1",
         img: "",
-        value: 1.50,
+        value: 3.00,
     },
     {
         figName: "Crusher",
@@ -18,7 +18,7 @@ const giantsFigures = [
         type: "giant",
         variation: "series 1",
         img: "",
-        value: 1.50,
+        value: 5.00,
     },
     {
         figName: "Tree Rex",
@@ -28,7 +28,7 @@ const giantsFigures = [
         type: "giant",
         variation: "series 1",
         img: "",
-        value: 1.50,
+        value: 5.00,
     },
     {
         figName: "Hot Head",
@@ -38,7 +38,7 @@ const giantsFigures = [
         type: "giant",
         variation: "series 1",
         img: "",
-        value: 1.50,
+        value: 3.00,
     },
     {
         figName: "Swarm",
@@ -48,7 +48,7 @@ const giantsFigures = [
         type: "giant",
         variation: "series 1",
         img: "",
-        value: 1.50,
+        value: 5.00,
     },
     {
         figName: "Eye-Brawl",
@@ -58,7 +58,7 @@ const giantsFigures = [
         type: "giant",
         variation: "series 1",
         img: "",
-        value: 1.50,
+        value: 6.00,
     },
     {
         figName: "Thumpback",
@@ -68,7 +68,7 @@ const giantsFigures = [
         type: "giant",
         variation: "series 1",
         img: "",
-        value: 1.50,
+        value: 6.00,
     },
     {
         figName: "Ninjini",
@@ -78,7 +78,7 @@ const giantsFigures = [
         type: "giant",
         variation: "series 1",
         img: "",
-        value: 1.50,
+        value: 5.00,
     },
     // giants standard
     {
@@ -89,7 +89,7 @@ const giantsFigures = [
         type: "standard",
         variation: "series 2",
         img: "",
-        value: 1.50,
+        value: 3.00,
     },
     {
         figName: "Chill",
@@ -99,7 +99,7 @@ const giantsFigures = [
         type: "standard",
         variation: "series 1",
         img: "",
-        value: 1.50,
+        value: 4.00,
     },
     {
         figName: "LightCore Chill",
@@ -109,7 +109,8 @@ const giantsFigures = [
         type: "standard",
         variation: "lightcore",
         img: "",
-        value: 1.50,
+        rare: true,
+        value: 15.00,
     },
     {
         figName: "Chop Chop S-2",
@@ -119,7 +120,7 @@ const giantsFigures = [
         type: "standard",
         variation: "series 2",
         img: "",
-        value: 1.50,
+        value: 0.50,
     },
     {
         figName: "Cynder S-2",
@@ -129,7 +130,7 @@ const giantsFigures = [
         type: "standard",
         variation: "series 2",
         img: "",
-        value: 1.50,
+        value: 3.00,
     },
     {
         figName: "Double Trouble S-2",
@@ -149,7 +150,8 @@ const giantsFigures = [
         type: "standard",
         variation: "series 2",
         img: "",
-        value: 1.50,
+        rare: true,
+        value: 5.00,
     },
     {
         figName: "LightCore Drobot",
@@ -169,7 +171,7 @@ const giantsFigures = [
         type: "standard",
         variation: "series 2",
         img: "",
-        value: 1.50,
+        value: 0.50,
     },
     {
         figName: "LightCore Eruptor",
@@ -199,7 +201,7 @@ const giantsFigures = [
         type: "standard",
         variation: "series 1",
         img: "",
-        value: 1.50,
+        value: 3.00,
     },
     {
         figName: "Fright Rider",
@@ -229,7 +231,7 @@ const giantsFigures = [
         type: "standard",
         variation: "series 2",
         img: "",
-        value: 1.50,
+        value: 2.00,
     },
     {
         figName: "LightCore Hex",
@@ -239,7 +241,7 @@ const giantsFigures = [
         type: "standard",
         variation: "lightcore",
         img: "",
-        value: 1.50,
+        value: 0.50,
     },
     {
         figName: "Hot Dog",
@@ -249,7 +251,7 @@ const giantsFigures = [
         type: "standard",
         variation: "series 1",
         img: "",
-        value: 1.50,
+        value: 4.00,
     },
     {
         figName: "Ignitor S-2",
@@ -259,7 +261,7 @@ const giantsFigures = [
         type: "standard",
         variation: "series 2",
         img: "",
-        value: 1.50,
+        value: 3.00,
     },
     {
         figName: "Jet-Vac",
@@ -269,7 +271,7 @@ const giantsFigures = [
         type: "standard",
         variation: "series 1",
         img: "",
-        value: 1.50,
+        value: 2.00,
     },
     {
         figName: "LightCore Jet-Vac",
@@ -279,7 +281,8 @@ const giantsFigures = [
         type: "standard",
         variation: "lightcore",
         img: "",
-        value: 1.50,
+        rare: true,
+        value: 5.00,
     },
     {
         figName: "Lightning Rod S-2",
@@ -299,7 +302,7 @@ const giantsFigures = [
         type: "standard",
         variation: "series 1",
         img: "",
-        value: 1.50,
+        value: 2.00,
     },
     {
         figName: "LightCore Pop Fizz",
@@ -309,7 +312,8 @@ const giantsFigures = [
         type: "standard",
         variation: "lightcore",
         img: "",
-        value: 1.50,
+        rare: true,
+        value: 20.00,
     },
     {
         figName: "Prism Break",
@@ -329,27 +333,27 @@ const giantsFigures = [
         type: "standard",
         variation: "lightcore",
         img: "",
-        value: 1.50,
+        value: 0.50,
     },
     {
-        figName: "Shroom Boom",
+        figName: "Shroomboom",
         characterId: 45,
         elementId: 8,
         gameId: 2,
         type: "standard",
         variation: "series 1",
         img: "",
-        value: 1.50,
+        value: 5.00,
     },
     {
-        figName: "LightCore Shroom Boom",
+        figName: "LightCore Shroomboom",
         characterId: 45,
         elementId: 8,
         gameId: 2,
         type: "standard",
         variation: "lightcore",
         img: "",
-        value: 1.50,
+        value: 1.00,
     },
     {
         figName: "Slam Bam S-2",
@@ -359,7 +363,7 @@ const giantsFigures = [
         type: "standard",
         variation: "series 2",
         img: "",
-        value: 1.50,
+        value: 3.00,
     },
     {
         figName: "Sonic Boom",
@@ -369,7 +373,7 @@ const giantsFigures = [
         type: "standard",
         variation: "series 2",
         img: "",
-        value: 1.50,
+        value: 0.50,
     },
     {
         figName: "Sprocket",
@@ -379,7 +383,7 @@ const giantsFigures = [
         type: "standard",
         variation: "series 1",
         img: "",
-        value: 1.50,
+        value: 3.00,
     },
     {
         figName: "Spyro S-2",
@@ -389,7 +393,8 @@ const giantsFigures = [
         type: "standard",
         variation: "series 2",
         img: "",
-        value: 1.50,
+        rare: true,
+        value: 8.00,
     },
     {
         figName: "Stealth Elf S-2",
@@ -399,7 +404,7 @@ const giantsFigures = [
         type: "standard",
         variation: "series 2",
         img: "",
-        value: 1.50,
+        value: 2.00,
     },
     {
         figName: "Stump Smash S-2",
@@ -409,7 +414,7 @@ const giantsFigures = [
         type: "standard",
         variation: "series 2",
         img: "",
-        value: 1.50,
+        value: 2.00,
     },
     {
         figName: "Terrafin S-2",
@@ -419,7 +424,7 @@ const giantsFigures = [
         type: "standard",
         variation: "series 2",
         img: "",
-        value: 1.50,
+        value: 3.00,
     },
     {
         figName: "Trigger Happy S-2",
@@ -429,7 +434,7 @@ const giantsFigures = [
         type: "standard",
         variation: "series 2",
         img: "",
-        value: 1.50,
+        value: 1.00,
     },
     {
         figName: "Whirlwind S-2",
@@ -439,7 +444,7 @@ const giantsFigures = [
         type: "standard",
         variation: "series 2",
         img: "",
-        value: 1.50,
+        value: 1.00,
     },
     {
         figName: "Wrecking Ball S-2",
@@ -449,7 +454,7 @@ const giantsFigures = [
         type: "standard",
         variation: "series 2",
         img: "",
-        value: 1.50,
+        value: 4.00,
     },
     {
         figName: "Zap S-2",
@@ -459,7 +464,7 @@ const giantsFigures = [
         type: "standard",
         variation: "series 2",
         img: "",
-        value: 1.50,
+        value: 1.00,
     },
     {
         figName: "Zook S-2",
@@ -469,7 +474,7 @@ const giantsFigures = [
         type: "standard",
         variation: "series 2",
         img: "",
-        value: 1.50,
+        value: 0.50,
     },
     // Giants sidekicks
     {
@@ -480,7 +485,7 @@ const giantsFigures = [
         type: "sidekick",
         variation: "series 1",
         img: "",
-        value: 1.50,
+        value: 3.00,
     },
     {
         figName: "Eye Small",
@@ -490,7 +495,7 @@ const giantsFigures = [
         type: "sidekick",
         variation: "series 1",
         img: "",
-        value: 1.50,
+        value: 3.00,
     },
     {
         figName: "Mini Jini",
@@ -500,7 +505,8 @@ const giantsFigures = [
         type: "sidekick",
         variation: "series 1",
         img: "",
-        value: 1.50,
+        rare: true,
+        value: 6.00
     },
     {
         figName: "Thumpling",
@@ -510,7 +516,8 @@ const giantsFigures = [
         type: "sidekick",
         variation: "series 1",
         img: "",
-        value: 1.50,
+        rare: true,
+        value: 8.00
     },
     // Giants variants
     {
@@ -521,7 +528,8 @@ const giantsFigures = [
         type: "giant",
         variation: "gnarly",
         img: "",
-        value: 1.50,
+        rare: true,
+        value: 8.00,
     },
     {
         figName: "Granite Crusher",
@@ -531,7 +539,8 @@ const giantsFigures = [
         type: "giant",
         variation: "granite",
         img: "",
-        value: 1.50,
+        rare: true,
+        value: 12.00,
     },
     {
         figName: "Jade Flashwing",
@@ -542,7 +551,7 @@ const giantsFigures = [
         variation: "jade",
         img: "",
         rare: true,
-        value: 1.50,
+        value: 9.00,
     },
     {
         figName: "Legendary Bouncer",
@@ -552,7 +561,7 @@ const giantsFigures = [
         type: "giant",
         variation: "legendary",
         img: "",
-        value: 1.50,
+        value: 4.50,
     },  
     {
         figName: "Legendary LightCore Chill",
@@ -562,7 +571,7 @@ const giantsFigures = [
         type: "standard",
         variation: "legendary",
         img: "",
-        value: 1.50,
+        value: 2.00,
     },
     {
         figName: "Legendary Ignitor",
@@ -582,7 +591,7 @@ const giantsFigures = [
         type: "standard",
         variation: "legendary",
         img: "",
-        value: 1.50,
+        value: 3.00,
     },
     {
         figName: "Legendary Slam Bam",
@@ -612,7 +621,8 @@ const giantsFigures = [
         type: "standard",
         variation: "molten",
         img: "",
-        value: 1.50,
+        rare: true,
+        value: 8.00,
     },
     {
         figName: "Polar Whirlwind",
@@ -622,7 +632,8 @@ const giantsFigures = [
         type: "standard",
         variation: "polar",
         img: "",
-        value: 1.50,
+        rare: true,
+        value: 8.00,
     },
     {
         figName: "Punch Pop Fizz",
@@ -632,7 +643,7 @@ const giantsFigures = [
         type: "standard",
         variation: "punch",
         img: "",
-        value: 1.50,
+        value: 5.00,
     },
     {
         figName: "Royal Double Trouble",
@@ -642,7 +653,8 @@ const giantsFigures = [
         type: "standard",
         variation: "royal",
         img: "",
-        value: 1.50,
+        rare: true,
+        value: 10.00,
     },
     {
         figName: "Scarlet Ninjini",
@@ -652,7 +664,8 @@ const giantsFigures = [
         type: "giant",
         variation: "scarlet",
         img: "",
-        value: 1.50,
+        rare: true,
+        value: 8.00,
     },
     {
         figName: "Double Trouble 1.5",
