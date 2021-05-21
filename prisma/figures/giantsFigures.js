@@ -316,7 +316,7 @@ const giantsFigures = [
         value: 20.00,
     },
     {
-        figName: "Prism Break",
+        figName: "Prism Break S-2",
         characterId: 17,
         elementId: 4,
         gameId: 2,
