@@ -3,7 +3,8 @@ const characters = require('./characters');
 const games  = require('./games');
 const elements = require('./elements');
 const figures = require('./figures');
-const sets = require('./set')
+const sets = require('./set');
+const accessories = require('./accessories');
 
 const prisma = new PrismaClient();
 
@@ -36,6 +37,12 @@ async function main() {
         let figure = figures[i];
         await prisma.figure.create({
             data: figure
+        })
+    }
+    for (let i = 0; i < accessories.length; ++i) {
+        let accessory = accessories[i];
+        await prisma.accessory.create({
+            data: accessory
         })
     }
 }

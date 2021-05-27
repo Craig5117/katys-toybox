@@ -18,11 +18,11 @@ const sets = [
     },
     // giants sets
     {
-        setName: "Battlepack 1",
+        setName: "Giants Battlepack 1",
         gameId: 2
     },
     {
-        setName: "Battlepack 2",
+        setName: "Giants Battlepack 2",
         gameId: 2
     },
 ];

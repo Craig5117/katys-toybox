@@ -69,7 +69,10 @@ model Accessory {
   gameId Int
   set Set? @relation(fields: [setId], references: [id])
   setId Int?
-  condition String
-  value Float
-  stock Int
+  modelNo String?
+  excellent Int @default(value: 0)
+  good Int @default(value: 0)
+  acceptable Int @default(value: 0)
+  value Decimal @db.Decimal(10, 2)
+  stock Int @default(value: 0)
 }
