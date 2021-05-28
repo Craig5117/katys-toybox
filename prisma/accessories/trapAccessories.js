@@ -1,5 +1,5 @@
-const trapAccessories = [
+// const trapAccessories = [
 
-];
+// ];
 
-module.exports = trapAccessories;
+// module.exports = trapAccessories;

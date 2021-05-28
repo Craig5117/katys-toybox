@@ -1,5 +1,0 @@
--- AlterTable
-ALTER TABLE `accessory` ADD COLUMN `setId` INTEGER;
-
--- AddForeignKey
-ALTER TABLE `Accessory` ADD FOREIGN KEY (`setId`) REFERENCES `Set`(`id`) ON DELETE SET NULL ON UPDATE CASCADE;

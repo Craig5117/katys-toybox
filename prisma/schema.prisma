@@ -10,6 +10,14 @@ generator client {
   provider = "prisma-client-js"
 }
 
+model Game {
+  id Int @id @default(autoincrement())
+  title String @db.VarChar(40) @unique
+  figures Figure[]
+  accesories Accessory[]
+  sets Set[]
+}
+
 model Character {
   id Int @id @default(autoincrement())
   name String @db.VarChar(30) @unique
@@ -21,14 +29,6 @@ model Element {
   id Int @id @default(autoincrement())
   element String @db.VarChar(10)
   figures Figure[]
-}
-
-model Game {
-  id Int @id @default(autoincrement())
-  title String @db.VarChar(40) @unique
-  figures Figure[]
-  accesories Accessory[]
-  sets Set[]
 }
 
 model Set {
@@ -69,7 +69,7 @@ model Accessory {
   gameId Int
   set Set? @relation(fields: [setId], references: [id])
   setId Int?
-  modelNo String?
+  modelNo String? @db.VarChar(20)
   excellent Int @default(value: 0)
   good Int @default(value: 0)
   acceptable Int @default(value: 0)

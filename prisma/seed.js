@@ -9,6 +9,7 @@ const accessories = require('./accessories');
 const prisma = new PrismaClient();
 
 async function main() {
+    console.log("Working")
     for (let i = 0; i < games.length; ++i) {
         let game = games[i];
         await prisma.game.create({
@@ -50,6 +51,6 @@ async function main() {
 main().catch(err => {
     console.log(err);
     process.exit(1)
-}).finally(() => {
-    prisma.$disconnect();
+}).finally(async () => {
+    await prisma.$disconnect();
 })

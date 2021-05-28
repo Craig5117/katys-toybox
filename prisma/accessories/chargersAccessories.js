@@ -1,5 +1,5 @@
-const chargersAccessories = [
+// const chargersAccessories = [
 
-];
+// ];
 
-module.exports = chargersAccessories;
+// module.exports = chargersAccessories;
