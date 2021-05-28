@@ -74,87 +74,87 @@ const trapCharacters = [
     },
     // traps
     {
-        name: "Air Hourglass",
+        name: "Tempest Timer",
         gender: "n"
     },
     {
-        name: "Air Jughead",
+        name: "Drafty Decanter",
         gender: "n"
     },
     {
-        name: "Air Screamer",
+        name: "Storm Warning",
         gender: "n"
     },
     {
-        name: "Air Snake",
+        name: "Cloudy Cobra",
         gender: "n"
     },
     {
-        name: "Air Sword",
+        name: "Cyclone Sabre",
         gender: "n"
     },
     {
-        name: "Air Toucan",
+        name: "Breezy Bird",
         gender: "n"
     },
     {
-        name: "Dark Handstand",
+        name: "Ghastly Grimace",
         gender: "n"
     },
     {
-        name: "Dark Spider",
+        name: "Shadow Spider",
         gender: "n"
     },
     {
-        name: "Dark Sword",
+        name: "Dark Dagger",
         gender: "n"
     },
     {
-        name: "Earth Hammer",
+        name: "Slag Hammer",
         gender: "n"
     },
     {
-        name: "Earth Handstand",
+        name: "Rubble Trouble",
         gender: "n"
     },
     {
-        name: "Earth Hourglass",
+        name: "Dust of Time",
         gender: "n"
     },
     {
-        name: "Earth Orb",
+        name: "Banded Boulder",
         gender: "n"
     },
     {
-        name: "Earth Totem",
+        name: "Spinning Sandstorm",
         gender: "n"
     },
     {
-        name: "Earth Toucan",
+        name: "Rock Hawk",
         gender: "n"
     },
     {
-        name: "Fire Captain's Hat",
+        name: "Spark Spear",
         gender: "n"
     },
     {
-        name: "Fire Scepter",
+        name: "Fire Flower",
         gender: "n"
     },
     {
-        name: "Fire Screamer",
+        name: "Scorching Stopper",
         gender: "n"
     },
     {
-        name: "Fire Torch",
+        name: "Eternal Flame",
         gender: "n"
     },
     {
-        name: "Fire Totem",
+        name: "Searing Spinner",
         gender: "n"
     },
     {
-        name: "Fire Yawn",
+        name: "Blazing Belch",
         gender: "n"
     },
     {
@@ -162,135 +162,135 @@ const trapCharacters = [
         gender: "n"
     },
     {
-        name: "Life Hammer",
+        name: "Weed Whacker",
         gender: "n"
     },
     {
-        name: "Life Snake",
+        name: "Seed Serpent",
         gender: "n"
     },
     {
-        name: "Life Sword",
+        name: "Jade Blade",
         gender: "n"
     },
     {
-        name: "Life Torch",
+        name: "Emerald Energy",
         gender: "n"
     },
     {
-        name: "Life Toucan",
+        name: "Oak Eagle",
         gender: "n"
     },
     {
-        name: "Life Yawn",
+        name: "Shrub Shrieker",
         gender: "n"
     },
     {
-        name: "Light Owl",
+        name: "Heavenly Hawk",
         gender: "n"
     },
     {
-        name: "Light Rocket",
+        name: "Shining Ship",
         gender: "n"
     },
     {
-        name: "Light Yawn",
+        name: "Beam Scream",
         gender: "n"
     },
     {
-        name: "Magic Axe",
+        name: "Axe of Illusion",
         gender: "n"
     },
     {
-        name: "Magic Hourglass",
+        name: "Arcane Hourglass",
         gender: "n"
     },
     {
-        name: "Magic Log Holder",
+        name: "Biter's Bane",
         gender: "n"
     },
     {
-        name: "Magic Rocket",
+        name: "Rune Rocket",
         gender: "n"
     },
     {
-        name: "Magic Skull",
+        name: "Sorcerous Skull",
         gender: "n"
     },
     {
-        name: "Magic Totem",
+        name: "Spell Slapper",
         gender: "n"
     },
     {
-        name: "Tech Angel",
+        name: "Automatic Angel",
         gender: "n"
     },
     {
-        name: "Tech Flying Helmet",
+        name: "Makers Mana",
         gender: "n"
     },
     {
-        name: "Tech Hand",
+        name: "Grabbing Gadget",
         gender: "n"
     },
     {
-        name: "Tech Handstand",
+        name: "Topsy Techy",
         gender: "n"
     },
     {
-        name: "Tech Scepter",
+        name: "Factory Flower",
         gender: "n"
     },
     {
-        name: "Tech Tiki",
+        name: "Tech Totem",
         gender: "n"
     },
     {
-        name: "Undead Axe",
+        name: "Haunted Hatchet",
         gender: "n"
     },
     {
-        name: "Undead Captain's Hat",
+        name: "Dream Piercer",
         gender: "n"
     },
     {
-        name: "Undead Hand",
+        name: "Grim Gripper",
         gender: "n"
     },
     {
-        name: "Undead Orb",
+        name: "Spirit Sphere",
         gender: "n"
     },
     {
-        name: "Undead Skull",
+        name: "Spectral Skull",
         gender: "n"
     },
     {
-        name: "Undead Snake",
+        name: "Spooky Snake",
         gender: "n"
     },
     {
-        name: "Water Angel",
+        name: "Soaking Staff",
         gender: "n"
     },
     {
-        name: "Water Axe",
+        name: "Aqua Axe",
         gender: "n"
     },
     {
-        name: "Water Flying Helmet",
+        name: "Frost Helm",
         gender: "n"
     },
     {
-        name: "Water Jughead",
+        name: "Flood Flask",
         gender: "n"
     },
     {
-        name: "Water Log Holder",
+        name: "Wet Walter",
         gender: "n"
     },
     {
-        name: "Water Tiki",
+        name: "Tidal Tiki",
         gender: "n"
     },
     // trap standard
@@ -396,7 +396,7 @@ const trapCharacters = [
         gender: "m"
     },
     {
-        name: "Weerupter",
+        name: "Weeruptor",
         gender: "m"
     }
 ];
