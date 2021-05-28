@@ -757,7 +757,7 @@ const trapFigures = [
         variation: "series 1",
         img: "",
         rare: true,
-        value: 75.00,
+        value: 35.00,
     },
     {
         figName: "Blades",
@@ -937,7 +937,7 @@ const trapFigures = [
         type: "standard",
         variation: "series 1",
         img: "",
-        value: 50.00,
+        value: 35.00,
     },
     {
         figName: "Torch",
