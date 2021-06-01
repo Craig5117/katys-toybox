@@ -42,6 +42,23 @@ const sets = [
         setName: "Swap Battlepack 2",
         gameId: 3
     },
+    // trap sets
+    {
+        setName: "Trap Adventure Pack 1",
+        gameId: 4
+    },
+    {
+        setName: "Trap Adventure Pace 2",
+        gameId: 4
+    },
+    {
+        setName: "Trap Dark Expansion Pack",
+        gameId: 4
+    },
+    {
+        setName: "Trap Light Expansion Pack",
+        gameId: 4
+    },
 ];
 
 module.exports = sets;
