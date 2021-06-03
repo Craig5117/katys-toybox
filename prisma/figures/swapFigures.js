@@ -185,7 +185,7 @@ const swapFigures = [
         value: 7.00,
     },
     {
-        figName: "Camo S-2",
+        figName: "Thorn Horn Camo",
         characterId: 3,
         elementId: 8,
         gameId: 3,
@@ -196,7 +196,7 @@ const swapFigures = [
         value: 6.00,
     },
     {
-        figName: "Chill S-2",
+        figName: "Blizzard Chill",
         characterId: 50,
         elementId: 2,
         gameId: 3,
@@ -206,7 +206,7 @@ const swapFigures = [
         value: 2.50,
     },
     {
-        figName: "Chop Chop S-3",
+        figName: "Twin Blade Chop Chop",
         characterId: 4,
         elementId: 7,
         gameId: 3,
@@ -236,7 +236,7 @@ const swapFigures = [
         value: 2.50,
     },
     {
-        figName: "Cynder S-3",
+        figName: "Phantom Cynder",
         characterId: 5,
         elementId: 7,
         gameId: 3,
@@ -256,7 +256,7 @@ const swapFigures = [
         value: 0.50,
     },
     {
-        figName: "Eruptor S-3",
+        figName: "Lava Barf Eruptor",
         characterId: 10,
         elementId: 1,
         gameId: 3,
@@ -286,7 +286,7 @@ const swapFigures = [
         value: 1.50,
     },
     {
-        figName: "Gill Grunt S-3",
+        figName: "Anchors Away Gill Grunt",
         characterId: 13,
         elementId: 2,
         gameId: 3,
@@ -317,7 +317,7 @@ const swapFigures = [
         value: 2.50,
     },
     {
-        figName: "Hot Dog S-2",
+        figName: "Fire Bone Hot Dog",
         characterId: 52,
         elementId: 1,
         gameId: 3,
@@ -328,7 +328,7 @@ const swapFigures = [
         value: 7.00,
     },
     {
-        figName: "Jet-Vac S-2",
+        figName: "Turbo Jet-Vac",
         characterId: 46,
         elementId: 5,
         gameId: 3,
@@ -339,7 +339,7 @@ const swapFigures = [
         value: 8.00,
     },
     {
-        figName: "Pop Fizz S-2",
+        figName: "Super Gulp Pop Fizz",
         characterId: 47,
         elementId: 6,
         gameId: 3,
@@ -360,7 +360,7 @@ const swapFigures = [
         value: 3.00,
     },
     {
-        figName: "Prism Break S-3",
+        figName: "Hyper Beam Prism Break",
         characterId: 17,
         elementId: 4,
         gameId: 3,
@@ -451,7 +451,7 @@ const swapFigures = [
         value: 1.50,
     },
     {
-        figName: "Sprocket S-2",
+        figName: "Heavy Duty Sprocket",
         characterId: 51,
         elementId: 3,
         gameId: 3,
@@ -461,7 +461,7 @@ const swapFigures = [
         value: 3.50,
     },
     {
-        figName: "Spyro S-3",
+        figName: "Mega Ram Spyro",
         characterId: 20,
         elementId: 6,
         gameId: 3,
@@ -491,7 +491,7 @@ const swapFigures = [
         value: 1.00,
     },
     {
-        figName: "Stealth Elf S-3",
+        figName: "Ninja Stealth Elf",
         characterId: 21,
         elementId: 8,
         gameId: 3,
@@ -501,7 +501,7 @@ const swapFigures = [
         value: 1.00,
     },
     {
-        figName: "Terrafin S-3",
+        figName: "Knockout Terrafin",
         characterId: 24,
         elementId: 4,
         gameId: 3,
@@ -512,7 +512,7 @@ const swapFigures = [
         value: 1.00,
     },
     {
-        figName: "Trigger Happy S-3",
+        figName: "Big Bang Trigger Happy",
         characterId: 25,
         elementId: 3,
         gameId: 3,
@@ -542,7 +542,7 @@ const swapFigures = [
         value: 0.50,
     },
     {
-        figName: "Whirlwind S-3",
+        figName: "Horn Blast Whirlwind",
         characterId: 29,
         elementId: 5,
         gameId: 3,
@@ -594,7 +594,7 @@ const swapFigures = [
         value: 1.00,
     },
     {
-        figName: "Dark Spyro S-3",
+        figName: "Dark Mega Ram Spyro",
         characterId: 20,
         elementId: 6,
         gameId: 3,
@@ -604,7 +604,7 @@ const swapFigures = [
         value: 2.00,
     },
     {
-        figName: "Dark Stealth Elf S-3",
+        figName: "Dark Ninja Stealth Elf",
         characterId: 21,
         elementId: 8,
         gameId: 3,
@@ -756,7 +756,7 @@ const swapFigures = [
         value: 1.00,
     },
     {
-        figName: "Volcanic Eruptor",
+        figName: "Volcanic Lava Barf Eruptor",
         characterId: 10,
         elementId: 1,
         gameId: 3,

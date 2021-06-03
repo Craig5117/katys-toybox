@@ -856,7 +856,7 @@ const trapFigures = [
         value: 2.00,
     },
     {
-        figName: "Fryno S-2",
+        figName: "Hog Wild Fryno",
         characterId: 76,
         elementId: 1,
         gameId: 4,
@@ -876,7 +876,7 @@ const trapFigures = [
         value: 2.50,
     },
     {
-        figName: "Gill Grunt S-4",
+        figName: "Tidal Wave Gill Grunt",
         characterId: 13,
         elementId: 2,
         gameId: 4,
@@ -896,7 +896,7 @@ const trapFigures = [
         value: 10.00,
     },
     {
-        figName: "Jet Vac S-3",
+        figName: "Full Blast Jet Vac",
         characterId: 46,
         elementId: 5,
         gameId: 4,
@@ -906,7 +906,7 @@ const trapFigures = [
         value: 0.50,
     },
     {
-        figName: "Pop Fizz S-3",
+        figName: "Fizzy Frenzy Pop Fizz",
         characterId: 47,
         elementId: 6,
         gameId: 4,
@@ -926,7 +926,7 @@ const trapFigures = [
         value: 20.00,
     },
     {
-        figName: "Shroomboom S-2",
+        figName: "Sure Shot Shroomboom",
         characterId: 45,
         elementId: 8,
         gameId: 4,
