@@ -21,7 +21,7 @@ const chargersAccessories = [
     },
     // discs and portals
     {
-        accName: "SuperChargers Wii/Wii U/PS3/PS4/XBOX 360/XBOX One Portal",
+        accName: "SuperChargers All Consoles Portal",
         gameId: 5,
         modelNo: "0000655",
         value: 10.00,
