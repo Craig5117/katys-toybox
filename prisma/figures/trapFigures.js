@@ -195,7 +195,7 @@ const trapFigures = [
     },
     {
         figName: "Drafty Decanter",
-        characterId: 108,
+        characterId: 107,
         elementId: 5,
         gameId: 4,
         type: "trap",
@@ -205,7 +205,7 @@ const trapFigures = [
     },
     {
         figName: "Storm Warning",
-        characterId: 109,
+        characterId: 107,
         elementId: 5,
         gameId: 4,
         type: "trap",
@@ -215,7 +215,7 @@ const trapFigures = [
     },
     {
         figName: "Cloudy Cobra",
-        characterId: 110,
+        characterId: 107,
         elementId: 5,
         gameId: 4,
         type: "trap",
@@ -225,7 +225,7 @@ const trapFigures = [
     },
     {
         figName: "Cyclone Sabre",
-        characterId: 111,
+        characterId: 107,
         elementId: 5,
         gameId: 4,
         type: "trap",
@@ -235,7 +235,7 @@ const trapFigures = [
     },
     {
         figName: "Breezy Bird",
-        characterId: 112,
+        characterId: 107,
         elementId: 5,
         gameId: 4,
         type: "trap",
@@ -245,7 +245,7 @@ const trapFigures = [
     },
     {
         figName: "Ghastly Grimace",
-        characterId: 113,
+        characterId: 108,
         elementId: 10,
         gameId: 4,
         type: "trap",
@@ -255,7 +255,7 @@ const trapFigures = [
     },
     {
         figName: "Shadow Spider",
-        characterId: 114,
+        characterId: 108,
         elementId: 10,
         gameId: 4,
         setId: 13,
@@ -266,7 +266,7 @@ const trapFigures = [
     },
     {
         figName: "Dark Dagger",
-        characterId: 115,
+        characterId: 108,
         elementId: 10,
         gameId: 4,
         type: "trap",
@@ -276,7 +276,7 @@ const trapFigures = [
     },
     {
         figName: "Slag Hammer",
-        characterId: 116,
+        characterId: 109,
         elementId: 4,
         gameId: 4,
         type: "trap",
@@ -286,7 +286,7 @@ const trapFigures = [
     },
     {
         figName: "Rubble Trouble",
-        characterId: 117,
+        characterId: 109,
         elementId: 4,
         gameId: 4,
         type: "trap",
@@ -296,7 +296,7 @@ const trapFigures = [
     },
     {
         figName: "Dust of Time",
-        characterId: 118,
+        characterId: 109,
         elementId: 4,
         gameId: 4,
         type: "trap",
@@ -306,7 +306,7 @@ const trapFigures = [
     },
     {
         figName: "Banded Boulder",
-        characterId: 119,
+        characterId: 109,
         elementId: 4,
         gameId: 4,
         type: "trap",
@@ -316,7 +316,7 @@ const trapFigures = [
     },
     {
         figName: "Spinning Sandstorm",
-        characterId: 120,
+        characterId: 109,
         elementId: 4,
         gameId: 4,
         type: "trap",
@@ -326,7 +326,7 @@ const trapFigures = [
     },
     {
         figName: "Rock Hawk",
-        characterId: 121,
+        characterId: 109,
         elementId: 4,
         gameId: 4,
         type: "trap",
@@ -336,7 +336,7 @@ const trapFigures = [
     },
     {
         figName: "Spark Spear",
-        characterId: 122,
+        characterId: 110,
         elementId: 1,
         gameId: 4,
         type: "trap",
@@ -346,7 +346,7 @@ const trapFigures = [
     },
     {
         figName: "Fire Flower",
-        characterId: 123,
+        characterId: 110,
         elementId: 1,
         gameId: 4,
         type: "trap",
@@ -356,7 +356,7 @@ const trapFigures = [
     },
     {
         figName: "Scorching Stopper",
-        characterId: 124,
+        characterId: 110,
         elementId: 1,
         gameId: 4,
         type: "trap",
@@ -366,7 +366,7 @@ const trapFigures = [
     },
     {
         figName: "Eternal Flame",
-        characterId: 125,
+        characterId: 110,
         elementId: 1,
         gameId: 4,
         type: "trap",
@@ -376,7 +376,7 @@ const trapFigures = [
     },
     {
         figName: "Searing Spinner",
-        characterId: 126,
+        characterId: 110,
         elementId: 1,
         gameId: 4,
         type: "trap",
@@ -386,7 +386,7 @@ const trapFigures = [
     },
     {
         figName: "Blazing Belch",
-        characterId: 127,
+        characterId: 110,
         elementId: 1,
         gameId: 4,
         type: "trap",
@@ -397,7 +397,7 @@ const trapFigures = [
     },
     {
         figName: "Kaos Trap",
-        characterId: 128,
+        characterId: 111,
         elementId: 10,
         gameId: 4,
         type: "trap",
@@ -407,7 +407,7 @@ const trapFigures = [
     },
     {
         figName: "Weed Whacker",
-        characterId: 129,
+        characterId: 112,
         elementId: 8,
         gameId: 4,
         type: "trap",
@@ -417,7 +417,7 @@ const trapFigures = [
     },
     {
         figName: "Seed Serpent",
-        characterId: 130,
+        characterId: 112,
         elementId: 8,
         gameId: 4,
         type: "trap",
@@ -427,7 +427,7 @@ const trapFigures = [
     },
     {
         figName: "Jade Blade",
-        characterId: 131,
+        characterId: 112,
         elementId: 8,
         gameId: 4,
         type: "trap",
@@ -437,7 +437,7 @@ const trapFigures = [
     },
     {
         figName: "Emerald Energy",
-        characterId: 132,
+        characterId: 112,
         elementId: 8,
         gameId: 4,
         type: "trap",
@@ -447,7 +447,7 @@ const trapFigures = [
     },
     {
         figName: "Oak Eagle",
-        characterId: 133,
+        characterId: 112,
         elementId: 8,
         gameId: 4,
         type: "trap",
@@ -457,7 +457,7 @@ const trapFigures = [
     },
     {
         figName: "Shrub Shrieker",
-        characterId: 134,
+        characterId: 112,
         elementId: 8,
         gameId: 4,
         type: "trap",
@@ -468,7 +468,7 @@ const trapFigures = [
     },
     {
         figName: "Heavenly Hawk",
-        characterId: 135,
+        characterId: 113,
         elementId: 9,
         gameId: 4,
         setId: 14,
@@ -480,7 +480,7 @@ const trapFigures = [
     },
     {
         figName: "Shining Ship",
-        characterId: 136,
+        characterId: 113,
         elementId: 9,
         gameId: 4,
         type: "trap",
@@ -491,7 +491,7 @@ const trapFigures = [
     },
     {
         figName: "Beam Scream",
-        characterId: 137,
+        characterId: 113,
         elementId: 9,
         gameId: 4,
         type: "trap",
@@ -502,7 +502,7 @@ const trapFigures = [
     },
     {
         figName: "Axe of Illusion",
-        characterId: 138,
+        characterId: 114,
         elementId: 6,
         gameId: 4,
         type: "trap",
@@ -512,7 +512,7 @@ const trapFigures = [
     },
     {
         figName: "Arcane Hourglass",
-        characterId: 139,
+        characterId: 114,
         elementId: 6,
         gameId: 4,
         type: "trap",
@@ -522,7 +522,7 @@ const trapFigures = [
     },
     {
         figName: "Biter's Bane",
-        characterId: 140,
+        characterId: 114,
         elementId: 6,
         gameId: 4,
         type: "trap",
@@ -532,7 +532,7 @@ const trapFigures = [
     },
     {
         figName: "Rune Rocket",
-        characterId: 141,
+        characterId: 114,
         elementId: 6,
         gameId: 4,
         type: "trap",
@@ -542,7 +542,7 @@ const trapFigures = [
     },
     {
         figName: "Sorcerous Skull",
-        characterId: 142,
+        characterId: 114,
         elementId: 6,
         gameId: 4,
         type: "trap",
@@ -552,7 +552,7 @@ const trapFigures = [
     },
     {
         figName: "Spell Slapper",
-        characterId: 143,
+        characterId: 114,
         elementId: 6,
         gameId: 4,
         type: "trap",
@@ -562,7 +562,7 @@ const trapFigures = [
     },
     {
         figName: "Automatic Angel",
-        characterId: 144,
+        characterId: 115,
         elementId: 3,
         gameId: 4,
         type: "trap",
@@ -572,7 +572,7 @@ const trapFigures = [
     },
     {
         figName: "Makers Mana",
-        characterId: 145,
+        characterId: 115,
         elementId: 3,
         gameId: 4,
         type: "trap",
@@ -582,7 +582,7 @@ const trapFigures = [
     },
     {
         figName: "Grabbing Gadget",
-        characterId: 146,
+        characterId: 115,
         elementId: 3,
         gameId: 4,
         type: "trap",
@@ -592,7 +592,7 @@ const trapFigures = [
     },
     {
         figName: "Topsy Techy",
-        characterId: 147,
+        characterId: 115,
         elementId: 3,
         gameId: 4,
         type: "trap",
@@ -602,7 +602,7 @@ const trapFigures = [
     },
     {
         figName: "Factory Flower",
-        characterId: 148,
+        characterId: 115,
         elementId: 3,
         gameId: 4,
         type: "trap",
@@ -612,7 +612,7 @@ const trapFigures = [
     },
     {
         figName: "Tech Totem",
-        characterId: 149,
+        characterId: 115,
         elementId: 3,
         gameId: 4,
         type: "trap",
@@ -622,7 +622,7 @@ const trapFigures = [
     },
     {
         figName: "Haunted Hatchet",
-        characterId: 150,
+        characterId: 116,
         elementId: 7,
         gameId: 4,
         type: "trap",
@@ -632,7 +632,7 @@ const trapFigures = [
     },
     {
         figName: "Dream Piercer",
-        characterId: 151,
+        characterId: 116,
         elementId: 7,
         gameId: 4,
         type: "trap",
@@ -642,7 +642,7 @@ const trapFigures = [
     },
     {
         figName: "Grim Gripper",
-        characterId: 152,
+        characterId: 116,
         elementId: 7,
         gameId: 4,
         type: "trap",
@@ -652,7 +652,7 @@ const trapFigures = [
     },
     {
         figName: "Spirit Sphere",
-        characterId: 153,
+        characterId: 116,
         elementId: 7,
         gameId: 4,
         type: "trap",
@@ -662,7 +662,7 @@ const trapFigures = [
     },
     {
         figName: "Spectral Skull",
-        characterId: 154,
+        characterId: 116,
         elementId: 7,
         gameId: 4,
         type: "trap",
@@ -672,7 +672,7 @@ const trapFigures = [
     },
     {
         figName: "Spooky Snake",
-        characterId: 155,
+        characterId: 116,
         elementId: 7,
         gameId: 4,
         type: "trap",
@@ -682,7 +682,7 @@ const trapFigures = [
     },
     {
         figName: "Soaking Staff",
-        characterId: 156,
+        characterId: 117,
         elementId: 2,
         gameId: 4,
         type: "trap",
@@ -692,7 +692,7 @@ const trapFigures = [
     },
     {
         figName: "Aqua Axe",
-        characterId: 157,
+        characterId: 117,
         elementId: 2,
         gameId: 4,
         type: "trap",
@@ -702,7 +702,7 @@ const trapFigures = [
     },
     {
         figName: "Frost Helm",
-        characterId: 158,
+        characterId: 117,
         elementId: 2,
         gameId: 4,
         type: "trap",
@@ -712,7 +712,7 @@ const trapFigures = [
     },
     {
         figName: "Flood Flask",
-        characterId: 159,
+        characterId: 117,
         elementId: 2,
         gameId: 4,
         type: "trap",
@@ -722,7 +722,7 @@ const trapFigures = [
     },
     {
         figName: "Wet Walter",
-        characterId: 160,
+        characterId: 117,
         elementId: 2,
         gameId: 4,
         type: "trap",
@@ -732,7 +732,7 @@ const trapFigures = [
     },
     {
         figName: "Tidal Tiki",
-        characterId: 161,
+        characterId: 117,
         elementId: 2,
         gameId: 4,
         type: "trap",
@@ -743,7 +743,7 @@ const trapFigures = [
     // standard figures
     {
         figName: "Bat Spin",
-        characterId: 162,
+        characterId: 118,
         elementId: 7,
         gameId: 4,
         type: "standard",
@@ -754,7 +754,7 @@ const trapFigures = [
     },
     {
         figName: "Blackout",
-        characterId: 163,
+        characterId: 119,
         elementId: 10,
         gameId: 4,
         type: "standard",
@@ -765,7 +765,7 @@ const trapFigures = [
     },
     {
         figName: "Blades",
-        characterId: 164,
+        characterId: 120,
         elementId: 10,
         gameId: 4,
         setId: 11,
@@ -776,7 +776,7 @@ const trapFigures = [
     },
     {
         figName: "Chopper",
-        characterId: 165,
+        characterId: 121,
         elementId: 3,
         gameId: 4,
         type: "standard",
@@ -786,7 +786,7 @@ const trapFigures = [
     },
     {
         figName: "Cobra Cadabra",
-        characterId: 166,
+        characterId: 122,
         elementId: 6,
         gameId: 4,
         type: "standard",
@@ -796,7 +796,7 @@ const trapFigures = [
     },
     {
         figName: "Deja Vu",
-        characterId: 167,
+        characterId: 123,
         elementId: 6,
         gameId: 4,
         setId: 12,
@@ -807,7 +807,7 @@ const trapFigures = [
     },
     {
         figName: "Echo",
-        characterId: 168,
+        characterId: 124,
         elementId: 2,
         gameId: 4,
         type: "standard",
@@ -817,7 +817,7 @@ const trapFigures = [
     },
     {
         figName: "Fist Bump",
-        characterId: 169,
+        characterId: 125,
         elementId: 4,
         gameId: 4,
         type: "standard",
@@ -827,7 +827,7 @@ const trapFigures = [
     },
     {
         figName: "Fling Kong",
-        characterId: 170,
+        characterId: 126,
         elementId: 5,
         gameId: 4,
         type: "standard",
@@ -837,7 +837,7 @@ const trapFigures = [
     },
     {
         figName: "Flip Wreck",
-        characterId: 171,
+        characterId: 127,
         elementId: 2,
         gameId: 4,
         type: "standard",
@@ -847,7 +847,7 @@ const trapFigures = [
     },
     {
         figName: "Food Fight",
-        characterId: 172,
+        characterId: 128,
         elementId: 8,
         gameId: 4,
         type: "standard",
@@ -867,7 +867,7 @@ const trapFigures = [
     },
     {
         figName: "Funny Bone",
-        characterId: 173,
+        characterId: 129,
         elementId: 7,
         gameId: 4,
         type: "standard",
@@ -887,7 +887,7 @@ const trapFigures = [
     },
     {
         figName: "High Five",
-        characterId: 174,
+        characterId: 130,
         elementId: 8,
         gameId: 4,
         type: "standard",
@@ -917,7 +917,7 @@ const trapFigures = [
     },
     {
         figName: "Rocky Roll",
-        characterId: 175,
+        characterId: 131,
         elementId: 4,
         gameId: 4,
         type: "standard",
@@ -937,7 +937,7 @@ const trapFigures = [
     },
     {
         figName: "Spotlight",
-        characterId: 176,
+        characterId: 132,
         elementId: 9,
         gameId: 4,
         type: "standard",
@@ -947,7 +947,7 @@ const trapFigures = [
     },
     {
         figName: "Torch",
-        characterId: 177,
+        characterId: 133,
         elementId: 1,
         gameId: 4,
         type: "standard",
@@ -957,7 +957,7 @@ const trapFigures = [
     },
     {
         figName: "Trail Blazer",
-        characterId: 178,
+        characterId: 134,
         elementId: 1,
         gameId: 4,
         type: "standard",
@@ -967,7 +967,7 @@ const trapFigures = [
     },
     {
         figName: "Tread Head",
-        characterId: 179,
+        characterId: 135,
         elementId: 3,
         gameId: 4,
         type: "standard",
@@ -988,7 +988,7 @@ const trapFigures = [
     },
     {
         figName: "Bop",
-        characterId: 180,
+        characterId: 136,
         elementId: 4,
         gameId: 4,
         type: "sidekick",
@@ -998,7 +998,7 @@ const trapFigures = [
     },
     {
         figName: "Breeze",
-        characterId: 181,
+        characterId: 137,
         elementId: 5,
         gameId: 4,
         type: "sidekick",
@@ -1009,7 +1009,7 @@ const trapFigures = [
     },
     {
         figName: "Drobit",
-        characterId: 182,
+        characterId: 138,
         elementId: 3,
         gameId: 4,
         type: "sidekick",
@@ -1039,7 +1039,7 @@ const trapFigures = [
     },
     {
         figName: "Hijinx",
-        characterId: 183,
+        characterId: 139,
         elementId: 7,
         gameId: 4,
         type: "sidekick",
@@ -1059,7 +1059,7 @@ const trapFigures = [
     },
     {
         figName: "Pet Vac",
-        characterId: 184,
+        characterId: 140,
         elementId: 5,
         gameId: 4,
         type: "sidekick",
@@ -1069,7 +1069,7 @@ const trapFigures = [
     },
     {
         figName: "Small Fry",
-        characterId: 185,
+        characterId: 141,
         elementId: 1,
         gameId: 4,
         type: "sidekick",
@@ -1079,7 +1079,7 @@ const trapFigures = [
     },
     {
         figName: "Spry",
-        characterId: 186,
+        characterId: 142,
         elementId: 6,
         gameId: 4,
         type: "sidekick",
@@ -1119,7 +1119,7 @@ const trapFigures = [
     },
     {
         figName: "Weeruptor",
-        characterId: 187,
+        characterId: 143,
         elementId: 1,
         gameId: 4,
         type: "sidekick",
@@ -1140,7 +1140,7 @@ const trapFigures = [
     // variants
     {
         figName: "Dark Food Fight",
-        characterId: 172,
+        characterId: 128,
         elementId: 8,
         gameId: 4,
         type: "standard",
@@ -1170,7 +1170,7 @@ const trapFigures = [
     },
     {
         figName: "Eggsellent Weeruptor",
-        characterId: 187,
+        characterId: 143,
         elementId: 1,
         gameId: 4,
         type: "sidekick",
@@ -1192,7 +1192,7 @@ const trapFigures = [
     },
     {
         figName: "King Cobra Cadabra",
-        characterId: 166,
+        characterId: 122,
         elementId: 6,
         gameId: 4,
         type: "standard",
@@ -1203,7 +1203,7 @@ const trapFigures = [
     },
     {
         figName: "Legendary Blades",
-        characterId: 164,
+        characterId: 120,
         elementId: 10,
         gameId: 4,
         setId: 11,
@@ -1224,7 +1224,7 @@ const trapFigures = [
     },
     {
         figName: "Legendary Deja Vu",
-        characterId: 167,
+        characterId: 123,
         elementId: 6,
         gameId: 4,
         type: "standard",
@@ -1274,7 +1274,7 @@ const trapFigures = [
     },
     {
         figName: "Power Punch Pet Vac",
-        characterId: 184,
+        characterId: 140,
         elementId: 5,
         gameId: 4,
         type: "sidekick",
@@ -1327,7 +1327,7 @@ const trapFigures = [
     },
     {
         figName: "Easter Bunny Rubble Trouble",
-        characterId: 117,
+        characterId: 109,
         elementId: 4,
         gameId: 4,
         type: "trap",
@@ -1338,7 +1338,7 @@ const trapFigures = [
     },
     {
         figName: "Legendary Spirit Sphere",
-        characterId: 153,
+        characterId: 116,
         elementId: 7,
         gameId: 4,
         type: "trap",
@@ -1349,7 +1349,7 @@ const trapFigures = [
     },
     {
         figName: "Legendary Spectral Skull",
-        characterId: 154,
+        characterId: 116,
         elementId: 7,
         gameId: 4,
         type: "trap",
@@ -1360,7 +1360,7 @@ const trapFigures = [
     },
     {
         figName: "Legendary Flood Flask",
-        characterId: 159,
+        characterId: 117,
         elementId: 2,
         gameId: 4,
         type: "trap",
@@ -1371,7 +1371,7 @@ const trapFigures = [
     },
     {
         figName: "Ultimate Kaos Trap",
-        characterId: 128,
+        characterId: 111,
         elementId: 10,
         gameId: 4,
         type: "trap",
@@ -1382,7 +1382,7 @@ const trapFigures = [
     },
     {
         figName: "Red Hot Tussle Sprout",
-        characterId: 120,
+        characterId: 109,
         elementId: 4,
         gameId: 4,
         type: "trap",
@@ -1393,7 +1393,7 @@ const trapFigures = [
     },
     {
         figName: "Rebel Lob Goblin",
-        characterId: 136,
+        characterId: 113,
         elementId: 9,
         gameId: 4,
         type: "trap",
@@ -1404,7 +1404,7 @@ const trapFigures = [
     },
     {
         figName: "Outlaw Brawl and Chain",
-        characterId: 160,
+        characterId: 117,
         elementId: 2,
         gameId: 4,
         type: "trap",
@@ -1415,7 +1415,7 @@ const trapFigures = [
     },
     {
         figName: "Riot Shield Shredder",
-        characterId: 132,
+        characterId: 112,
         elementId: 8,
         gameId: 4,
         type: "trap",
@@ -1426,7 +1426,7 @@ const trapFigures = [
     },
     {
         figName: "Steamed Broccoli Guy",
-        characterId: 133,
+        characterId: 112,
         elementId: 8,
         gameId: 4,
         type: "trap",
@@ -1437,7 +1437,7 @@ const trapFigures = [
     },
     {
         figName: "Steampunk Shrednaught",
-        characterId: 145,
+        characterId: 115,
         elementId: 3,
         gameId: 4,
         type: "trap",

@@ -74,87 +74,19 @@ const trapCharacters = [
     },
     // traps
     {
-        name: "Tempest Timer",
+        name: "Air Trap",
         gender: "n"
     },
     {
-        name: "Drafty Decanter",
+        name: "Dark Trap",
         gender: "n"
     },
     {
-        name: "Storm Warning",
+        name: "Earth Trap",
         gender: "n"
     },
     {
-        name: "Cloudy Cobra",
-        gender: "n"
-    },
-    {
-        name: "Cyclone Sabre",
-        gender: "n"
-    },
-    {
-        name: "Breezy Bird",
-        gender: "n"
-    },
-    {
-        name: "Ghastly Grimace",
-        gender: "n"
-    },
-    {
-        name: "Shadow Spider",
-        gender: "n"
-    },
-    {
-        name: "Dark Dagger",
-        gender: "n"
-    },
-    {
-        name: "Slag Hammer",
-        gender: "n"
-    },
-    {
-        name: "Rubble Trouble",
-        gender: "n"
-    },
-    {
-        name: "Dust of Time",
-        gender: "n"
-    },
-    {
-        name: "Banded Boulder",
-        gender: "n"
-    },
-    {
-        name: "Spinning Sandstorm",
-        gender: "n"
-    },
-    {
-        name: "Rock Hawk",
-        gender: "n"
-    },
-    {
-        name: "Spark Spear",
-        gender: "n"
-    },
-    {
-        name: "Fire Flower",
-        gender: "n"
-    },
-    {
-        name: "Scorching Stopper",
-        gender: "n"
-    },
-    {
-        name: "Eternal Flame",
-        gender: "n"
-    },
-    {
-        name: "Searing Spinner",
-        gender: "n"
-    },
-    {
-        name: "Blazing Belch",
+        name: "Fire Trap",
         gender: "n"
     },
     {
@@ -162,135 +94,27 @@ const trapCharacters = [
         gender: "n"
     },
     {
-        name: "Weed Whacker",
+        name: "Life Trap",
         gender: "n"
     },
     {
-        name: "Seed Serpent",
+        name: "Light Trap",
         gender: "n"
     },
     {
-        name: "Jade Blade",
+        name: "Magic Trap",
         gender: "n"
     },
     {
-        name: "Emerald Energy",
+        name: "Tech Trap",
         gender: "n"
     },
     {
-        name: "Oak Eagle",
+        name: "Undead Trap",
         gender: "n"
     },
     {
-        name: "Shrub Shrieker",
-        gender: "n"
-    },
-    {
-        name: "Heavenly Hawk",
-        gender: "n"
-    },
-    {
-        name: "Shining Ship",
-        gender: "n"
-    },
-    {
-        name: "Beam Scream",
-        gender: "n"
-    },
-    {
-        name: "Axe of Illusion",
-        gender: "n"
-    },
-    {
-        name: "Arcane Hourglass",
-        gender: "n"
-    },
-    {
-        name: "Biter's Bane",
-        gender: "n"
-    },
-    {
-        name: "Rune Rocket",
-        gender: "n"
-    },
-    {
-        name: "Sorcerous Skull",
-        gender: "n"
-    },
-    {
-        name: "Spell Slapper",
-        gender: "n"
-    },
-    {
-        name: "Automatic Angel",
-        gender: "n"
-    },
-    {
-        name: "Makers Mana",
-        gender: "n"
-    },
-    {
-        name: "Grabbing Gadget",
-        gender: "n"
-    },
-    {
-        name: "Topsy Techy",
-        gender: "n"
-    },
-    {
-        name: "Factory Flower",
-        gender: "n"
-    },
-    {
-        name: "Tech Totem",
-        gender: "n"
-    },
-    {
-        name: "Haunted Hatchet",
-        gender: "n"
-    },
-    {
-        name: "Dream Piercer",
-        gender: "n"
-    },
-    {
-        name: "Grim Gripper",
-        gender: "n"
-    },
-    {
-        name: "Spirit Sphere",
-        gender: "n"
-    },
-    {
-        name: "Spectral Skull",
-        gender: "n"
-    },
-    {
-        name: "Spooky Snake",
-        gender: "n"
-    },
-    {
-        name: "Soaking Staff",
-        gender: "n"
-    },
-    {
-        name: "Aqua Axe",
-        gender: "n"
-    },
-    {
-        name: "Frost Helm",
-        gender: "n"
-    },
-    {
-        name: "Flood Flask",
-        gender: "n"
-    },
-    {
-        name: "Wet Walter",
-        gender: "n"
-    },
-    {
-        name: "Tidal Tiki",
+        name: "Water Trap",
         gender: "n"
     },
     // trap standard

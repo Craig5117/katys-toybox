@@ -2,7 +2,7 @@ const chargersFigures = [
     // vehicles
     {
         figName: "Barrel Blaster",
-        characterId: 199,
+        characterId: 155,
         elementId: 8,
         gameId: 5,
         type: "vehicle",
@@ -23,7 +23,7 @@ const chargersFigures = [
     },
     {
         figName: "Buzz Wing",
-        characterId: 198,
+        characterId: 154,
         elementId: 8,
         gameId: 5,
         type: "vehicle",
@@ -34,7 +34,7 @@ const chargersFigures = [
     },
     {
         figName: "Clown Cruiser",
-        characterId: 191,
+        characterId: 147,
         elementId: 1,
         gameId: 5,
         type: "vehicle",
@@ -45,7 +45,7 @@ const chargersFigures = [
     },
     {
         figName: "Crypt Crusher",
-        characterId: 190,
+        characterId: 146,
         elementId: 7,
         gameId: 5,
         type: "vehicle",
@@ -55,7 +55,7 @@ const chargersFigures = [
     },
     {
         figName: "Dive Bomber",
-        characterId: 189,
+        characterId: 145,
         elementId: 2,
         gameId: 5,
         type: "vehicle",
@@ -76,7 +76,7 @@ const chargersFigures = [
     },
     {
         figName: "Hot Streak",
-        characterId: 195,
+        characterId: 151,
         elementId: 1,
         gameId: 5,
         type: "vehicle",
@@ -106,7 +106,7 @@ const chargersFigures = [
     },
     {
         figName: "Sea Shadow",
-        characterId: 193,
+        characterId: 149,
         elementId: 10,
         gameId: 5,
         type: "vehicle",
@@ -126,7 +126,7 @@ const chargersFigures = [
     },
     {
         figName: "Shield Striker",
-        characterId: 192,
+        characterId: 148,
         elementId: 3,
         gameId: 5,
         type: "vehicle",
@@ -136,7 +136,7 @@ const chargersFigures = [
     },
     {
         figName: "Sky Slicer",
-        characterId: 197,
+        characterId: 153,
         elementId: 5,
         gameId: 5,
         type: "vehicle",
@@ -156,7 +156,7 @@ const chargersFigures = [
     },
     {
         figName: "Splatter Splasher",
-        characterId: 196,
+        characterId: 152,
         elementId: 6,
         gameId: 5,
         type: "vehicle",
@@ -176,7 +176,7 @@ const chargersFigures = [
     },
     {
         figName: "Sun Runner",
-        characterId: 188,
+        characterId: 144,
         elementId: 9,
         gameId: 5,
         type: "vehicle",
@@ -187,7 +187,7 @@ const chargersFigures = [
     },
     {
         figName: "Thump Truck",
-        characterId: 194,
+        characterId: 150,
         elementId: 4,
         gameId: 5,
         type: "vehicle",
@@ -208,7 +208,7 @@ const chargersFigures = [
     // chargers standard
     {
         figName: "Astroblast",
-        characterId: 188,
+        characterId: 144,
         elementId: 9,
         gameId: 5,
         type: "standard",
@@ -218,7 +218,7 @@ const chargersFigures = [
     },
     {
         figName: "Hammer Slam Bowser",
-        characterId: 191,
+        characterId: 147,
         elementId: 1,
         gameId: 5,
         type: "standard",
@@ -229,7 +229,7 @@ const chargersFigures = [
     },
     {
         figName: "Dive Clops",
-        characterId: 189,
+        characterId: 145,
         elementId: 2,
         gameId: 5,
         type: "standard",
@@ -239,7 +239,7 @@ const chargersFigures = [
     },
     {
         figName: "Donkey Kong",
-        characterId: 199,
+        characterId: 155,
         elementId: 8,
         gameId: 5,
         type: "standard",
@@ -260,7 +260,7 @@ const chargersFigures = [
     },
     {
         figName: "Fiesta",
-        characterId: 190,
+        characterId: 146,
         elementId: 7,
         gameId: 5,
         type: "standard",
@@ -280,7 +280,7 @@ const chargersFigures = [
     },
     {
         figName: "High Volt",
-        characterId: 192,
+        characterId: 148,
         elementId: 3,
         gameId: 5,
         type: "standard",
@@ -300,7 +300,7 @@ const chargersFigures = [
     },
     {
         figName: "Nightfall",
-        characterId: 193,
+        characterId: 149,
         elementId: 10,
         gameId: 5,
         type: "standard",
@@ -331,7 +331,7 @@ const chargersFigures = [
     },
     {
         figName: "Smash Hit",
-        characterId: 194,
+        characterId: 150,
         elementId: 4,
         gameId: 5,
         type: "standard",
@@ -341,7 +341,7 @@ const chargersFigures = [
     },
     {
         figName: "Spitfire",
-        characterId: 195,
+        characterId: 151,
         elementId: 1,
         gameId: 5,
         type: "standard",
@@ -351,7 +351,7 @@ const chargersFigures = [
     },
     {
         figName: "Splat",
-        characterId: 196,
+        characterId: 152,
         elementId: 6,
         gameId: 5,
         type: "standard",
@@ -371,7 +371,7 @@ const chargersFigures = [
     },
     {
         figName: "Stormblade",
-        characterId: 197,
+        characterId: 153,
         elementId: 5,
         gameId: 5,
         type: "standard",
@@ -391,7 +391,7 @@ const chargersFigures = [
     },
     {
         figName: "Thrillipede",
-        characterId: 198,
+        characterId: 154,
         elementId: 8,
         gameId: 5,
         type: "standard",
@@ -424,7 +424,7 @@ const chargersFigures = [
     },
     {
         figName: "Dark Hammer Slam Bowser",
-        characterId: 191,
+        characterId: 147,
         elementId: 1,
         gameId: 5,
         type: "standard",
@@ -435,7 +435,7 @@ const chargersFigures = [
     },
     {
         figName: "Dark Donkey Kong",
-        characterId: 199,
+        characterId: 155,
         elementId: 8,
         gameId: 5,
         type: "standard",
@@ -446,7 +446,7 @@ const chargersFigures = [
     },
     {
         figName: "Dark Spitfire",
-        characterId: 195,
+        characterId: 151,
         elementId: 1,
         gameId: 5,
         type: "standard",
@@ -466,7 +466,7 @@ const chargersFigures = [
     },
     {
         figName: "Eggcited Thrillipede",
-        characterId: 198,
+        characterId: 154,
         elementId: 8,
         gameId: 5,
         type: "standard",
@@ -476,7 +476,7 @@ const chargersFigures = [
     },
     {
         figName: "Frightful Fiesta",
-        characterId: 190,
+        characterId: 146,
         elementId: 7,
         gameId: 5,
         type: "standard",
@@ -486,7 +486,7 @@ const chargersFigures = [
     },
     {
         figName: "Legendary Astroblast",
-        characterId: 188,
+        characterId: 144,
         elementId: 9,
         gameId: 5,
         type: "standard",
@@ -507,7 +507,7 @@ const chargersFigures = [
     },
     {
         figName: "Missile-Tow Dive Clops",
-        characterId: 189,
+        characterId: 145,
         elementId: 2,
         gameId: 5,
         type: "standard",
@@ -517,7 +517,7 @@ const chargersFigures = [
     },
     {
         figName: "Power Blue Splat",
-        characterId: 196,
+        characterId: 152,
         elementId: 6,
         gameId: 5,
         type: "standard",
@@ -539,7 +539,7 @@ const chargersFigures = [
     },
     {
         figName: "Steel Plated Smash Hit",
-        characterId: 194,
+        characterId: 150,
         elementId: 4,
         gameId: 5,
         type: "standard",
@@ -560,7 +560,7 @@ const chargersFigures = [
     },
     {
         figName: "Patina High Volt",
-        characterId: 192,
+        characterId: 148,
         elementId: 3,
         gameId: 5,
         type: "standard",
@@ -582,7 +582,7 @@ const chargersFigures = [
     },
     {
         figName: "Snow-Brite Stormblade",
-        characterId: 197,
+        characterId: 153,
         elementId: 5,
         gameId: 5,
         type: "standard",
@@ -594,7 +594,7 @@ const chargersFigures = [
     // vehicle variants
     {
         figName: "Dark Barrel Blaster",
-        characterId: 199,
+        characterId: 155,
         elementId: 8,
         gameId: 5,
         type: "vehicle",
@@ -604,7 +604,7 @@ const chargersFigures = [
     },
     {
         figName: "Dark Clown Cruiser",
-        characterId: 191,
+        characterId: 147,
         elementId: 1,
         gameId: 5,
         type: "vehicle",
@@ -614,7 +614,7 @@ const chargersFigures = [
     },
     {
         figName: "Dark Hot Streak",
-        characterId: 195,
+        characterId: 151,
         elementId: 1,
         gameId: 5,
         type: "vehicle",
@@ -624,7 +624,7 @@ const chargersFigures = [
     },
     {
         figName: "Dark Sea Shadow",
-        characterId: 193,
+        characterId: 149,
         elementId: 10,
         gameId: 5,
         type: "vehicle",
@@ -634,7 +634,7 @@ const chargersFigures = [
     },
     {
         figName: "E3 Hot Streak",
-        characterId: 195,
+        characterId: 151,
         elementId: 1,
         gameId: 5,
         type: "vehicle",
@@ -645,7 +645,7 @@ const chargersFigures = [
     },
     {
         figName: "Golden Hot Streak",
-        characterId: 195,
+        characterId: 151,
         elementId: 1,
         gameId: 5,
         type: "vehicle",
@@ -656,7 +656,7 @@ const chargersFigures = [
     },
     {
         figName: "Legendary Sun Runner",
-        characterId: 188,
+        characterId: 144,
         elementId: 9,
         gameId: 5,
         type: "vehicle",
@@ -697,7 +697,7 @@ const chargersFigures = [
     },
     {
         figName: "Power Blue Splatter Splasher",
-        characterId: 196,
+        characterId: 152,
         elementId: 6,
         gameId: 5,
         type: "vehicle",
@@ -708,7 +708,7 @@ const chargersFigures = [
     },
     {
         figName: "Spring Ahead Dive Bomber",
-        characterId: 189,
+        characterId: 145,
         elementId: 2,
         gameId: 5,
         type: "vehicle",
@@ -740,7 +740,7 @@ const chargersFigures = [
     },
     {
         figName: "Patina Shield Striker",
-        characterId: 192,
+        characterId: 148,
         elementId: 3,
         gameId: 5,
         type: "vehicle",

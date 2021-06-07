@@ -80,111 +80,92 @@ const imaginatorsCharacters = [
         name: "Wild Storm",
         gender: "m"
     },
+    // villain senseis
+    {
+        name: "Bad Juju",
+        gender: "f"
+    },
+    {
+        name: "Blaster-Tron",
+        gender: "m"
+    },
+    {
+        name: "Chompy Mage",
+        gender: "m"
+    },
+    {
+        name: "Dr. Krankcase",
+        gender: "m"
+    },
+    {
+        name: "Golden Queen",
+        gender: "f"
+    },
+    {
+        name: "Grave Clobber",
+        gender: "m"
+    },
+    {
+        name: "Hood Sickle",
+        gender: "m"
+    },
+    {
+        name: "Kaos",
+        gender: "m"
+    },
+    {
+        name: "Pain-Yatta",
+        gender: "m"
+    },
+    {
+        name: "Tae Kwon Crow",
+        gender: "m"
+    },
+    {
+        name: "Wolfgang",
+        gender: "m"
+    },
     // Crystals
     {
-        name: "Air Angel",
+        name: "Air Creation Crystal",
         gender: "n"
     },
     {
-        name: "Air Lantern",
+        name: "Dark Creation Crystal",
         gender: "n"
     },
     {
-        name: "Dark Pyramid",
+        name: "Earth Creation Crystal",
         gender: "n"
     },
     {
-        name: "Dark Reactor",
+        name: "Fire Creation Crystal",
         gender: "n"
     },
     {
-        name: "Dark Rune",
+        name: "Life Creation Crystal",
         gender: "n"
     },
     {
-        name: "Earth Armor",
+        name: "Light Creation Crystal",
         gender: "n"
     },
     {
-        name: "Earth Rocket",
+        name: "Magic Creation Crystall",
         gender: "n"
     },
     {
-        name: "Fire Acorn",
+        name: "Tech Creation Crystal",
         gender: "n"
     },
     {
-        name: "Fire Reactor",
+        name: "Undead Creation Crystal",
         gender: "n"
     },
     {
-        name: "Life Acorn",
+        name: "Water Creation Crystal",
         gender: "n"
     },
-    {
-        name: "Life Claw",
-        gender: "n"
-    },
-    {
-        name: "Life Rocket",
-        gender: "n"
-    },
-    {
-        name: "Life Rune",
-        gender: "n"
-    },
-    {
-        name: "Light Fanged",
-        gender: "n"
-    },
-    {
-        name: "Light Rune",
-        gender: "n"
-    },
-    {
-        name: "Magic Claw",
-        gender: "n"
-    },
-    {
-        name: "Magic Lantern",
-        gender: "n"
-    },
-    {
-        name: "Magic Pyramid",
-        gender: "n"
-    },
-    {
-        name: "Tech Armor",
-        gender: "n"
-    },
-    {
-        name: "Tech Reactor",
-        gender: "n"
-    },
-    {
-        name: "Undead Claw",
-        gender: "n"
-    },
-    {
-        name: "Undead Fanged",
-        gender: "n"
-    },
-    {
-        name: "Undead Lantern",
-        gender: "n"
-    },
-    {
-        name: "Water Armor",
-        gender: "n"
-    },
-    {
-        name: "Water Fanged",
-        gender: "n"
-    },
-    {
-        name: "Water Rocket",
-        gender: "n"
-    }
 ];
 
 module.exports = imaginatorsCharacters;
