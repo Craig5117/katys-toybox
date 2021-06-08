@@ -59,6 +59,27 @@ const sets = [
         setName: "Trap Light Expansion Pack",
         gameId: 4
     },
+    // imaginator sets
+    {
+        setName: "Imaginators Adventure Pack 1",
+        gameId: 6
+    },
+    {
+        setName: "Imaginators Adventure Pack 2",
+        gameId: 6
+    },
+    {
+        setName: "Thumpin' Wumpa Islands",
+        gameId: 6
+    },
+    {
+        setName: "Cursed Tiki Temple",
+        gameId: 6
+    },
+    {
+        setName: "Lost Imaginite Mines",
+        gameId: 6
+    },
 ];
 
 module.exports = sets;
