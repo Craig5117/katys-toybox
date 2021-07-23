@@ -8,7 +8,7 @@ const trapFigures = [
         type: "master",
         variation: "series 1",
         img: "",
-        value: 6.00,
+        value: 600,
     },
     {
         figName: "Bushwhack",
@@ -18,7 +18,7 @@ const trapFigures = [
         type: "master",
         variation: "series 1",
         img: "",
-        value: 4.00,
+        value: 400,
     },
     {
         figName: "Enigma",
@@ -28,7 +28,7 @@ const trapFigures = [
         type: "master",
         variation: "series 1",
         img: "",
-        value: 15.00,
+        value: 1500,
     },
     {
         figName: "Gearshift",
@@ -38,7 +38,7 @@ const trapFigures = [
         type: "master",
         variation: "series 1",
         img: "",
-        value: 10.00,
+        value: 1000,
     },
     {
         figName: "Gusto",
@@ -48,7 +48,7 @@ const trapFigures = [
         type: "master",
         variation: "series 1",
         img: "",
-        value: 3.00,
+        value: 300,
     },
     {
         figName: "Head Rush",
@@ -58,7 +58,7 @@ const trapFigures = [
         type: "master",
         variation: "series 1",
         img: "",
-        value: 5.00,
+        value: 500,
     },
     {
         figName: "Jawbreaker",
@@ -68,7 +68,7 @@ const trapFigures = [
         type: "master",
         variation: "series 1",
         img: "",
-        value: 5.00,
+        value: 500,
     },
     {
         figName: "Ka-Boom",
@@ -78,7 +78,7 @@ const trapFigures = [
         type: "master",
         variation: "series 1",
         img: "",
-        value: 7.00,
+        value: 700,
     },
     {
         figName: "Knight Light",
@@ -89,7 +89,7 @@ const trapFigures = [
         type: "master",
         variation: "series 1",
         img: "",
-        value: 20.00,
+        value: 2000,
     },
     {
         figName: "Knight Mare",
@@ -100,7 +100,7 @@ const trapFigures = [
         type: "master",
         variation: "series 1",
         img: "",
-        value: 30.00,
+        value: 3000,
     },
     {
         figName: "Krypt King",
@@ -110,7 +110,7 @@ const trapFigures = [
         type: "master",
         variation: "series 1",
         img: "",
-        value: 10.00,
+        value: 1000,
     },
     {
         figName: "Lob-Star",
@@ -120,7 +120,7 @@ const trapFigures = [
         type: "master",
         variation: "series 1",
         img: "",
-        value: 6.00,
+        value: 600,
     },
     {
         figName: "Short Cut",
@@ -130,7 +130,7 @@ const trapFigures = [
         type: "master",
         variation: "series 1",
         img: "",
-        value: 10.00,
+        value: 1000,
     },
     {
         figName: "Snap Shot",
@@ -140,7 +140,7 @@ const trapFigures = [
         type: "master",
         variation: "series 1",
         img: "",
-        value: 2.00,
+        value: 200,
     },
     {
         figName: "Thunderbolt",
@@ -150,7 +150,7 @@ const trapFigures = [
         type: "master",
         variation: "series 1",
         img: "",
-        value: 2.50,
+        value: 250,
     },
     {
         figName: "Tuff Luck",
@@ -160,7 +160,7 @@ const trapFigures = [
         type: "master",
         variation: "series 1",
         img: "",
-        value: 6.00,
+        value: 600,
     },
     {
         figName: "Wallop",
@@ -170,7 +170,7 @@ const trapFigures = [
         type: "master",
         variation: "series 1",
         img: "",
-        value: 10.00,
+        value: 1000,
     },
     {
         figName: "Wildfire",
@@ -180,7 +180,7 @@ const trapFigures = [
         type: "master",
         variation: "series 1",
         img: "",
-        value: 10.00,
+        value: 1000,
     },
     // traps
     {
@@ -191,7 +191,7 @@ const trapFigures = [
         type: "trap",
         variation: "hourglass",
         img: "",
-        value: 6.00,
+        value: 600,
     },
     {
         figName: "Drafty Decanter",
@@ -201,7 +201,7 @@ const trapFigures = [
         type: "trap",
         variation: "jughead",
         img: "",
-        value: 6.00,
+        value: 600,
     },
     {
         figName: "Storm Warning",
@@ -211,7 +211,7 @@ const trapFigures = [
         type: "trap",
         variation: "screamer",
         img: "",
-        value: 6.00,
+        value: 600,
     },
     {
         figName: "Cloudy Cobra",
@@ -221,7 +221,7 @@ const trapFigures = [
         type: "trap",
         variation: "snake",
         img: "",
-        value: 6.00,
+        value: 600,
     },
     {
         figName: "Cyclone Sabre",
@@ -231,7 +231,7 @@ const trapFigures = [
         type: "trap",
         variation: "sword",
         img: "",
-        value: 6.00,
+        value: 600,
     },
     {
         figName: "Breezy Bird",
@@ -241,7 +241,7 @@ const trapFigures = [
         type: "trap",
         variation: "toucan",
         img: "",
-        value: 6.00,
+        value: 600,
     },
     {
         figName: "Ghastly Grimace",
@@ -251,7 +251,7 @@ const trapFigures = [
         type: "trap",
         variation: "handstand",
         img: "",
-        value: 25.00,
+        value: 2500,
     },
     {
         figName: "Shadow Spider",
@@ -262,7 +262,7 @@ const trapFigures = [
         type: "trap",
         variation: "spider",
         img: "",
-        value: 25.00,
+        value: 2500,
     },
     {
         figName: "Dark Dagger",
@@ -272,7 +272,7 @@ const trapFigures = [
         type: "trap",
         variation: "sword",
         img: "",
-        value: 25.00,
+        value: 2500,
     },
     {
         figName: "Slag Hammer",
@@ -282,7 +282,7 @@ const trapFigures = [
         type: "trap",
         variation: "hammer",
         img: "",
-        value: 4.00,
+        value: 400,
     },
     {
         figName: "Rubble Trouble",
@@ -292,7 +292,7 @@ const trapFigures = [
         type: "trap",
         variation: "handstand",
         img: "",
-        value: 4.00,
+        value: 400,
     },
     {
         figName: "Dust of Time",
@@ -302,7 +302,7 @@ const trapFigures = [
         type: "trap",
         variation: "hourglass",
         img: "",
-        value: 4.00,
+        value: 400,
     },
     {
         figName: "Banded Boulder",
@@ -312,7 +312,7 @@ const trapFigures = [
         type: "trap",
         variation: "orb",
         img: "",
-        value: 4.00,
+        value: 400,
     },
     {
         figName: "Spinning Sandstorm",
@@ -322,7 +322,7 @@ const trapFigures = [
         type: "trap",
         variation: "totem",
         img: "",
-        value: 4.00,
+        value: 400,
     },
     {
         figName: "Rock Hawk",
@@ -332,7 +332,7 @@ const trapFigures = [
         type: "trap",
         variation: "toucan",
         img: "",
-        value: 4.00,
+        value: 400,
     },
     {
         figName: "Spark Spear",
@@ -342,7 +342,7 @@ const trapFigures = [
         type: "trap",
         variation: "hat",
         img: "",
-        value: 6.00,
+        value: 600,
     },
     {
         figName: "Fire Flower",
@@ -352,7 +352,7 @@ const trapFigures = [
         type: "trap",
         variation: "scepter",
         img: "",
-        value: 6.00,
+        value: 600,
     },
     {
         figName: "Scorching Stopper",
@@ -362,7 +362,7 @@ const trapFigures = [
         type: "trap",
         variation: "screamer",
         img: "",
-        value: 6.00,
+        value: 600,
     },
     {
         figName: "Eternal Flame",
@@ -372,7 +372,7 @@ const trapFigures = [
         type: "trap",
         variation: "torch",
         img: "",
-        value: 6.00,
+        value: 600,
     },
     {
         figName: "Searing Spinner",
@@ -382,7 +382,7 @@ const trapFigures = [
         type: "trap",
         variation: "totem",
         img: "",
-        value: 6.00,
+        value: 600,
     },
     {
         figName: "Blazing Belch",
@@ -393,7 +393,7 @@ const trapFigures = [
         variation: "yawn",
         img: "",
         rare: true,
-        value: 130.00,
+        value: 13000,
     },
     {
         figName: "Kaos Trap",
@@ -403,7 +403,7 @@ const trapFigures = [
         type: "trap",
         variation: "kaos",
         img: "",
-        value: 14.00,
+        value: 1400,
     },
     {
         figName: "Weed Whacker",
@@ -413,7 +413,7 @@ const trapFigures = [
         type: "trap",
         variation: "hammer",
         img: "",
-        value: 3.00,
+        value: 300,
     },
     {
         figName: "Seed Serpent",
@@ -423,7 +423,7 @@ const trapFigures = [
         type: "trap",
         variation: "snake",
         img: "",
-        value: 3.00,
+        value: 300,
     },
     {
         figName: "Jade Blade",
@@ -433,7 +433,7 @@ const trapFigures = [
         type: "trap",
         variation: "sword",
         img: "",
-        value: 3.00,
+        value: 300,
     },
     {
         figName: "Emerald Energy",
@@ -443,7 +443,7 @@ const trapFigures = [
         type: "trap",
         variation: "torch",
         img: "",
-        value: 3.00,
+        value: 300,
     },
     {
         figName: "Oak Eagle",
@@ -453,7 +453,7 @@ const trapFigures = [
         type: "trap",
         variation: "toucan",
         img: "",
-        value: 3.00,
+        value: 300,
     },
     {
         figName: "Shrub Shrieker",
@@ -464,7 +464,7 @@ const trapFigures = [
         variation: "yawn",
         img: "",
         rare: true,
-        value: 225.00,
+        value: 22500,
     },
     {
         figName: "Heavenly Hawk",
@@ -476,7 +476,7 @@ const trapFigures = [
         variation: "owl",
         img: "",
         rare: true,
-        value: 30.00,
+        value: 3000,
     },
     {
         figName: "Shining Ship",
@@ -487,7 +487,7 @@ const trapFigures = [
         variation: "rocket",
         img: "",
         rare: true,
-        value: 30.00,
+        value: 3000,
     },
     {
         figName: "Beam Scream",
@@ -498,7 +498,7 @@ const trapFigures = [
         variation: "yawn",
         img: "",
         rare: true,
-        value: 100.00,
+        value: 10000,
     },
     {
         figName: "Axe of Illusion",
@@ -508,7 +508,7 @@ const trapFigures = [
         type: "trap",
         variation: "axe",
         img: "",
-        value: 7.00,
+        value: 700,
     },
     {
         figName: "Arcane Hourglass",
@@ -518,7 +518,7 @@ const trapFigures = [
         type: "trap",
         variation: "hourglass",
         img: "",
-        value: 7.00,
+        value: 700,
     },
     {
         figName: "Biter's Bane",
@@ -528,7 +528,7 @@ const trapFigures = [
         type: "trap",
         variation: "log",
         img: "",
-        value: 7.00,
+        value: 700,
     },
     {
         figName: "Rune Rocket",
@@ -538,7 +538,7 @@ const trapFigures = [
         type: "trap",
         variation: "rocket",
         img: "",
-        value: 7.00,
+        value: 700,
     },
     {
         figName: "Sorcerous Skull",
@@ -548,7 +548,7 @@ const trapFigures = [
         type: "trap",
         variation: "skull",
         img: "",
-        value: 7.00,
+        value: 700,
     },
     {
         figName: "Spell Slapper",
@@ -558,7 +558,7 @@ const trapFigures = [
         type: "trap",
         variation: "totem",
         img: "",
-        value: 7.00,
+        value: 700,
     },
     {
         figName: "Automatic Angel",
@@ -568,7 +568,7 @@ const trapFigures = [
         type: "trap",
         variation: "angel",
         img: "",
-        value: 10.00,
+        value: 1000,
     },
     {
         figName: "Makers Mana",
@@ -578,7 +578,7 @@ const trapFigures = [
         type: "trap",
         variation: "helmet",
         img: "",
-        value: 10.00,
+        value: 1000,
     },
     {
         figName: "Grabbing Gadget",
@@ -588,7 +588,7 @@ const trapFigures = [
         type: "trap",
         variation: "hand",
         img: "",
-        value: 10.00,
+        value: 1000,
     },
     {
         figName: "Topsy Techy",
@@ -598,7 +598,7 @@ const trapFigures = [
         type: "trap",
         variation: "handstand",
         img: "",
-        value: 10.00,
+        value: 1000,
     },
     {
         figName: "Factory Flower",
@@ -608,7 +608,7 @@ const trapFigures = [
         type: "trap",
         variation: "scepter",
         img: "",
-        value: 10.00,
+        value: 1000,
     },
     {
         figName: "Tech Totem",
@@ -618,7 +618,7 @@ const trapFigures = [
         type: "trap",
         variation: "tiki",
         img: "",
-        value: 10.00,
+        value: 1000,
     },
     {
         figName: "Haunted Hatchet",
@@ -628,7 +628,7 @@ const trapFigures = [
         type: "trap",
         variation: "axe",
         img: "",
-        value: 9.00,
+        value: 900,
     },
     {
         figName: "Dream Piercer",
@@ -638,7 +638,7 @@ const trapFigures = [
         type: "trap",
         variation: "hat",
         img: "",
-        value: 9.00,
+        value: 900,
     },
     {
         figName: "Grim Gripper",
@@ -648,7 +648,7 @@ const trapFigures = [
         type: "trap",
         variation: "hand",
         img: "",
-        value: 9.00,
+        value: 900,
     },
     {
         figName: "Spirit Sphere",
@@ -658,7 +658,7 @@ const trapFigures = [
         type: "trap",
         variation: "orb",
         img: "",
-        value: 9.00,
+        value: 900,
     },
     {
         figName: "Spectral Skull",
@@ -668,7 +668,7 @@ const trapFigures = [
         type: "trap",
         variation: "skull",
         img: "",
-        value: 9.00,
+        value: 900,
     },
     {
         figName: "Spooky Snake",
@@ -678,7 +678,7 @@ const trapFigures = [
         type: "trap",
         variation: "snake",
         img: "",
-        value: 9.00,
+        value: 900,
     },
     {
         figName: "Soaking Staff",
@@ -688,7 +688,7 @@ const trapFigures = [
         type: "trap",
         variation: "angel",
         img: "",
-        value: 2.00,
+        value: 200,
     },
     {
         figName: "Aqua Axe",
@@ -698,7 +698,7 @@ const trapFigures = [
         type: "trap",
         variation: "axe",
         img: "",
-        value: 2.00,
+        value: 200,
     },
     {
         figName: "Frost Helm",
@@ -708,7 +708,7 @@ const trapFigures = [
         type: "trap",
         variation: "helmet",
         img: "",
-        value: 2.00,
+        value: 200,
     },
     {
         figName: "Flood Flask",
@@ -718,7 +718,7 @@ const trapFigures = [
         type: "trap",
         variation: "jughead",
         img: "",
-        value: 2.00,
+        value: 200,
     },
     {
         figName: "Wet Walter",
@@ -728,7 +728,7 @@ const trapFigures = [
         type: "trap",
         variation: "log",
         img: "",
-        value: 2.00,
+        value: 200,
     },
     {
         figName: "Tidal Tiki",
@@ -738,7 +738,7 @@ const trapFigures = [
         type: "trap",
         variation: "tiki",
         img: "",
-        value: 2.00,
+        value: 200,
     },
     // standard figures
     {
@@ -750,7 +750,7 @@ const trapFigures = [
         variation: "series 1",
         img: "",
         rare: true,
-        value: 15.00,
+        value: 1500,
     },
     {
         figName: "Blackout",
@@ -761,7 +761,7 @@ const trapFigures = [
         variation: "series 1",
         img: "",
         rare: true,
-        value: 35.00,
+        value: 3500,
     },
     {
         figName: "Blades",
@@ -772,7 +772,7 @@ const trapFigures = [
         type: "standard",
         variation: "series 1",
         img: "",
-        value: 4.00,
+        value: 400,
     },
     {
         figName: "Chopper",
@@ -782,7 +782,7 @@ const trapFigures = [
         type: "standard",
         variation: "series 1",
         img: "",
-        value: 4.00,
+        value: 400,
     },
     {
         figName: "Cobra Cadabra",
@@ -792,7 +792,7 @@ const trapFigures = [
         type: "standard",
         variation: "series 1",
         img: "",
-        value: 8.00,
+        value: 800,
     },
     {
         figName: "Deja Vu",
@@ -803,7 +803,7 @@ const trapFigures = [
         type: "standard",
         variation: "series 1",
         img: "",
-        value: 2.00,
+        value: 200,
     },
     {
         figName: "Echo",
@@ -813,7 +813,7 @@ const trapFigures = [
         type: "standard",
         variation: "series 1",
         img: "",
-        value: 20.00,
+        value: 2000,
     },
     {
         figName: "Fist Bump",
@@ -823,7 +823,7 @@ const trapFigures = [
         type: "standard",
         variation: "series 1",
         img: "",
-        value: 3.00,
+        value: 300,
     },
     {
         figName: "Fling Kong",
@@ -833,7 +833,7 @@ const trapFigures = [
         type: "standard",
         variation: "series 1",
         img: "",
-        value: 13.00,
+        value: 1300,
     },
     {
         figName: "Flip Wreck",
@@ -843,7 +843,7 @@ const trapFigures = [
         type: "standard",
         variation: "series 1",
         img: "",
-        value: 14.00,
+        value: 1400,
     },
     {
         figName: "Food Fight",
@@ -853,7 +853,7 @@ const trapFigures = [
         type: "standard",
         variation: "series 1",
         img: "",
-        value: 2.00,
+        value: 200,
     },
     {
         figName: "Hog Wild Fryno",
@@ -863,7 +863,7 @@ const trapFigures = [
         type: "standard",
         variation: "series 2",
         img: "",
-        value: 1.50,
+        value: 150,
     },
     {
         figName: "Funny Bone",
@@ -873,7 +873,7 @@ const trapFigures = [
         type: "standard",
         variation: "series 1",
         img: "",
-        value: 2.50,
+        value: 250,
     },
     {
         figName: "Tidal Wave Gill Grunt",
@@ -883,7 +883,7 @@ const trapFigures = [
         type: "standard",
         variation: "series 4",
         img: "",
-        value: 0.50,
+        value: 050,
     },
     {
         figName: "High Five",
@@ -893,7 +893,7 @@ const trapFigures = [
         type: "standard",
         variation: "series 1",
         img: "",
-        value: 10.00,
+        value: 1000,
     },
     {
         figName: "Full Blast Jet Vac",
@@ -903,7 +903,7 @@ const trapFigures = [
         type: "standard",
         variation: "series 3",
         img: "",
-        value: 0.50,
+        value: 050,
     },
     {
         figName: "Fizzy Frenzy Pop Fizz",
@@ -913,7 +913,7 @@ const trapFigures = [
         type: "standard",
         variation: "series 3",
         img: "",
-        value: 1.50,
+        value: 150,
     },
     {
         figName: "Rocky Roll",
@@ -923,7 +923,7 @@ const trapFigures = [
         type: "standard",
         variation: "series 1",
         img: "",
-        value: 20.00,
+        value: 2000,
     },
     {
         figName: "Sure Shot Shroomboom",
@@ -933,7 +933,7 @@ const trapFigures = [
         type: "standard",
         variation: "series 2",
         img: "",
-        value: 0.50,
+        value: 050,
     },
     {
         figName: "Spotlight",
@@ -943,7 +943,7 @@ const trapFigures = [
         type: "standard",
         variation: "series 1",
         img: "",
-        value: 35.00,
+        value: 3500,
     },
     {
         figName: "Torch",
@@ -953,7 +953,7 @@ const trapFigures = [
         type: "standard",
         variation: "series 1",
         img: "",
-        value: 2.50,
+        value: 250,
     },
     {
         figName: "Trail Blazer",
@@ -963,7 +963,7 @@ const trapFigures = [
         type: "standard",
         variation: "series 1",
         img: "",
-        value: 10.00,
+        value: 1000,
     },
     {
         figName: "Tread Head",
@@ -973,7 +973,7 @@ const trapFigures = [
         type: "standard",
         variation: "series 1",
         img: "",
-        value: 5.00,
+        value: 500,
     },
     // sidekicks
     {
@@ -984,7 +984,7 @@ const trapFigures = [
         type: "sidekick",
         variation: "series 2",
         img: "",
-        value: 10.00,
+        value: 1000,
     },
     {
         figName: "Bop",
@@ -994,7 +994,7 @@ const trapFigures = [
         type: "sidekick",
         variation: "series 1",
         img: "",
-        value: 4.00,
+        value: 400,
     },
     {
         figName: "Breeze",
@@ -1005,7 +1005,7 @@ const trapFigures = [
         variation: "series 1",
         img: "",
         rare: true,
-        value: 70.00,
+        value: 7000,
     },
     {
         figName: "Drobit",
@@ -1015,7 +1015,7 @@ const trapFigures = [
         type: "sidekick",
         variation: "series 1",
         img: "",
-        value: 3.00,
+        value: 300,
     },
     {
         figName: "Eye Small S-2",
@@ -1025,7 +1025,7 @@ const trapFigures = [
         type: "sidekick",
         variation: "series 2",
         img: "",
-        value: 5.00,
+        value: 500,
     },
     {
         figName: "Gill Runt S-2",
@@ -1035,7 +1035,7 @@ const trapFigures = [
         type: "sidekick",
         variation: "series 2",
         img: "",
-        value: 4.00,
+        value: 400,
     },
     {
         figName: "Hijinx",
@@ -1045,7 +1045,7 @@ const trapFigures = [
         type: "sidekick",
         variation: "series 1",
         img: "",
-        value: 0.50,
+        value: 050,
     },
     {
         figName: "Mini Jini",
@@ -1055,7 +1055,7 @@ const trapFigures = [
         type: "sidekick",
         variation: "series 1",
         img: "",
-        value: 3.00,
+        value: 300,
     },
     {
         figName: "Pet Vac",
@@ -1065,7 +1065,7 @@ const trapFigures = [
         type: "sidekick",
         variation: "series 1",
         img: "",
-        value: 10.00,
+        value: 1000,
     },
     {
         figName: "Small Fry",
@@ -1075,7 +1075,7 @@ const trapFigures = [
         type: "sidekick",
         variation: "series 1",
         img: "",
-        value: 4.00,
+        value: 400,
     },
     {
         figName: "Spry",
@@ -1085,7 +1085,7 @@ const trapFigures = [
         type: "sidekick",
         variation: "series 1",
         img: "",
-        value: 2.00,
+        value: 200,
     },
     {
         figName: "Terrabite S-2",
@@ -1095,7 +1095,7 @@ const trapFigures = [
         type: "sidekick",
         variation: "series 2",
         img: "",
-        value: 2.50,
+        value: 250,
     },
     {
         figName: "Thumpling S-2",
@@ -1105,7 +1105,7 @@ const trapFigures = [
         type: "sidekick",
         variation: "series 2",
         img: "",
-        value: 7.00,
+        value: 700,
     },
     {
         figName: "Trigger Snappy S-2",
@@ -1115,7 +1115,7 @@ const trapFigures = [
         type: "sidekick",
         variation: "series 2",
         img: "",
-        value: 4.00,
+        value: 400,
     },
     {
         figName: "Weeruptor",
@@ -1125,7 +1125,7 @@ const trapFigures = [
         type: "sidekick",
         variation: "series 1",
         img: "",
-        value: 10.00,
+        value: 1000,
     },
     {
         figName: "Whisper Elf S-2",
@@ -1135,7 +1135,7 @@ const trapFigures = [
         type: "sidekick",
         variation: "series 2",
         img: "",
-        value: 15.00,
+        value: 1500,
     },
     // variants
     {
@@ -1146,7 +1146,7 @@ const trapFigures = [
         type: "standard",
         variation: "dark",
         img: "",
-        value: 1.50,
+        value: 150,
     },
     {
         figName: "Dark Snap Shot",
@@ -1156,7 +1156,7 @@ const trapFigures = [
         type: "master",
         variation: "dark",
         img: "",
-        value: 3.00,
+        value: 300,
     },
     {
         figName: "Dark Wildfire",
@@ -1166,7 +1166,7 @@ const trapFigures = [
         type: "master",
         variation: "dark",
         img: "",
-        value: 7.00,
+        value: 700,
     },
     {
         figName: "Eggsellent Weeruptor",
@@ -1177,7 +1177,7 @@ const trapFigures = [
         variation: "holiday",
         img: "",
         rare: true,
-        value: 10.00,
+        value: 1000,
     },
     {
         figName: "Gnarly Barkley",
@@ -1188,7 +1188,7 @@ const trapFigures = [
         variation: "gnarly",
         img: "",
         rare: true,
-        value: 14.00,
+        value: 1400,
     },
     {
         figName: "King Cobra Cadabra",
@@ -1199,7 +1199,7 @@ const trapFigures = [
         variation: "king",
         img: "",
         rare: true,
-        value: 10.00,
+        value: 1000,
     },
     {
         figName: "Legendary Blades",
@@ -1210,7 +1210,7 @@ const trapFigures = [
         type: "standard",
         variation: "legendary",
         img: "",
-        value: 3.00,
+        value: 300,
     },
     {
         figName: "Legendary Bushwhack",
@@ -1220,7 +1220,7 @@ const trapFigures = [
         type: "master",
         variation: "legendary",
         img: "",
-        value: 8.00,
+        value: 800,
     },
     {
         figName: "Legendary Deja Vu",
@@ -1230,7 +1230,7 @@ const trapFigures = [
         type: "standard",
         variation: "legendary",
         img: "",
-        value: 3.00,
+        value: 300,
     },
     {
         figName: "Legendary Jawbreaker",
@@ -1240,7 +1240,7 @@ const trapFigures = [
         type: "master",
         variation: "legendary",
         img: "",
-        value: 8.00,
+        value: 800,
     },
     {
         figName: "Love Potion Pop Fizz",
@@ -1250,7 +1250,7 @@ const trapFigures = [
         type: "standard",
         variation: "holiday",
         img: "",
-        value: 6.00,
+        value: 600,
     },
     {
         figName: "Nitro Head Rush",
@@ -1260,7 +1260,7 @@ const trapFigures = [
         type: "master",
         variation: "nitro",
         img: "",
-        value: 8.00,
+        value: 800,
     },
     {
         figName: "Nitro Krypt King",
@@ -1270,7 +1270,7 @@ const trapFigures = [
         type: "master",
         variation: "nitro",
         img: "",
-        value: 8.00,
+        value: 800,
     },
     {
         figName: "Power Punch Pet Vac",
@@ -1280,7 +1280,7 @@ const trapFigures = [
         type: "sidekick",
         variation: "red",
         img: "",
-        value: 10.00,
+        value: 1000,
     },
     {
         figName: "Winterfest Lob-Star",
@@ -1290,7 +1290,7 @@ const trapFigures = [
         type: "master",
         variation: "holiday",
         img: "",
-        value: 8.00,
+        value: 800,
     },
     {
         figName: "Clear Short Cut",
@@ -1301,7 +1301,7 @@ const trapFigures = [
         variation: "clear",
         img: "",
         rare: true,
-        value: 175.00,
+        value: 17500,
     },
     {
         figName: "Clear Thunderbolt",
@@ -1312,7 +1312,7 @@ const trapFigures = [
         variation: "clear",
         img: "",
         rare: true,
-        value: 125.00,
+        value: 12500,
     },
     {
         figName: "Clear Tuff Luck",
@@ -1323,7 +1323,7 @@ const trapFigures = [
         variation: "clear",
         img: "",
         rare: true,
-        value: 150.00,
+        value: 15000,
     },
     {
         figName: "Easter Bunny Rubble Trouble",
@@ -1334,7 +1334,7 @@ const trapFigures = [
         variation: "holiday",
         img: "",
         rare: true,
-        value: 10.00,
+        value: 1000,
     },
     {
         figName: "Legendary Spirit Sphere",
@@ -1345,7 +1345,7 @@ const trapFigures = [
         variation: "legendary",
         img: "",
         rare: true,
-        value: 10.00,
+        value: 1000,
     },
     {
         figName: "Legendary Spectral Skull",
@@ -1356,7 +1356,7 @@ const trapFigures = [
         variation: "legendary",
         img: "legendary",
         rare: true,
-        value: 10.00,
+        value: 1000,
     },
     {
         figName: "Legendary Flood Flask",
@@ -1367,7 +1367,7 @@ const trapFigures = [
         variation: "legendary",
         img: "",
         rare: true,
-        value: 10.00,
+        value: 1000,
     },
     {
         figName: "Ultimate Kaos Trap",
@@ -1378,7 +1378,7 @@ const trapFigures = [
         variation: "ultimate",
         img: "",
         rare: true,
-        value: 20.00,
+        value: 2000,
     },
     {
         figName: "Red Hot Tussle Sprout",
@@ -1389,7 +1389,7 @@ const trapFigures = [
         variation: "totem",
         img: "",
         rare: true,
-        value: 20.00,
+        value: 2000,
     },
     {
         figName: "Rebel Lob Goblin",
@@ -1400,7 +1400,7 @@ const trapFigures = [
         variation: "rocket",
         img: "",
         rare: true,
-        value: 35.00,
+        value: 3500,
     },
     {
         figName: "Outlaw Brawl and Chain",
@@ -1411,7 +1411,7 @@ const trapFigures = [
         variation: "log",
         img: "",
         rare: true,
-        value: 7.00,
+        value: 700,
     },
     {
         figName: "Riot Shield Shredder",
@@ -1422,7 +1422,7 @@ const trapFigures = [
         variation: "torch",
         img: "",
         rare: true,
-        value: 20.00,
+        value: 2000,
     },
     {
         figName: "Steamed Broccoli Guy",
@@ -1433,7 +1433,7 @@ const trapFigures = [
         variation: "toucan",
         img: "",
         rare: true,
-        value: 10.00,
+        value: 1000,
     },
     {
         figName: "Steampunk Shrednaught",
@@ -1444,7 +1444,7 @@ const trapFigures = [
         variation: "helmet",
         img: "",
         rare: true,
-        value: 20.00,
+        value: 2000,
     },
     // Eon's Elite Trap Team
     {
@@ -1456,7 +1456,7 @@ const trapFigures = [
         variation: "elite",
         img: "",
         rare: true,
-        value: 15.00,
+        value: 1500,
     },
     {
         figName: "Elite Eruptor",
@@ -1467,7 +1467,7 @@ const trapFigures = [
         variation: "elite",
         img: "",
         rare: true,
-        value: 15.00,
+        value: 1500,
     },
     {
         figName: "Elite Gill Grunt",
@@ -1478,7 +1478,7 @@ const trapFigures = [
         variation: "elite",
         img: "",
         rare: true,
-        value: 15.00,
+        value: 1500,
     },
     {
         figName: "Elite Spyro",
@@ -1489,7 +1489,7 @@ const trapFigures = [
         variation: "elite",
         img: "",
         rare: true,
-        value: 10.00,
+        value: 1000,
     },
     {
         figName: "Elite Stealth Elf",
@@ -1500,7 +1500,7 @@ const trapFigures = [
         variation: "elite",
         img: "",
         rare: true,
-        value: 20.00,
+        value: 2000,
     },
     {
         figName: "Elite Terrafin",
@@ -1511,7 +1511,7 @@ const trapFigures = [
         variation: "elite",
         img: "",
         rare: true,
-        value: 10.00,
+        value: 1000,
     },
     {
         figName: "Elite Trigger Happy",
@@ -1522,7 +1522,7 @@ const trapFigures = [
         variation: "elite",
         img: "",
         rare: true,
-        value: 10.00,
+        value: 1000,
     },
     {
         figName: "Elite Whirlwind",
@@ -1533,7 +1533,7 @@ const trapFigures = [
         variation: "elite",
         img: "",
         rare: true,
-        value: 10.00,
+        value: 1000,
     },
 ];
 

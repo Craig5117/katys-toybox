@@ -8,7 +8,7 @@ const swapFigures = [
         type: "swap",
         variation: "series 1",
         img: "",
-        value: 4.00,
+        value: 400,
     },
     {
         figName: "Trap Shadow",
@@ -18,7 +18,7 @@ const swapFigures = [
         type: "swap",
         variation: "series 1",
         img: "",
-        value: 6.00,
+        value: 600,
     },
     {
         figName: "Magna Charge",
@@ -28,7 +28,7 @@ const swapFigures = [
         type: "swap",
         variation: "series 1",
         img: "",
-        value: 9.00,
+        value: 900,
     },
     {
         figName: "Spy Rise",
@@ -38,7 +38,7 @@ const swapFigures = [
         type: "swap",
         variation: "series 1",
         img: "",
-        value: 6.50,
+        value: 650,
     },
     {
         figName: "Wash Buckler",
@@ -48,7 +48,7 @@ const swapFigures = [
         type: "swap",
         variation: "series 1",
         img: "",
-        value: 3.00,
+        value: 300,
     },
     {
         figName: "Freeze Blade",
@@ -58,7 +58,7 @@ const swapFigures = [
         type: "swap",
         variation: "series 1",
         img: "",
-        value: 5.50,
+        value: 550,
     },
     {
         figName: "Blast Zone",
@@ -68,7 +68,7 @@ const swapFigures = [
         type: "swap",
         variation: "series 1",
         img: "",
-        value: 2.00,
+        value: 200,
     },
     {
         figName: "Fire Kraken",
@@ -78,7 +78,7 @@ const swapFigures = [
         type: "swap",
         variation: "series 1",
         img: "",
-        value: 5.00,
+        value: 500,
     },
     {
         figName: "Night Shift",
@@ -88,7 +88,7 @@ const swapFigures = [
         type: "swap",
         variation: "series 1",
         img: "",
-        value: 5.50,
+        value: 550,
     },
     {
         figName: "Rattle Shake",
@@ -98,7 +98,7 @@ const swapFigures = [
         type: "swap",
         variation: "series 1",
         img: "",
-        value: 7.00,
+        value: 700,
     },
     {
         figName: "Stink Bomb",
@@ -108,7 +108,7 @@ const swapFigures = [
         type: "swap",
         variation: "series 1",
         img: "",
-        value: 7.00,
+        value: 700,
     },
     {
         figName: "Grilla Drilla",
@@ -118,7 +118,7 @@ const swapFigures = [
         type: "swap",
         variation: "series 1",
         img: "",
-        value: 6.00,
+        value: 600,
     },
     {
         figName: "Free Ranger",
@@ -128,7 +128,7 @@ const swapFigures = [
         type: "swap",
         variation: "series 1",
         img: "",
-        value: 5.00,
+        value: 500,
     },
     {
         figName: "Boom Jet",
@@ -138,7 +138,7 @@ const swapFigures = [
         type: "swap",
         variation: "series 1",
         img: "",
-        value: 4.00,
+        value: 400,
     },
     {
         figName: "Rubble Rouser",
@@ -148,7 +148,7 @@ const swapFigures = [
         type: "swap",
         variation: "series 1",
         img: "",
-        value: 5.50,
+        value: 550,
     },
     {
         figName: "Doom Stone",
@@ -159,7 +159,7 @@ const swapFigures = [
         variation: "series 1",
         img: "",
         rare: true,
-        value: 30.00,
+        value: 3000,
     },
     // standard sf figures
     {
@@ -171,7 +171,7 @@ const swapFigures = [
         type: "standard",
         variation: "series 1",
         img: "",
-        value: 2.50,
+        value: 250,
     },
     {
         figName: "LightCore Bumble Blast",
@@ -182,7 +182,7 @@ const swapFigures = [
         variation: "lightcore",
         img: "",
         rare: true,
-        value: 7.00,
+        value: 700,
     },
     {
         figName: "Thorn Horn Camo",
@@ -193,7 +193,7 @@ const swapFigures = [
         type: "standard",
         variation: "series 2",
         img: "",
-        value: 6.00,
+        value: 600,
     },
     {
         figName: "Blizzard Chill",
@@ -203,7 +203,7 @@ const swapFigures = [
         type: "standard",
         variation: "series 2",
         img: "",
-        value: 2.50,
+        value: 250,
     },
     {
         figName: "Twin Blade Chop Chop",
@@ -213,7 +213,7 @@ const swapFigures = [
         type: "standard",
         variation: "series 3",
         img: "",
-        value: 0.50,
+        value: 050,
     },
     {
         figName: "Countdown",
@@ -223,7 +223,7 @@ const swapFigures = [
         type: "standard",
         variation: "series 1",
         img: "",
-        value: 2.50,
+        value: 250,
     },
     {
         figName: "LightCore Countdown",
@@ -233,7 +233,7 @@ const swapFigures = [
         type: "standard",
         variation: "lightcore",
         img: "",
-        value: 2.50,
+        value: 250,
     },
     {
         figName: "Phantom Cynder",
@@ -243,7 +243,7 @@ const swapFigures = [
         type: "standard",
         variation: "series 3",
         img: "",
-        value: 1.00,
+        value: 100,
     },
     {
         figName: "Dune Bug",
@@ -253,7 +253,7 @@ const swapFigures = [
         type: "standard",
         variation: "series 1",
         img: "",
-        value: 0.50,
+        value: 050,
     },
     {
         figName: "Lava Barf Eruptor",
@@ -263,7 +263,7 @@ const swapFigures = [
         type: "standard",
         variation: "series 3",
         img: "",
-        value: 1.00,
+        value: 100,
     },
     {
         figName: "LightCore Flashwing",
@@ -273,7 +273,7 @@ const swapFigures = [
         type: "standard",
         variation: "lightcore",
         img: "",
-        value: 5.00,
+        value: 500,
     },
     {
         figName: "Fryno",
@@ -283,7 +283,7 @@ const swapFigures = [
         type: "standard",
         variation: "series 1",
         img: "",
-        value: 1.50,
+        value: 150,
     },
     {
         figName: "Anchors Away Gill Grunt",
@@ -293,7 +293,7 @@ const swapFigures = [
         type: "standard",
         variation: "series 3",
         img: "",
-        value: 2.50,
+        value: 250,
     },
     {
         figName: "Grim Creeper",
@@ -304,7 +304,7 @@ const swapFigures = [
         type: "standard",
         variation: "series 1",
         img: "",
-        value: 4.50,
+        value: 450,
     },
     {
         figName: "LightCore Grim Creeper",
@@ -314,7 +314,7 @@ const swapFigures = [
         type: "standard",
         variation: "lightcore",
         img: "",
-        value: 2.50,
+        value: 250,
     },
     {
         figName: "Fire Bone Hot Dog",
@@ -325,7 +325,7 @@ const swapFigures = [
         variation: "series 2",
         img: "",
         rare: true,
-        value: 7.00,
+        value: 700,
     },
     {
         figName: "Turbo Jet-Vac",
@@ -336,7 +336,7 @@ const swapFigures = [
         variation: "series 2",
         img: "",
         rare: true,
-        value: 8.00,
+        value: 800,
     },
     {
         figName: "Super Gulp Pop Fizz",
@@ -346,7 +346,7 @@ const swapFigures = [
         type: "standard",
         variation: "series 2",
         img: "",
-        value: 3.50,
+        value: 350,
     },
     {
         figName: "Pop Thorn",
@@ -357,7 +357,7 @@ const swapFigures = [
         type: "standard",
         variation: "series 1",
         img: "",
-        value: 3.00,
+        value: 300,
     },
     {
         figName: "Hyper Beam Prism Break",
@@ -367,7 +367,7 @@ const swapFigures = [
         type: "standard",
         variation: "series 3",
         img: "",
-        value: 2.00,
+        value: 200,
     },
     {
         figName: "Punk Shock",
@@ -377,7 +377,7 @@ const swapFigures = [
         type: "standard",
         variation: "series 1",
         img: "",
-        value: 9.00,
+        value: 900,
     },
     {
         figName: "Rip Tide",
@@ -387,7 +387,7 @@ const swapFigures = [
         type: "standard",
         variation: "series 1",
         img: "",
-        value: 3.50,
+        value: 350,
     },
     {
         figName: "Roller Brawl",
@@ -397,7 +397,7 @@ const swapFigures = [
         type: "standard",
         variation: "series 1",
         img: "",
-        value: 4.50,
+        value: 450,
     },
     {
         figName: "Scorp",
@@ -407,7 +407,7 @@ const swapFigures = [
         type: "standard",
         variation: "series 1",
         img: "",
-        value: 2.50,
+        value: 250,
     },
     {
         figName: "Scratch",
@@ -418,7 +418,7 @@ const swapFigures = [
         variation: "series 1",
         img: "",
         rare: true,
-        value: 20.00,
+        value: 2000,
     },
     {
         figName: "Slobber Tooth",
@@ -428,7 +428,7 @@ const swapFigures = [
         type: "standard",
         variation: "series 1",
         img: "",
-        value: 3.00,
+        value: 300,
     },
     {
         figName: "Smolderdash",
@@ -438,7 +438,7 @@ const swapFigures = [
         type: "standard",
         variation: "series 1",
         img: "",
-        value: 3.00,
+        value: 300,
     },
     {
         figName: "LightCore Smolderdash",
@@ -448,7 +448,7 @@ const swapFigures = [
         type: "standard",
         variation: "lightcore",
         img: "",
-        value: 1.50,
+        value: 150,
     },
     {
         figName: "Heavy Duty Sprocket",
@@ -458,7 +458,7 @@ const swapFigures = [
         type: "standard",
         variation: "series 2",
         img: "",
-        value: 3.50,
+        value: 350,
     },
     {
         figName: "Mega Ram Spyro",
@@ -468,7 +468,7 @@ const swapFigures = [
         type: "standard",
         variation: "series 1",
         img: "",
-        value: 0.50,
+        value: 050,
     },
     {
         figName: "Star Strike",
@@ -478,7 +478,7 @@ const swapFigures = [
         type: "standard",
         variation: "series 1",
         img: "",
-        value: 4.00,
+        value: 400,
     },
     {
         figName: "LightCore Star Strike",
@@ -488,7 +488,7 @@ const swapFigures = [
         type: "standard",
         variation: "lightcore",
         img: "",
-        value: 1.00,
+        value: 100,
     },
     {
         figName: "Ninja Stealth Elf",
@@ -498,7 +498,7 @@ const swapFigures = [
         type: "standard",
         variation: "series 3",
         img: "",
-        value: 1.00,
+        value: 100,
     },
     {
         figName: "Knockout Terrafin",
@@ -509,7 +509,7 @@ const swapFigures = [
         type: "standard",
         variation: "series 3",
         img: "",
-        value: 1.00,
+        value: 100,
     },
     {
         figName: "Big Bang Trigger Happy",
@@ -519,7 +519,7 @@ const swapFigures = [
         type: "standard",
         variation: "series 3",
         img: "",
-        value: 1.50,
+        value: 150,
     },
     {
         figName: "LightCore Warnado",
@@ -529,7 +529,7 @@ const swapFigures = [
         type: "standard",
         variation: "lightcore",
         img: "",
-        value: 0.50,
+        value: 050,
     },
     {
         figName: "LightCore Wham Shell",
@@ -539,7 +539,7 @@ const swapFigures = [
         type: "standard",
         variation: "lightcore",
         img: "",
-        value: 0.50,
+        value: 050,
     },
     {
         figName: "Horn Blast Whirlwind",
@@ -549,7 +549,7 @@ const swapFigures = [
         type: "standard",
         variation: "series 3",
         img: "",
-        value: 1.00,
+        value: 100,
     },
     {
         figName: "Wind Up",
@@ -560,7 +560,7 @@ const swapFigures = [
         type: "standard",
         variation: "series 1",
         img: "",
-        value: 4.00,
+        value: 400,
     },
     {
         figName: "Zoo Lou",
@@ -570,7 +570,7 @@ const swapFigures = [
         type: "standard",
         variation: "series 1",
         img: "",
-        value: 2.00,
+        value: 200,
     },
     // swap variants
     {
@@ -581,7 +581,7 @@ const swapFigures = [
         type: "swap",
         variation: "dark",
         img: "",
-        value: 6.00,
+        value: 600,
     },
     {
         figName: "Dark Slobber Tooth",
@@ -591,7 +591,7 @@ const swapFigures = [
         type: "standard",
         variation: "dark",
         img: "",
-        value: 1.00,
+        value: 100,
     },
     {
         figName: "Dark Mega Ram Spyro",
@@ -601,7 +601,7 @@ const swapFigures = [
         type: "standard",
         variation: "dark",
         img: "",
-        value: 2.00,
+        value: 200,
     },
     {
         figName: "Dark Ninja Stealth Elf",
@@ -611,7 +611,7 @@ const swapFigures = [
         type: "standard",
         variation: "dark",
         img: "",
-        value: 1.50,
+        value: 150,
     },
     {
         figName: "Dark Wash Buckler",
@@ -621,7 +621,7 @@ const swapFigures = [
         type: "swap",
         variation: "dark",
         img: "",
-        value: 6.00,
+        value: 600,
     },
     {
         figName: "Enchanted Hoot Loop",
@@ -631,7 +631,7 @@ const swapFigures = [
         type: "swap",
         variation: "dark",
         img: "",
-        value: 6.00,
+        value: 600,
     },
     {
         figName: "Enchanted Star Strike",
@@ -641,7 +641,7 @@ const swapFigures = [
         type: "standard",
         variation: "dark",
         img: "",
-        value: 6.00,
+        value: 600,
     },
     {
         figName: "Jade Fire Kraken",
@@ -651,7 +651,7 @@ const swapFigures = [
         type: "swap",
         variation: "jade",
         img: "",
-        value: 6.00,
+        value: 600,
     },
     {
         figName: "Jolly Bumble Blast",
@@ -661,7 +661,7 @@ const swapFigures = [
         type: "standard",
         variation: "holiday",
         img: "",
-        value: 4.00,
+        value: 400,
     },
     {
         figName: "Kickoff Countdown",
@@ -671,7 +671,7 @@ const swapFigures = [
         type: "standard",
         variation: "sport",
         img: "",
-        value: 1.00,
+        value: 100,
     },
     {
         figName: "Legendary Free Ranger",
@@ -681,7 +681,7 @@ const swapFigures = [
         type: "swap",
         variation: "legendary",
         img: "",
-        value: 6.00,
+        value: 600,
     },
     {
         figName: "Legendary Grim Creeper",
@@ -691,7 +691,7 @@ const swapFigures = [
         type: "standard",
         variation: "legendary",
         img: "",
-        value: 1.75,
+        value: 175,
     },
     {
         figName: "Legendary Night Shift",
@@ -702,7 +702,7 @@ const swapFigures = [
         variation: "legendary",
         img: "",
         rare: true,
-        value: 8.00,
+        value: 800,
     },
     {
         figName: "Legendary Zoo Lou",
@@ -712,7 +712,7 @@ const swapFigures = [
         type: "standard",
         variation: "legendary",
         img: "",
-        value: 1.00,
+        value: 100,
     },
     {
         figName: "Nitro Freeze Blade",
@@ -722,7 +722,7 @@ const swapFigures = [
         type: "swap",
         variation: "nitro",
         img: "",
-        value: 1.50,
+        value: 150,
     },
     {
         figName: "Nitro Magna Charge",
@@ -733,7 +733,7 @@ const swapFigures = [
         variation: "nitro",
         img: "",
         rare: true,
-        value: 10.00,
+        value: 1000,
     },
     {
         figName: "Quickdraw Rattle Shake",
@@ -743,7 +743,7 @@ const swapFigures = [
         type: "swap",
         variation: "glow",
         img: "",
-        value: 1.50,
+        value: 150,
     },
     {
         figName: "Springtime Trigger Happy",
@@ -753,7 +753,7 @@ const swapFigures = [
         type: "standard",
         variation: "holiday",
         img: "",
-        value: 1.00,
+        value: 100,
     },
     {
         figName: "Volcanic Lava Barf Eruptor",
@@ -763,7 +763,7 @@ const swapFigures = [
         type: "standard",
         variation: "dark",
         img: "",
-        value: 2.00,
+        value: 200,
     },
     {
         figName: "Bronze & Silver Trap Shadow",
@@ -774,7 +774,7 @@ const swapFigures = [
         variation: "metallic",
         rare: true,
         img: "",
-        value: 110.00,
+        value: 11000,
     },
     {
         figName: "Flocked Springtime Trigger Happy",
@@ -785,7 +785,7 @@ const swapFigures = [
         variation: "flocked",
         img: "",
         rare: true,
-        value: 110.00,
+        value: 11000,
     },
     {
         figName: "Frito-Lay Fire Bone Hot Dog (Green)",
@@ -796,7 +796,7 @@ const swapFigures = [
         variation: "clear",
         img: "",
         rare: true,
-        value: 100.00,
+        value: 10000,
     },
     {
         figName: "Frito-Lay Fire Bone Hot Dog (Purple)",
@@ -807,7 +807,7 @@ const swapFigures = [
         variation: "clear",
         img: "",
         rare: true,
-        value: 100.00,
+        value: 10000,
     },
     {
         figName: "Frito-Lay Fire Bone Hot Dog (Red)",
@@ -818,7 +818,7 @@ const swapFigures = [
         variation: "clear",
         img: "",
         rare: true,
-        value: 100.00,
+        value: 10000,
     },
     {
         figName: "Gold & Bronze Doom Stone",
@@ -829,7 +829,7 @@ const swapFigures = [
         variation: "metallic",
         img: "",
         rare: true,
-        value: 320.00,
+        value: 32000,
     },
     {
         figName: "Gold Fire Kraken",
@@ -840,7 +840,7 @@ const swapFigures = [
         variation: "metallic",
         img: "",
         rare: true,
-        value: 8.00,
+        value: 800,
     },
     {
         figName: "Gold Wash Buckler",
@@ -851,7 +851,7 @@ const swapFigures = [
         variation: "metallic",
         img: "",
         rare: true,
-        value: 10.00,
+        value: 1000,
     },
     {
         figName: "Green Chop Chop",
@@ -862,7 +862,7 @@ const swapFigures = [
         variation: "green",
         img: "",
         rare: true,
-        value: 25.00,
+        value: 2500,
     },
     {
         figName: "Green Rip Tide",
@@ -873,7 +873,7 @@ const swapFigures = [
         variation: "green",
         img: "",
         rare: true,
-        value: 100.00,
+        value: 10000,
     },
     {
         figName: "Green Scorp",
@@ -884,7 +884,7 @@ const swapFigures = [
         variation: "green",
         img: "",
         rare: true,
-        value: 45.00,
+        value: 4500,
     },
     {
         figName: "Heavy Metal Sprocket",
@@ -895,7 +895,7 @@ const swapFigures = [
         variation: "metallic",
         img: "",
         rare: true,
-        value: 12.00,
+        value: 1200,
     },
     {
         figName: "Metallic Red Dune Bug",
@@ -906,7 +906,7 @@ const swapFigures = [
         variation: "metallic",
         img: "",
         rare: true,
-        value: 75.00,
+        value: 7500,
     },
     {
         figName: "Silver & Gold Stink Bomb",
@@ -917,7 +917,7 @@ const swapFigures = [
         variation: "metallic",
         img: "",
         rare: true,
-        value: 95.00,
+        value: 9500,
     },
     {
         figName: "Snowderdash",
@@ -928,7 +928,7 @@ const swapFigures = [
         variation: "sparkle",
         img: "",
         rare: true,
-        value: 75.00,
+        value: 7500,
     },
 ];
 

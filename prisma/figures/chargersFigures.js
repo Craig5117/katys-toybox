@@ -9,7 +9,7 @@ const chargersFigures = [
         variation: "series 1",
         img: "",
         rare: true,
-        value: 10.00,
+        value: 1000,
     },
     {
         figName: "Burn Cycle",
@@ -19,7 +19,7 @@ const chargersFigures = [
         type: "vehicle",
         variation: "series 1",
         img: "",
-        value: 1.00,
+        value: 100,
     },
     {
         figName: "Buzz Wing",
@@ -30,7 +30,7 @@ const chargersFigures = [
         variation: "series 1",
         img: "",
         rare: true,
-        value: 10.00,
+        value: 1000,
     },
     {
         figName: "Clown Cruiser",
@@ -41,7 +41,7 @@ const chargersFigures = [
         variation: "series 1",
         img: "",
         rare: true,
-        value: 10.00,
+        value: 1000,
     },
     {
         figName: "Crypt Crusher",
@@ -51,7 +51,7 @@ const chargersFigures = [
         type: "vehicle",
         variation: "series 1",
         img: "",
-        value: 4.00,
+        value: 400,
     },
     {
         figName: "Dive Bomber",
@@ -61,7 +61,7 @@ const chargersFigures = [
         type: "vehicle",
         variation: "series 1",
         img: "",
-        value: 3.00,
+        value: 300,
     },
     {
         figName: "Gold Rusher",
@@ -72,7 +72,7 @@ const chargersFigures = [
         variation: "series 1",
         img: "",
         rare: true,
-        value: 15.00,
+        value: 1500,
     },
     {
         figName: "Hot Streak",
@@ -82,7 +82,7 @@ const chargersFigures = [
         type: "vehicle",
         variation: "series 1",
         img: "",
-        value: 5.00,
+        value: 500,
     },
     {
         figName: "Jet Stream",
@@ -92,7 +92,7 @@ const chargersFigures = [
         type: "vehicle",
         variation: "series 1",
         img: "",
-        value: 3.00,
+        value: 300,
     },
     {
         figName: "Reef Ripper",
@@ -102,7 +102,7 @@ const chargersFigures = [
         type: "vehicle",
         variation: "series 1",
         img: "",
-        value: 3.00,
+        value: 300,
     },
     {
         figName: "Sea Shadow",
@@ -112,7 +112,7 @@ const chargersFigures = [
         type: "vehicle",
         variation: "series 1",
         img: "",
-        value: 3.00,
+        value: 300,
     },
     {
         figName: "Shark Tank",
@@ -122,7 +122,7 @@ const chargersFigures = [
         type: "vehicle",
         variation: "series 1",
         img: "",
-        value: 3.00,
+        value: 300,
     },
     {
         figName: "Shield Striker",
@@ -132,7 +132,7 @@ const chargersFigures = [
         type: "vehicle",
         variation: "series 1",
         img: "",
-        value: 1.00,
+        value: 100,
     },
     {
         figName: "Sky Slicer",
@@ -142,7 +142,7 @@ const chargersFigures = [
         type: "vehicle",
         variation: "series 1",
         img: "",
-        value: 4.00,
+        value: 400,
     },
     {
         figName: "Soda Skimmer",
@@ -152,7 +152,7 @@ const chargersFigures = [
         type: "vehicle",
         variation: "series 1",
         img: "",
-        value: 3.00,
+        value: 300,
     },
     {
         figName: "Splatter Splasher",
@@ -162,7 +162,7 @@ const chargersFigures = [
         type: "vehicle",
         variation: "series 1",
         img: "",
-        value: 4.00,
+        value: 400,
     },
     {
         figName: "Stealth Stinger",
@@ -172,7 +172,7 @@ const chargersFigures = [
         type: "vehicle",
         variation: "series 1",
         img: "",
-        value: 3.00,
+        value: 300,
     },
     {
         figName: "Sun Runner",
@@ -183,7 +183,7 @@ const chargersFigures = [
         variation: "series 1",
         img: "",
         rare: true,
-        value: 8.00,
+        value: 800,
     },
     {
         figName: "Thump Truck",
@@ -193,7 +193,7 @@ const chargersFigures = [
         type: "vehicle",
         variation: "series 1",
         img: "",
-        value: 3.00,
+        value: 300,
     },
     {
         figName: "Tomb Buggy",
@@ -203,7 +203,7 @@ const chargersFigures = [
         type: "vehicle",
         variation: "series 1",
         img: "",
-        value: 4.00,
+        value: 400,
     },
     // chargers standard
     {
@@ -214,7 +214,7 @@ const chargersFigures = [
         type: "standard",
         variation: "series 1",
         img: "",
-        value: 3.00,
+        value: 300,
     },
     {
         figName: "Hammer Slam Bowser",
@@ -225,7 +225,7 @@ const chargersFigures = [
         variation: "series 1",
         img: "",
         rare: true,
-        value: 10.00,
+        value: 1000,
     },
     {
         figName: "Dive Clops",
@@ -235,7 +235,7 @@ const chargersFigures = [
         type: "standard",
         variation: "series 1",
         img: "",
-        value: 3.00,
+        value: 300,
     },
     {
         figName: "Donkey Kong",
@@ -246,7 +246,7 @@ const chargersFigures = [
         variation: "series 1",
         img: "",
         rare: true,
-        value: 10.00,
+        value: 1000,
     },
     {
         figName: "Lava Lance Eruptor",
@@ -256,7 +256,7 @@ const chargersFigures = [
         type: "standard",
         variation: "series 4",
         img: "",
-        value: 1.00,
+        value: 100,
     },
     {
         figName: "Fiesta",
@@ -266,7 +266,7 @@ const chargersFigures = [
         type: "standard",
         variation: "series 1",
         img: "",
-        value: 6.00,
+        value: 600,
     },
     {
         figName: "Deep Dive Gill Grunt",
@@ -276,7 +276,7 @@ const chargersFigures = [
         type: "standard",
         variation: "series 5",
         img: "",
-        value: 2.00,
+        value: 200,
     },
     {
         figName: "High Volt",
@@ -286,7 +286,7 @@ const chargersFigures = [
         type: "standard",
         variation: "series 1",
         img: "",
-        value: 1.00,
+        value: 100,
     },
     {
         figName: "Hurricane Jet Vac",
@@ -296,7 +296,7 @@ const chargersFigures = [
         type: "standard",
         variation: "series 4",
         img: "",
-        value: 1.00,
+        value: 100,
     },
     {
         figName: "Nightfall",
@@ -306,7 +306,7 @@ const chargersFigures = [
         type: "standard",
         variation: "series 1",
         img: "",
-        value: 7.00,
+        value: 700,
     },
     {
         figName: "Big Bubble Pop Fizz",
@@ -316,7 +316,7 @@ const chargersFigures = [
         type: "standard",
         variation: "series 4",
         img: "",
-        value: 3.00,
+        value: 300,
     },
     {
         figName: "Bone Bash Roller Brawl",
@@ -327,7 +327,7 @@ const chargersFigures = [
         variation: "series 2",
         img: "",
         rare: true,
-        value: 10.00,
+        value: 1000,
     },
     {
         figName: "Smash Hit",
@@ -337,7 +337,7 @@ const chargersFigures = [
         type: "standard",
         variation: "series 1",
         img: "",
-        value: 1.00,
+        value: 100,
     },
     {
         figName: "Spitfire",
@@ -347,7 +347,7 @@ const chargersFigures = [
         type: "standard",
         variation: "series 1",
         img: "",
-        value: 5.00,
+        value: 500,
     },
     {
         figName: "Splat",
@@ -357,7 +357,7 @@ const chargersFigures = [
         type: "standard",
         variation: "series 1",
         img: "",
-        value: 3.00,
+        value: 300,
     },
     {
         figName: "Super Shot Stealth Elf",
@@ -367,7 +367,7 @@ const chargersFigures = [
         type: "standard",
         variation: "series 4",
         img: "",
-        value: 1.00,
+        value: 100,
     },
     {
         figName: "Stormblade",
@@ -377,7 +377,7 @@ const chargersFigures = [
         type: "standard",
         variation: "series 1",
         img: "",
-        value: 4.00,
+        value: 400,
     },
     {
         figName: "Shark Shooter Terrafin",
@@ -387,7 +387,7 @@ const chargersFigures = [
         type: "standard",
         variation: "series 4",
         img: "",
-        value: 1.00,
+        value: 100,
     },
     {
         figName: "Thrillipede",
@@ -398,7 +398,7 @@ const chargersFigures = [
         variation: "series 1",
         img: "",
         rare: true,
-        value: 8.00,
+        value: 800,
     },
     {
         figName: "Double Dare Trigger Happy",
@@ -409,7 +409,7 @@ const chargersFigures = [
         variation: "series 4",
         img: "",
         rare: true,
-        value: 30.00,
+        value: 3000,
     },
     // variants
     {
@@ -420,7 +420,7 @@ const chargersFigures = [
         type: "standard",
         variation: "holiday",
         img: "",
-        value: 6.00,
+        value: 600,
     },
     {
         figName: "Dark Hammer Slam Bowser",
@@ -431,7 +431,7 @@ const chargersFigures = [
         variation: "dark",
         img: "",
         rare: true,
-        value: 35.00,
+        value: 3500,
     },
     {
         figName: "Dark Donkey Kong",
@@ -442,7 +442,7 @@ const chargersFigures = [
         variation: "dark",
         img: "",
         rare: true,
-        value: 25.00,
+        value: 2500,
     },
     {
         figName: "Dark Spitfire",
@@ -452,7 +452,7 @@ const chargersFigures = [
         type: "standard",
         variation: "dark",
         img: "",
-        value: 8.00,
+        value: 800,
     },
     {
         figName: "Dark Super Shot Stealth Elf",
@@ -462,7 +462,7 @@ const chargersFigures = [
         type: "standard",
         variation: "dark",
         img: "",
-        value: 5.00,
+        value: 500,
     },
     {
         figName: "Eggcited Thrillipede",
@@ -472,7 +472,7 @@ const chargersFigures = [
         type: "standard",
         variation: "holiday",
         img: "",
-        value: 8.00,
+        value: 800,
     },
     {
         figName: "Frightful Fiesta",
@@ -482,7 +482,7 @@ const chargersFigures = [
         type: "standard",
         variation: "holiday",
         img: "",
-        value: 7.00,
+        value: 700,
     },
     {
         figName: "Legendary Astroblast",
@@ -492,7 +492,7 @@ const chargersFigures = [
         type: "standard",
         variation: "legendary",
         img: "",
-        value: 6.00,
+        value: 600,
     },
     {
         figName: "Legendary Bone Bash Roller Brawl",
@@ -503,7 +503,7 @@ const chargersFigures = [
         variation: "legendary",
         img: "",
         rare: true,
-        value: 12.00,
+        value: 1200,
     },
     {
         figName: "Missile-Tow Dive Clops",
@@ -513,7 +513,7 @@ const chargersFigures = [
         type: "standard",
         variation: "holiday",
         img: "",
-        value: 6.00,
+        value: 600,
     },
     {
         figName: "Power Blue Splat",
@@ -524,7 +524,7 @@ const chargersFigures = [
         variation: "blue",
         img: "",
         rare: true,
-        value: 8.00,
+        value: 800,
     },
     {
         figName: "Power Blue Trigger Happy",
@@ -535,7 +535,7 @@ const chargersFigures = [
         variation: "blue",
         img: "",
         rare: true,
-        value: 25.00,
+        value: 2500,
     },
     {
         figName: "Steel Plated Smash Hit",
@@ -545,7 +545,7 @@ const chargersFigures = [
         type: "standard",
         variation: "metallic",
         img: "",
-        value: 2.50,
+        value: 250,
     },
     {
         figName: "Bronze Bone Bash Roller Brawl",
@@ -556,7 +556,7 @@ const chargersFigures = [
         variation: "metallic",
         img: "",
         rare: true,
-        value: 100.00,
+        value: 10000,
     },
     {
         figName: "Patina High Volt",
@@ -567,7 +567,7 @@ const chargersFigures = [
         variation: "patina",
         img: "",
         rare: true,
-        value: 15.00,
+        value: 1500,
     },
     {
         figName: "Patina Lava Lance Eruptor",
@@ -578,7 +578,7 @@ const chargersFigures = [
         variation: "patina",
         img: "",
         rare: true,
-        value: 200.00,
+        value: 20000,
     },
     {
         figName: "Snow-Brite Stormblade",
@@ -589,7 +589,7 @@ const chargersFigures = [
         variation: "jade",
         img: "",
         rare: true,
-        value: 50.00,
+        value: 5000,
     },
     // vehicle variants
     {
@@ -600,7 +600,7 @@ const chargersFigures = [
         type: "vehicle",
         variation: "dark",
         img: "",
-        value: 1.00,
+        value: 100,
     },
     {
         figName: "Dark Clown Cruiser",
@@ -610,7 +610,7 @@ const chargersFigures = [
         type: "vehicle",
         variation: "dark",
         img: "",
-        value: 6.00,
+        value: 600,
     },
     {
         figName: "Dark Hot Streak",
@@ -620,7 +620,7 @@ const chargersFigures = [
         type: "vehicle",
         variation: "dark",
         img: "",
-        value: 3.00,
+        value: 300,
     },
     {
         figName: "Dark Sea Shadow",
@@ -630,7 +630,7 @@ const chargersFigures = [
         type: "vehicle",
         variation: "dark",
         img: "",
-        value: 6.00,
+        value: 600,
     },
     {
         figName: "E3 Hot Streak",
@@ -641,7 +641,7 @@ const chargersFigures = [
         variation: "event",
         img: "",
         rare: true,
-        value: 14.00,
+        value: 1400,
     },
     {
         figName: "Golden Hot Streak",
@@ -652,7 +652,7 @@ const chargersFigures = [
         variation: "metallic",
         img: "",
         rare: true,
-        value: 20.00,
+        value: 2000,
     },
     {
         figName: "Legendary Sun Runner",
@@ -662,7 +662,7 @@ const chargersFigures = [
         type: "vehicle",
         variation: "legendary",
         img: "",
-        value: 1.00,
+        value: 100,
     },
     {
         figName: "Nitro Soda Skimmer",
@@ -672,7 +672,7 @@ const chargersFigures = [
         type: "vehicle",
         variation: "nitro",
         img: "",
-        value: 6.00,
+        value: 600,
     },
     {
         figName: "Nitro Stealth Stinger",
@@ -682,7 +682,7 @@ const chargersFigures = [
         type: "vehicle",
         variation: "nitro",
         img: "",
-        value: 3.00,
+        value: 300,
     },
     {
         figName: "Power Blue Gold Rusher",
@@ -693,7 +693,7 @@ const chargersFigures = [
         variation: "blue",
         img: "",
         rare: true,
-        value: 25.00,
+        value: 2500,
     },
     {
         figName: "Power Blue Splatter Splasher",
@@ -704,7 +704,7 @@ const chargersFigures = [
         variation: "blue",
         img: "",
         rare: true,
-        value: 20.00,
+        value: 2000,
     },
     {
         figName: "Spring Ahead Dive Bomber",
@@ -714,7 +714,7 @@ const chargersFigures = [
         type: "vehicle",
         variation: "holiday",
         img: "",
-        value: 6.00,
+        value: 600,
     },
     {
         figName: "Bronze Tomb Buggy",
@@ -725,7 +725,7 @@ const chargersFigures = [
         variation: "metallic",
         img: "",
         rare: true,
-        value: 100.00,
+        value: 10000,
     },
     {
         figName: "Patina Burn Cycle",
@@ -736,7 +736,7 @@ const chargersFigures = [
         variation: "patina",
         img: "",
         rare: true,
-        value: 30.00,
+        value: 3000,
     },
     {
         figName: "Patina Shield Striker",
@@ -747,7 +747,7 @@ const chargersFigures = [
         variation: "patina",
         img: "",
         rare: true,
-        value: 65.00,
+        value: 6500,
     },
     // Eon's Elite Chargers
     {
@@ -759,7 +759,7 @@ const chargersFigures = [
         variation: "elite",
         img: "",
         rare: true,
-        value: 10.00,
+        value: 1000,
     },
     {
         figName: "Elite Dino-Rang",
@@ -770,7 +770,7 @@ const chargersFigures = [
         variation: "elite",
         img: "",
         rare: true,
-        value: 12.00,
+        value: 1200,
     },
     {
         figName: "Elite Ghost Roaster",
@@ -781,7 +781,7 @@ const chargersFigures = [
         variation: "elite",
         img: "",
         rare: true,
-        value: 15.00,
+        value: 1500,
     },
     {
         figName: "Elite Slam Bam",
@@ -792,7 +792,7 @@ const chargersFigures = [
         variation: "elite",
         img: "",
         rare: true,
-        value: 15.00,
+        value: 1500,
     },
     {
         figName: "Elite Voodood",
@@ -803,7 +803,7 @@ const chargersFigures = [
         variation: "elite",
         img: "",
         rare: true,
-        value: 10.00,
+        value: 1000,
     },
     {
         figName: "Elite Zook",
@@ -814,7 +814,7 @@ const chargersFigures = [
         variation: "elite",
         img: "",
         rare: true,
-        value: 10.00,
+        value: 1000,
     },
 ];
 

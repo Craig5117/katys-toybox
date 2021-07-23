@@ -1,0 +1,34 @@
+.title {
+    font-size: 5em;
+    font-family: 'Luckiest Guy', cursive;
+    background-color: rgb(97, 0, 97);
+    text-shadow: 3px 1px black;
+    -webkit-text-stroke: 2px white;
+    margin: 0;
+    border-bottom: solid 4px rgb(97, 0, 97);
+}
+
+.firstLetter {
+    font-size: 2em;
+    color: yellow;
+}
+
+.largeLetter {
+    font-size: 1.75em;
+}
+
+.letterPurple {
+    color: rgb(185, 4, 185);
+}
+
+.letterRed {
+    color: red;
+}
+
+.letterYellow {
+    color: yellow;
+}
+
+.letterBlue {
+    color: rgb(0, 153, 255)
+}

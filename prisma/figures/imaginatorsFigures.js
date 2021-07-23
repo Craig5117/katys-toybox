@@ -9,7 +9,7 @@ const imaginatorsFigures = [
         type: "sensei",
         variation: "series 1",
         img: "",
-        value: 15.00,
+        value: 1500,
     },
     {
         figName: "Ambush",
@@ -19,7 +19,7 @@ const imaginatorsFigures = [
         type: "sensei",
         variation: "series 1",
         img: "",
-        value: 10.00,
+        value: 1000,
     },
     {
         figName: "Aurora",
@@ -29,7 +29,7 @@ const imaginatorsFigures = [
         type: "sensei",
         variation: "series 1",
         img: "",
-        value: 10.00,
+        value: 1000,
     },
     {
         figName: "Barbella",
@@ -39,7 +39,7 @@ const imaginatorsFigures = [
         type: "sensei",
         variation: "series 1",
         img: "",
-        value: 7.00,
+        value: 700,
     },
     {
         figName: "Boom Bloom",
@@ -50,7 +50,7 @@ const imaginatorsFigures = [
         type: "sensei",
         variation: "series 1",
         img: "",
-        value: 20.00,
+        value: 2000,
     },
     {
         figName: "Buckshot",
@@ -60,7 +60,7 @@ const imaginatorsFigures = [
         type: "sensei",
         variation: "series 1",
         img: "",
-        value: 20.00,
+        value: 2000,
     },
     {
         figName: "Chain Reaction",
@@ -70,7 +70,7 @@ const imaginatorsFigures = [
         type: "sensei",
         variation: "series 1",
         img: "",
-        value: 25.00,
+        value: 2500,
     },
     {
         figName: "Chopscotch",
@@ -80,7 +80,7 @@ const imaginatorsFigures = [
         type: "sensei",
         variation: "series 1",
         img: "",
-        value: 9.00,
+        value: 900,
     },
     {
         figName: "Crash Bandicoot",
@@ -91,10 +91,10 @@ const imaginatorsFigures = [
         type: "sensei",
         variation: "series 1",
         img: "",
-        value: 12.00,
+        value: 1200,
     },
     {
-        figName: "Dr. Neo Cortex",
+        figName: "Dr Neo Cortex",
         characterId: 165,
         elementId: 3,
         gameId: 6,
@@ -102,7 +102,7 @@ const imaginatorsFigures = [
         type: "sensei",
         variation: "series 1",
         img: "",
-        value: 9.00,
+        value: 900,
     },
     {
         figName: "Ember",
@@ -112,7 +112,7 @@ const imaginatorsFigures = [
         type: "sensei",
         variation: "series 1",
         img: "",
-        value: 12.00,
+        value: 1200,
     },
     {
         figName: "Flarewolf",
@@ -122,7 +122,7 @@ const imaginatorsFigures = [
         type: "sensei",
         variation: "series 1",
         img: "",
-        value: 20.00,
+        value: 2000,
     },
     {
         figName: "King Pen",
@@ -132,7 +132,7 @@ const imaginatorsFigures = [
         type: "sensei",
         variation: "series 1",
         img: "",
-        value: 1.00,
+        value: 100,
     },
     {
         figName: "Mysticat",
@@ -142,7 +142,7 @@ const imaginatorsFigures = [
         type: "sensei",
         variation: "series 1",
         img: "",
-        value: 13.00,
+        value: 1300,
     },
     {
         figName: "Pit Boss",
@@ -152,7 +152,7 @@ const imaginatorsFigures = [
         type: "sensei",
         variation: "series 1",
         img: "",
-        value: 18.00,
+        value: 1800,
     },
     {
         figName: "Ro-Bow",
@@ -164,7 +164,7 @@ const imaginatorsFigures = [
         variation: "series 1",
         img: "",
         rare: true,
-        value: 100.00,
+        value: 10000,
     },
     {
         figName: "Starcast",
@@ -174,7 +174,7 @@ const imaginatorsFigures = [
         type: "sensei",
         variation: "series 1",
         img: "",
-        value: 28.00,
+        value: 2800,
     },
     {
         figName: "Tidepool",
@@ -184,7 +184,7 @@ const imaginatorsFigures = [
         type: "sensei",
         variation: "series 1",
         img: "",
-        value: 15.00,
+        value: 1500,
     },
     {
         figName: "Tri-Tip",
@@ -194,7 +194,7 @@ const imaginatorsFigures = [
         type: "sensei",
         variation: "series 1",
         img: "",
-        value: 6.00,
+        value: 600,
     },
     {
         figName: "Wild Storm",
@@ -206,7 +206,7 @@ const imaginatorsFigures = [
         variation: "series 1",
         img: "",
         rare: true,
-        value: 100.00,
+        value: 10000,
     },
     {
         figName: "Bad Juju",
@@ -216,7 +216,7 @@ const imaginatorsFigures = [
         type: "sensei",
         variation: "series 1",
         img: "",
-        value: 15.00,
+        value: 1500,
     },
     {
         figName: "Blaster-Tron",
@@ -226,7 +226,7 @@ const imaginatorsFigures = [
         type: "sensei",
         variation: "series 1",
         img: "",
-        value: 25.00,
+        value: 2500,
     },
     {
         figName: "Chompy Mage",
@@ -236,17 +236,17 @@ const imaginatorsFigures = [
         type: "sensei",
         variation: "series 1",
         img: "",
-        value: 20.00,
+        value: 2000,
     },
     {
-        figName: "Dr. Krankcase",
+        figName: "Dr Krankcase",
         characterId: 179,
         elementId: 3,
         gameId: 6,
         type: "sensei",
         variation: "series 1",
         img: "",
-        value: 15.00,
+        value: 1500,
     },
     {
         figName: "Golden Queen",
@@ -256,7 +256,7 @@ const imaginatorsFigures = [
         type: "sensei",
         variation: "series 1",
         img: "",
-        value: 3.00,
+        value: 300,
     },
     {
         figName: "Grave Clobber",
@@ -266,7 +266,7 @@ const imaginatorsFigures = [
         type: "sensei",
         variation: "series 1",
         img: "",
-        value: 15.00,
+        value: 1500,
     },
     {
         figName: "Hood Sickle",
@@ -276,7 +276,7 @@ const imaginatorsFigures = [
         type: "sensei",
         variation: "series 1",
         img: "",
-        value: 30.00,
+        value: 3000,
     },
     {
         figName: "Kaos",
@@ -286,7 +286,7 @@ const imaginatorsFigures = [
         type: "sensei",
         variation: "series 1",
         img: "",
-        value: 35.00,
+        value: 3500,
     },
     {
         figName: "Pain-Yatta",
@@ -296,7 +296,7 @@ const imaginatorsFigures = [
         type: "sensei",
         variation: "series 1",
         img: "",
-        value: 25.00,
+        value: 2500,
     },
     {
         figName: "Tae Kwon Crow",
@@ -306,7 +306,7 @@ const imaginatorsFigures = [
         type: "sensei",
         variation: "series 1",
         img: "",
-        value: 12.00,
+        value: 1200,
     },
     {
         figName: "Wolfgang",
@@ -316,7 +316,7 @@ const imaginatorsFigures = [
         type: "sensei",
         variation: "series 1",
         img: "",
-        value: 20.00,
+        value: 2000,
     },
     // creation crystals
     {
@@ -327,7 +327,7 @@ const imaginatorsFigures = [
         type: "crystal",
         variation: "series 1",
         img: "",
-        value: 10.00,
+        value: 1000,
     },
     {
         figName: "Air Lantern",
@@ -338,7 +338,7 @@ const imaginatorsFigures = [
         type: "crystal",
         variation: "series 1",
         img: "",
-        value: 10.00,
+        value: 1000,
     },
     {
         figName: "Dark Pyramid",
@@ -349,7 +349,7 @@ const imaginatorsFigures = [
         variation: "series 1",
         img: "",
         rare: true,
-        value: 25.00,
+        value: 2500,
     },
     {
         figName: "Dark Reactor",
@@ -360,7 +360,7 @@ const imaginatorsFigures = [
         variation: "series 1",
         img: "",
         rare: true,
-        value: 25.00,
+        value: 2500,
     },
     {
         figName: "Dark Rune",
@@ -371,7 +371,7 @@ const imaginatorsFigures = [
         variation: "series 1",
         img: "",
         rare: true,
-        value: 25.00,
+        value: 2500,
     },
     {
         figName: "Earth Armor",
@@ -382,7 +382,7 @@ const imaginatorsFigures = [
         type: "crystal",
         variation: "series 1",
         img: "",
-        value: 10.00,
+        value: 1000,
     },
     {
         figName: "Earth Rocket",
@@ -392,7 +392,7 @@ const imaginatorsFigures = [
         type: "crystal",
         variation: "series 1",
         img: "",
-        value: 10.00,
+        value: 1000,
     },
     {
         figName: "Fire Acorn",
@@ -402,7 +402,7 @@ const imaginatorsFigures = [
         type: "crystal",
         variation: "series 1",
         img: "",
-        value: 10.00,
+        value: 1000,
     },
     {
         figName: "Fire Reactor",
@@ -412,7 +412,7 @@ const imaginatorsFigures = [
         type: "crystal",
         variation: "series 1",
         img: "",
-        value: 5.00,
+        value: 500,
     },
     {
         figName: "Life Acorn",
@@ -422,7 +422,7 @@ const imaginatorsFigures = [
         type: "crystal",
         variation: "series 1",
         img: "",
-        value: 10.00,
+        value: 1000,
     },
     {
         figName: "Life Claw",
@@ -433,7 +433,7 @@ const imaginatorsFigures = [
         type: "crystal",
         variation: "series 1",
         img: "",
-        value: 10.00,
+        value: 1000,
     },
     {
         figName: "Life Rocket",
@@ -443,7 +443,7 @@ const imaginatorsFigures = [
         type: "crystal",
         variation: "series 1",
         img: "",
-        value: 10.00,
+        value: 1000,
     },
     {
         figName: "Life Rune",
@@ -453,7 +453,7 @@ const imaginatorsFigures = [
         type: "crystal",
         variation: "series 1",
         img: "",
-        value: 10.00,
+        value: 1000,
     },
     {
         figName: "Light Fanged",
@@ -463,7 +463,7 @@ const imaginatorsFigures = [
         type: "crystal",
         variation: "series 1",
         img: "",
-        value: 13.00,
+        value: 1300,
     },
     {
         figName: "Light Rune",
@@ -473,7 +473,7 @@ const imaginatorsFigures = [
         type: "crystal",
         variation: "series 1",
         img: "",
-        value: 13.00,
+        value: 1300,
     },
     {
         figName: "Magic Claw",
@@ -484,7 +484,7 @@ const imaginatorsFigures = [
         variation: "series 1",
         img: "",
         rare: true,
-        value: 30.00,
+        value: 3000,
     },
     {
         figName: "Magic Lantern",
@@ -495,7 +495,7 @@ const imaginatorsFigures = [
         type: "crystal",
         variation: "series 1",
         img: "",
-        value: 10.00,
+        value: 1000,
     },
     {
         figName: "Magic Pyramid",
@@ -505,7 +505,7 @@ const imaginatorsFigures = [
         type: "crystal",
         variation: "series 1",
         img: "",
-        value: 10.00,
+        value: 1000,
     },
     {
         figName: "Tech Armor",
@@ -515,7 +515,7 @@ const imaginatorsFigures = [
         type: "crystal",
         variation: "series 1",
         img: "",
-        value: 10.00,
+        value: 1000,
     },
     {
         figName: "Tech Reactor",
@@ -525,7 +525,7 @@ const imaginatorsFigures = [
         type: "crystal",
         variation: "series 1",
         img: "",
-        value: 10.00,
+        value: 1000,
     },
     {
         figName: "Undead Claw",
@@ -535,7 +535,7 @@ const imaginatorsFigures = [
         type: "crystal",
         variation: "series 1",
         img: "",
-        value: 10.00,
+        value: 1000,
     },
     {
         figName: "Undead Fanged",
@@ -545,7 +545,7 @@ const imaginatorsFigures = [
         type: "crystal",
         variation: "series 1",
         img: "",
-        value: 10.00,
+        value: 1000,
     },
     {
         figName: "Undead Lantern",
@@ -555,7 +555,7 @@ const imaginatorsFigures = [
         type: "crystal",
         variation: "series 1",
         img: "",
-        value: 10.00,
+        value: 1000,
     },
     {
         figName: "Water Armor",
@@ -565,7 +565,7 @@ const imaginatorsFigures = [
         type: "crystal",
         variation: "series 1",
         img: "",
-        value: 10.00,
+        value: 1000,
     },
     {
         figName: "Water Fanged",
@@ -575,7 +575,7 @@ const imaginatorsFigures = [
         type: "crystal",
         variation: "series 1",
         img: "",
-        value: 10.00,
+        value: 1000,
     },
     {
         figName: "Water Rocket",
@@ -585,7 +585,7 @@ const imaginatorsFigures = [
         type: "crystal",
         variation: "series 1",
         img: "",
-        value: 10.00,
+        value: 1000,
     },
     // variants
     {
@@ -596,7 +596,7 @@ const imaginatorsFigures = [
         type: "sensei",
         variation: "holiday",
         img: "",
-        value: 12.00,
+        value: 1200,
     },
     {
         figName: "Dark King Pen",
@@ -606,7 +606,7 @@ const imaginatorsFigures = [
         type: "sensei",
         variation: "dark",
         img: "",
-        value: 10.00,
+        value: 1000,
     },
     {
         figName: "Egg Bomber Air Strike",
@@ -616,7 +616,7 @@ const imaginatorsFigures = [
         type: "sensei",
         variation: "holiday",
         img: "",
-        value: 15.00,
+        value: 1500,
     },
     {
         figName: "Hard-Boiled Flarewolf",
@@ -626,7 +626,7 @@ const imaginatorsFigures = [
         type: "sensei",
         variation: "holiday",
         img: "",
-        value: 25.00,
+        value: 2500,
     },
     {
         figName: "Legendary Pit Boss",
@@ -636,7 +636,7 @@ const imaginatorsFigures = [
         type: "sensei",
         variation: "legendary",
         img: "",
-        value: 18.00,
+        value: 1800,
     },
     {
         figName: "Legendary Tri-Tip",
@@ -646,7 +646,7 @@ const imaginatorsFigures = [
         type: "sensei",
         variation: "legendary",
         img: "",
-        value: 12.00,
+        value: 1200,
     },
     {
         figName: "Solar Flare Aurora",
@@ -656,7 +656,7 @@ const imaginatorsFigures = [
         type: "sensei",
         variation: "dark",
         img: "",
-        value: 14.00,
+        value: 1400,
     },
     {
         figName: "Clear Starcast",
@@ -667,7 +667,7 @@ const imaginatorsFigures = [
         variation: "clear",
         img: "",
         rare: true,
-        value: 150.00,
+        value: 15000,
     },
     {
         figName: "Dec-Ember",
@@ -678,7 +678,7 @@ const imaginatorsFigures = [
         variation: "holiday",
         img: "",
         rare: true,
-        value: 65.00,
+        value: 6500,
     },
     {
         figName: "Orange Chain Reaction",
@@ -689,7 +689,7 @@ const imaginatorsFigures = [
         variation: "orange",
         img: "",
         rare: true, 
-        value: 30.00,
+        value: 3000,
     },
     {
         figName: "Pink Barbella",
@@ -700,7 +700,7 @@ const imaginatorsFigures = [
         variation: "pink",
         img: "",
         rare: true, 
-        value: 190.00,
+        value: 19000,
     },
     {
         figName: "Dark Golden Queen",
@@ -710,7 +710,7 @@ const imaginatorsFigures = [
         type: "sensei",
         variation: "dark",
         img: "",
-        value: 16.00,
+        value: 1600,
     },
     {
         figName: "Dark Wolfgang",
@@ -720,7 +720,7 @@ const imaginatorsFigures = [
         type: "sensei",
         variation: "dark",
         img: "",
-        value: 20.00,
+        value: 2000,
     },
     {
         figName: "Jingle Bell Chompy Mage",
@@ -730,7 +730,7 @@ const imaginatorsFigures = [
         type: "sensei",
         variation: "holiday",
         img: "",
-        value: 25.00,
+        value: 2500,
     },
     {
         figName: "Mystical Bad Juju",
@@ -740,7 +740,7 @@ const imaginatorsFigures = [
         type: "sensei",
         variation: "dark",
         img: "",
-        value: 22.00,
+        value: 2200,
     },
     {
         figName: "Mystical Tae Kwon Crow",
@@ -750,7 +750,7 @@ const imaginatorsFigures = [
         type: "sensei",
         variation: "dark",
         img: "",
-        value: 18.00,
+        value: 1800,
     },
     {
         figName: "Steel Plated Hood Sickle",
@@ -761,7 +761,7 @@ const imaginatorsFigures = [
         variation: "metallic",
         img: "",
         rare: true,
-        value: 40.00,
+        value: 4000,
     },
     {
         figName: "Rock Candy Pain-Yatta",
@@ -772,7 +772,7 @@ const imaginatorsFigures = [
         variation: "blue",
         img: "",
         rare: true,
-        value: 50.00,
+        value: 5000,
     },
     {
         figName: "Legendary Life Acorn",
@@ -782,7 +782,7 @@ const imaginatorsFigures = [
         type: "crystal",
         variation: "legendary",
         img: "",
-        value: 18.00,
+        value: 1800,
     },
     {
         figName: "Legendary Light Fanged",
@@ -792,7 +792,7 @@ const imaginatorsFigures = [
         type: "crystal",
         variation: "legendary",
         img: "",
-        value: 18.00,
+        value: 1800,
     },
     {
         figName: "Legendary Magic Lantern",
@@ -802,7 +802,7 @@ const imaginatorsFigures = [
         type: "crystal",
         variation: "legendary",
         img: "",
-        value: 18.00,
+        value: 1800,
     },
 ];
 

@@ -55,7 +55,7 @@ model Figure {
   variation String
   img String
   rare Boolean @default(value: false)
-  value Decimal @db.Decimal(10, 2)
+  value Int
   stock Int @default(value: 0)
   damaged Int @default(value: 0)
   held Int @default(value: 0)
@@ -73,6 +73,6 @@ model Accessory {
   excellent Int @default(value: 0)
   good Int @default(value: 0)
   acceptable Int @default(value: 0)
-  value Decimal @db.Decimal(10, 2)
+  value Int
   stock Int @default(value: 0)
 }
