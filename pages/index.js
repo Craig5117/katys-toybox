@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import styles from '../styles/Home.module.css';
-import prisma from '../db';
+// import prisma from '../db';
 import Header from '../components/Header';
 
 export default function Home({ data }) {
@@ -46,22 +46,22 @@ export default function Home({ data }) {
 }
 
 export async function getServerSideProps() {
-  const figures = await prisma.figure.findMany();
+  // const figures = await prisma.figure.findMany();
 
-  // const data = [
-  //   {
-  //     id: 1,
-  //     title: 'title',
-  //   },
-  //   {
-  //     id: 2,
-  //     title: 'another title',
-  //   },
-  // ];
+  const data = [
+    {
+      id: 1,
+      title: 'title',
+    },
+    {
+      id: 2,
+      title: 'another title',
+    },
+  ];
 
   return {
     props: {
-      data: figures,
+      data,
     },
   };
 }
