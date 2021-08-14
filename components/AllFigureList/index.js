@@ -62,7 +62,7 @@ export default function AllFigureList({}) {
         break;
       case 'variant':
         setFilteredFigures(data?.figures.filter((f) => 
-            !f.variation.toLowerCase().includes('series') && f.character.name.toLowerCase().includes(searchTerm.toLowerCase())
+            !f.variation.toLowerCase().includes('series') && f.figName.toLowerCase().includes(searchTerm.toLowerCase()) || f.variation.toLowerCase().includes(searchTerm.toLowerCase())
           ));
         break;
       case 'rare':
