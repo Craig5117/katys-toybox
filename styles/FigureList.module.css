@@ -1,0 +1,19 @@
+.figureList {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.figListItem {
+    border: solid 2px black;
+    padding: 1em;
+    margin: 1em;
+}
+
+.figListStats {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.listInput {
+    width: 4em;
+}

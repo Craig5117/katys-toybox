@@ -7,6 +7,7 @@ export const QUERY_FIGURES = gql`
       figName
       character {
         name
+        gender
       }
       element {
         element

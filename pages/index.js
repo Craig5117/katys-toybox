@@ -3,19 +3,13 @@ import Image from 'next/image';
 import styles from '../styles/Home.module.css';
 // import prisma from '../db';
 import Header from '../components/Header';
-import { useQuery } from '@apollo/client';
-import { QUERY_FIGURES } from '../graphql/queries';
-import { useEffect, useState } from 'react';
+import AllFigureList from '../components/AllFigureList';
+
+import { ApolloProvider } from '@apollo/client';
 
 export default function Home({}) {
   // doesn't work. Just try passing in in through server side props.
-  const { loading, error, data } = useQuery(QUERY_FIGURES);
-    if (loading) {
-      return "loading"
-    } if (error) {
-      return "error"
-    } 
-  console.log(data.figures)
+
   return (
     <div className={styles.container}>
       <Head>
@@ -33,11 +27,7 @@ export default function Home({}) {
 
       <main className={styles.main}>
         <div>
-          <ol className="figure-list">
-            {data.figures.map((figure) => (
-              <li key={figure.id}>{figure.figName}</li>
-            ))}
-          </ol>
+          <AllFigureList></AllFigureList>
         </div>
       </main>
 
