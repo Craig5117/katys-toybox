@@ -73,11 +73,12 @@ export const typeDefs = gql`
 
     type Mutation {
         addFigure(figName: String!, characterId: Int!, elementId: Int, gameId: Int, setId: Int, type: String, variation: String, img: String, rare: Boolean, value: Int, stock: Int, damaged: Int, held: Int, dmgHeld: Int): Figure
-        updateFigureValue(id: ID!, value: Int): Figure
-        updateFigureStock(id: ID!, stock: Int): Figure
-        updateFigureHeld(id: ID!, held: Int): Figure
-        updateFigureDmg(id: ID!, damaged: Int): Figure
-        updateFigureDmgHeld(id: ID!, dmgHeld: Int): Figure
+        updateFigure(id: ID!, value: Int, stock: Int, held: Int, damaged: Int, dmgHeld: Int): Figure
+        # updateFigureValue(id: ID!, value: Int): Figure
+        # updateFigureStock(id: ID!, stock: Int): Figure
+        # updateFigureHeld(id: ID!, held: Int): Figure
+        # updateFigureDmg(id: ID!, damaged: Int): Figure
+        # updateFigureDmgHeld(id: ID!, dmgHeld: Int): Figure
         updateAccValue(id: ID!, value: Int): Accessory
         updateAccStock(id: ID!, stock: Int): Accessory
         updateAccExcellent(id: ID!, excellent: Int): Accessory

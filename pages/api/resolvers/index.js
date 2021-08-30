@@ -48,6 +48,33 @@ export const resolvers = {
                 console.log(error);
             }            
         },
+    },
+    Mutation: {
+        updateFigure: async (parent, args, context) => {
+            try {
+                const figure = await prisma.figure.update({
+                    where: {
+                      id: args.id,
+                    },
+                    data: {
+                      value: args.value,
+                      stock: args.stock,
+                      held: args.held,
+                      damaged: args.damaged,
+                      dmgHeld: args.dmgHeld
+                    },
+                    include: {
+                        character: true,
+                        element: true,
+                        gameTitle: true,
+                        set: true,
+                    }
+                  });
+                  return figure;
+            } catch (error) {
+                console.log(error)
+            }
+        }
     }
 };
 

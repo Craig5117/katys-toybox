@@ -83,9 +83,12 @@ export default function AllFigureList({}) {
     return <p>error</p>;
   }
 
+//   const figures = React.useMemo(() => {filteredFigures.map(figure => {
+//     return <FigureCard {...figure} key={figure.id}/>})
+//  }, [filteredFigures]);
   return (
     <div>
-      <label>
+      <label htmlFor="search-by-game">
         <input
           type="radio"
           name="search-toggle"
@@ -97,7 +100,7 @@ export default function AllFigureList({}) {
         />
         Game
       </label>
-      <label>
+      <label htmlFor="search-by-character">
         <input
           type="radio"
           name="search-toggle"
@@ -109,7 +112,7 @@ export default function AllFigureList({}) {
         />
         Character
       </label>
-      <label>
+      <label htmlFor="search-by-element">
         <input
           type="radio"
           name="search-toggle"
@@ -121,7 +124,7 @@ export default function AllFigureList({}) {
         />
         Element
       </label>
-      <label>
+      <label htmlFor="search-by-gender">
         <input
           type="radio"
           name="search-toggle"
@@ -133,7 +136,7 @@ export default function AllFigureList({}) {
         />
         Gender
       </label>
-      <label>
+      <label htmlFor="search-by-variant">
         <input
           type="radio"
           name="search-toggle"
@@ -145,7 +148,7 @@ export default function AllFigureList({}) {
         />
         Variant
       </label>
-      <label>
+      <label htmlFor="search-by-rare">
         <input
           type="radio"
           name="search-toggle"
@@ -157,7 +160,7 @@ export default function AllFigureList({}) {
         />
         Rare
       </label>
-      <label>
+      <label htmlFor="search-by-none">
         <input
           type="radio"
           name="search-toggle"
@@ -178,7 +181,7 @@ export default function AllFigureList({}) {
         <button type="submit">Search</button>
       </form>
       <div className={styles.figureList}>
-        {filteredFigures?.map((figure) => < FigureCard {...figure}/>)}
+        {filteredFigures?.map((figure) => < FigureCard {...figure} key={figure.id}/>)}
       </div>
     </div>
   );
