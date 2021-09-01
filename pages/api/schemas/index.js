@@ -68,7 +68,7 @@ export const typeDefs = gql`
         elements: [Element]
         sets: [Set]
         figures: [Figure]
-        accesories: [Accessory]
+        accessories: [Accessory]
     }
 
     type Mutation {

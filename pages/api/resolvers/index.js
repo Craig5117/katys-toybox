@@ -48,6 +48,19 @@ export const resolvers = {
                 console.log(error);
             }            
         },
+        accessories: async () => {
+            try {
+                const accessories = await prisma.accessory.findMany({
+                    include: {
+                        gameTitle: true,
+                        set: true,
+                    }
+                });
+                return accessories;
+            } catch (error) {
+                console.log(error);
+            }            
+        },
     },
     Mutation: {
         updateFigure: async (parent, args, context) => {

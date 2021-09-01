@@ -4,12 +4,14 @@ import styles from '../styles/Home.module.css';
 // import prisma from '../db';
 import Header from '../components/Header';
 import AllFigureList from '../components/AllFigureList';
+import AllAccessoriesList from '../components/AllAccessoriesList';
 
 import { ApolloProvider } from '@apollo/client';
+import { useState } from 'react';
 
 export default function Home({}) {
-  // doesn't work. Just try passing in in through server side props.
-
+  const [showFigures, setShowFigures] = useState(true);
+  const [showAcc, setShowAcc] = useState(false);
   return (
     <div className={styles.container}>
       <Head>
@@ -23,11 +25,12 @@ export default function Home({}) {
           rel="stylesheet"
         />
       </Head>
-      <Header></Header>
+      <Header setShowFigures={setShowFigures} setShowAcc={setShowAcc}></Header>
 
       <main className={styles.main}>
         <div>
-          <AllFigureList></AllFigureList>
+          {showFigures && <AllFigureList></AllFigureList>}
+          {showAcc && <AllAccessoriesList></AllAccessoriesList>}
         </div>
       </main>
 

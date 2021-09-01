@@ -30,6 +30,27 @@ export const QUERY_FIGURES = gql`
   }
 `;
 
+export const QUERY_ACCESSORIES = gql`
+  {
+    accessories {
+      id
+      accName
+      gameTitle {
+        title
+      }
+      set {
+        setName
+      }
+      modelNo
+      excellent
+      good
+      acceptable      
+      value
+      stock
+    }
+  }
+`;
+
 export const QUERY_GAMES = gql`
   {
     games {
@@ -51,25 +72,3 @@ export const QUERY_GAMES = gql`
     }
   }
 `;
-
-// export const QUERY_GAME = gql`
-//     query($gameTitle: String!){
-//   game(title: $gameTitle) {
-//     id
-//     title
-//     sets {
-//       id
-//       setName
-//     }
-//     figures {
-//       id
-//       figName
-//       stock
-//     }
-//     accesories {
-//       id
-//       accName
-//     }
-// 	}
-// }
-// `;
