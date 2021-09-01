@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useMutation } from '@apollo/client';
 import { UPDATE_FIGURE } from '../../graphql/mutations';
 import styles from '../../styles/FigureList.module.css';
+import btnStyles from '../../styles/Button.module.css';
 
 export default function FigureCard(figure) {
   const [updateFigure, { error }] = useMutation(UPDATE_FIGURE);
@@ -14,26 +15,45 @@ export default function FigureCard(figure) {
     damaged: figure.damaged,
     dmgHeld: figure.dmgHeld,
   });
+  const [disabled, setDisabled] = useState(false);
 
   function handleChange(event) {
     const { name, value } = event.target;
     let assignedValue = value;
     if (name === "value") {
-      assignedValue = value * 100;
+      const currencyPattern = /^[0-9]+\.[0-9]{2}$/
+      if (currencyPattern.test(value)) {
+        setDisabled(false)
+        assignedValue = value * 100;
+      } else {
+        setDisabled(true);
+      }
     } else{
-      assignedValue = parseInt(value);
+      const numberPattern = /^[0-9]+$/
+      if (value >= 0 && value < 10000 && numberPattern.test(value)) {
+        setDisabled(false);
+        assignedValue = parseInt(value);
+      } else {
+        setDisabled(true);
+      }
+      
     };
     setFigureState({
       ...figureState,
       [name]: assignedValue,
     });
+  
     console.log(`${name}: ${assignedValue}`);
   }
 
   async function handleUpdateClick() {
-    updateFigure({
-      variables: {...figureState}
-    })
+    
+   
+      updateFigure({
+        variables: {...figureState}
+      })
+     
+    
     console.log(figureState);
   }
 
@@ -46,8 +66,9 @@ export default function FigureCard(figure) {
           name="stock"
           id="stock"
           type="number"
+          min="0"
           defaultValue={figure.stock}
-          onChange={handleChange}
+          onInput={handleChange}
         />
         <label htmlFor="stockHeld">Held: </label>
         <input
@@ -55,8 +76,9 @@ export default function FigureCard(figure) {
           name="held"
           id="stockHeld"
           type="number"
+          min="0"
           defaultValue={figure.held}
-          onChange={handleChange}
+          onInput={handleChange}
         />
         <label htmlFor="dmg">Dmg: </label>
         <input
@@ -64,8 +86,9 @@ export default function FigureCard(figure) {
           name="damaged"
           id="dmg"
           type="number"
+          min="0"
           defaultValue={figure.damaged}
-          onChange={handleChange}
+          onInput={handleChange}
         />
         <label htmlFor="dmgHeld">Held: </label>
         <input
@@ -73,8 +96,10 @@ export default function FigureCard(figure) {
           name="dmgHeld"
           id="dmgHeld"
           type="number"
+          min="0"
+          max="10000"
           defaultValue={figure.dmgHeld}
-          onChange={handleChange}
+          onInput={handleChange}
         />
         <label htmlFor="figValue">Value: </label>
         <input
@@ -86,7 +111,8 @@ export default function FigureCard(figure) {
           onChange={handleChange}
         />
       </div>
-      <p>{figure.figName}</p>
+      <p style={{width: "12em", overflow: "hidden", whiteSpace: "nowrap",
+    textOverflow: "ellipsis"}}>{figure.figName}</p>
       <ul>
         <li>
           {figure.element.element[0].toUpperCase() +
@@ -96,7 +122,7 @@ export default function FigureCard(figure) {
         <li>{figure.character.name}</li>
         <li>{figure.character.gender.toUpperCase()}</li>
       </ul>
-      <button style={{ float: 'right' }} onClick={handleUpdateClick}>
+      <button className={`${disabled && btnStyles.disabledBtn}  ${btnStyles.btn}`} style={{ float: 'right', borderRadius: "5px"}} onClick={handleUpdateClick} disabled={disabled}>
         Update
       </button>
     </div>

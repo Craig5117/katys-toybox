@@ -1,0 +1,26 @@
+.btn {
+    background-color: rgb(97, 0, 97); 
+    color: white;
+    border-color: white;
+    text-decoration: none;
+    border: solid 2px white;
+    padding: 5px;
+}
+
+.btn:hover {
+    background-color: rgb(61, 9, 61); 
+}
+
+.pageBtn {
+    border-radius: 0;
+    width: 2em
+}
+
+.disabledBtn {
+    background-color: rgb(138, 93, 138) !important;
+    color: black !important;
+}
+
+.selectedBtn {
+    background-color: rgb(61, 9, 61) !important; 
+}
