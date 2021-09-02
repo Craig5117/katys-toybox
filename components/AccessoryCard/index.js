@@ -1,13 +1,13 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useMutation } from '@apollo/client';
-// import { UPDATE_ACCESSORY } from '../../graphql/mutations';
+import { UPDATE_ACCESSORY } from '../../graphql/mutations';
 import styles from '../../styles/FigureList.module.css';
 import btnStyles from '../../styles/Button.module.css';
 
 export default function AccessoryCard(acc) {
-//   const [updateAcc, { error }] = useMutation(UPDATE_ACCESSORY);
+  const [updateAcc, { error }] = useMutation(UPDATE_ACCESSORY);
 
-  const [AccState, setAccState] = useState({
+  const [accState, setAccState] = useState({
     id: acc.id,
     value: acc.value,
     stock: acc.stock,
@@ -16,6 +16,18 @@ export default function AccessoryCard(acc) {
     excellent: acc.excellent,
   });
   const [disabled, setDisabled] = useState(false);
+  const [validValue, setValidValue] = useState(true);
+  const [validStock, setValidStock] = useState(true);
+  const [validAcceptable, setValidAcceptable] = useState(true);
+  const [validGood, setValidGood] = useState(true);
+  const [validExcellent, setValidExcellent] = useState(true);
+
+  useEffect(() => {
+   if (validValue === true && validStock === true && validAcceptable === true && validGood === true && validExcellent === true) {
+      setDisabled(false);
+    }
+  }, [validValue, validStock, validAcceptable, validGood, validExcellent])
+
 
   function handleChange(event) {
     const { name, value } = event.target;
@@ -23,17 +35,45 @@ export default function AccessoryCard(acc) {
     if (name === "value") {
       const currencyPattern = /^[0-9]+\.[0-9]{2}$/
       if (currencyPattern.test(value)) {
-        setDisabled(false)
+        setValidValue(true);
         assignedValue = value * 100;
       } else {
+        setValidValue(false);
         setDisabled(true);
       }
     } else{
       const numberPattern = /^[0-9]+$/
       if (value >= 0 && value < 10000 && numberPattern.test(value)) {
-        setDisabled(false);
+        switch (name) {
+          case 'stock':
+            setValidStock(true);
+            break;
+          case 'acceptable':
+            setValidAcceptable(true);
+            break;
+          case 'good':
+            setValidGood(true);
+            break;
+          case 'excellent':
+            setValidExcellent(true);
+            break;
+        }
         assignedValue = parseInt(value);
       } else {
+        switch (name) {
+          case 'stock':
+            setValidStock(false);
+            break;
+          case 'acceptable':
+            setValidAcceptable(false);
+            break;
+          case 'good':
+            setValidGood(false);
+            break;
+          case 'excellent':
+            setValidExcellent(false);
+            break;
+        }
         setDisabled(true);
       }
       
@@ -49,9 +89,9 @@ export default function AccessoryCard(acc) {
   async function handleUpdateClick() {
     
    
-    //   updateAcc({
-    //     variables: {...accState}
-    //   })
+      updateAcc({
+        variables: {...accState}
+      })
      
     
     console.log(accState);

@@ -26,6 +26,7 @@ export const QUERY_FIGURES = gql`
       damaged
       held
       dmgHeld
+      updatedAt
     }
   }
 `;
@@ -47,6 +48,7 @@ export const QUERY_ACCESSORIES = gql`
       acceptable      
       value
       stock
+      updatedAt
     }
   }
 `;

@@ -87,6 +87,29 @@ export const resolvers = {
             } catch (error) {
                 console.log(error)
             }
+        },
+        updateAcc: async (parent, args, context) => {
+            try {
+                const accessory = await prisma.accessory.update({
+                    where: {
+                      id: args.id,
+                    },
+                    data: {
+                      value: args.value,
+                      stock: args.stock,
+                      acceptable: args.acceptable,
+                      good: args.good,
+                      excellent: args.excellent
+                    },
+                    include: {
+                        gameTitle: true,
+                        set: true,
+                    }
+                  });
+                  return accessory;
+            } catch (error) {
+                console.log(error)
+            }
         }
     }
 };

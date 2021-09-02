@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useMutation } from '@apollo/client';
 import { UPDATE_FIGURE } from '../../graphql/mutations';
 import styles from '../../styles/FigureList.module.css';
@@ -16,6 +16,19 @@ export default function FigureCard(figure) {
     dmgHeld: figure.dmgHeld,
   });
   const [disabled, setDisabled] = useState(false);
+  const [validValue, setValidValue] = useState(true);
+  const [validStock, setValidStock] = useState(true);
+  const [validHeld, setValidHeld] = useState(true);
+  const [validDmg, setValidDmg] = useState(true);
+  const [validDmgHeld, setValidDmgHeld] = useState(true);
+  const [updatedDate, setUpdatedDate] = useState(new Date(+figure.updatedAt));
+  console.log(updatedDate);
+
+  useEffect(() => {
+   if (validValue === true && validStock === true && validHeld === true && validDmg === true && validDmgHeld === true) {
+      setDisabled(false);
+    }
+  }, [validValue, validStock, validHeld, validDmg, validDmgHeld])
 
   function handleChange(event) {
     const { name, value } = event.target;
@@ -23,17 +36,45 @@ export default function FigureCard(figure) {
     if (name === "value") {
       const currencyPattern = /^[0-9]+\.[0-9]{2}$/
       if (currencyPattern.test(value)) {
-        setDisabled(false)
+        setValidValue(true);
         assignedValue = value * 100;
       } else {
+        setValidValue(false);
         setDisabled(true);
       }
     } else{
       const numberPattern = /^[0-9]+$/
       if (value >= 0 && value < 10000 && numberPattern.test(value)) {
-        setDisabled(false);
+        switch (name) {
+          case 'stock':
+            setValidStock(true);
+            break;
+          case 'held':
+            setValidHeld(true);
+            break;
+          case 'damaged':
+            setValidDmg(true);
+            break;
+          case 'dmgHeld':
+            setValidDmgHeld(true);
+            break;
+        }
         assignedValue = parseInt(value);
       } else {
+        switch (name) {
+          case 'stock':
+            setValidStock(false);
+            break;
+          case 'held':
+            setValidHeld(false);
+            break;
+          case 'damaged':
+            setValidDmg(false);
+            break;
+          case 'dmgHeld':
+            setValidDmgHeld(false);
+            break;
+        }
         setDisabled(true);
       }
       
@@ -51,6 +92,8 @@ export default function FigureCard(figure) {
    
       updateFigure({
         variables: {...figureState}
+      }).then((data)=>{
+        console.log(data);
       })
      
     
@@ -122,6 +165,7 @@ export default function FigureCard(figure) {
         <li>{figure.character.name}</li>
         <li>{figure.character.gender.toUpperCase()}</li>
       </ul>
+      <span>{}</span>
       <button className={`${disabled && btnStyles.disabledBtn}  ${btnStyles.btn}`} style={{ float: 'right', borderRadius: "5px"}} onClick={handleUpdateClick} disabled={disabled}>
         Update
       </button>

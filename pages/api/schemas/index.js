@@ -46,6 +46,7 @@ export const typeDefs = gql`
         damaged: Int
         held: Int
         dmgHeld: Int
+        updatedAt: String
     }
 
     type Accessory {
@@ -59,6 +60,7 @@ export const typeDefs = gql`
         acceptable: Int
         value: Int
         stock: Int
+        updatedAt: String
     }
 
     type Query {
@@ -74,16 +76,12 @@ export const typeDefs = gql`
     type Mutation {
         addFigure(figName: String!, characterId: Int!, elementId: Int, gameId: Int, setId: Int, type: String, variation: String, img: String, rare: Boolean, value: Int, stock: Int, damaged: Int, held: Int, dmgHeld: Int): Figure
         updateFigure(id: ID!, value: Int, stock: Int, held: Int, damaged: Int, dmgHeld: Int): Figure
-        # updateFigureValue(id: ID!, value: Int): Figure
-        # updateFigureStock(id: ID!, stock: Int): Figure
-        # updateFigureHeld(id: ID!, held: Int): Figure
-        # updateFigureDmg(id: ID!, damaged: Int): Figure
-        # updateFigureDmgHeld(id: ID!, dmgHeld: Int): Figure
-        updateAccValue(id: ID!, value: Int): Accessory
-        updateAccStock(id: ID!, stock: Int): Accessory
-        updateAccExcellent(id: ID!, excellent: Int): Accessory
-        updateAccGood(id: ID!, good: Int): Accessory
-        updateAccAcceptable(id: ID!, acceptable: Int): Accessory
+        updateAcc(id: ID!, value: Int, stock: Int, acceptable: Int, good: Int, excellent: Int): Accessory
+        # updateAccValue(id: ID!, value: Int): Accessory
+        # updateAccStock(id: ID!, stock: Int): Accessory
+        # updateAccExcellent(id: ID!, excellent: Int): Accessory
+        # updateAccGood(id: ID!, good: Int): Accessory
+        # updateAccAcceptable(id: ID!, acceptable: Int): Accessory
     }
 `;
 

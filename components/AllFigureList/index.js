@@ -7,9 +7,9 @@ import FigureCard from '../FigureCard';
 import PaginationButton from '../PaginationButton';
 
 export default function AllFigureList({}) {
-  const [searchType, setSearchType] = useState('');
   const [filteredFigures, setFilteredFigures] = useState([]);
   const { loading, error, data } = useQuery(QUERY_FIGURES);
+  const [searchType, setSearchType] = useState('');
   const [searchTerm, setSearchTerm] = useState('');
   const [startingIndex, setStartingIndex] = useState(0);
   const [pageTotal, setPageTotal] = useState(0);

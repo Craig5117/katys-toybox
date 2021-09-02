@@ -45,8 +45,8 @@ model Figure {
   figName String @db.VarChar(50)
   character Character @relation(fields: [characterId], references: [id])
   characterId Int
-  element Element @relation(fields: [elementId], references: [id])
-  elementId Int
+  element Element? @relation(fields: [elementId], references: [id])
+  elementId Int?
   gameTitle Game @relation(fields: [gameId], references: [id])
   gameId Int
   set Set? @relation(fields: [setId], references: [id])
@@ -60,6 +60,7 @@ model Figure {
   damaged Int @default(value: 0)
   held Int @default(value: 0)
   dmgHeld Int @default(value: 0)
+  updatedAt DateTime? @updatedAt
 }
 
 model Accessory {
@@ -75,4 +76,5 @@ model Accessory {
   acceptable Int @default(value: 0)
   value Int
   stock Int @default(value: 0)
+  updatedAt DateTime? @updatedAt
 }
