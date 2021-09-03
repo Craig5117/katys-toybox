@@ -1,8 +1,10 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useMutation } from '@apollo/client';
 import { UPDATE_FIGURE } from '../../graphql/mutations';
 import styles from '../../styles/FigureList.module.css';
 import btnStyles from '../../styles/Button.module.css';
+import updateStyles from '../../styles/UpdateStyles.module.css'
+import dateFormat from '../../utils/dateFormat';
 
 export default function FigureCard(figure) {
   const [updateFigure, { error }] = useMutation(UPDATE_FIGURE);
@@ -21,14 +23,38 @@ export default function FigureCard(figure) {
   const [validHeld, setValidHeld] = useState(true);
   const [validDmg, setValidDmg] = useState(true);
   const [validDmgHeld, setValidDmgHeld] = useState(true);
-  const [updatedDate, setUpdatedDate] = useState(new Date(+figure.updatedAt));
-  console.log(updatedDate);
+  const [updatedDate, setUpdatedDate] = useState(dateFormat(+figure.updatedAt, {monthLength: "digit", dateSuffix: false}));
+  const [changed, setChanged] = useState(false);
+  const [saved, setSaved] = useState(false);
+  const [updateStyle, setUpdateStyle] = useState("");
+
+
+  const isInitialMount = useRef(true);
+
+useEffect(() => {
+  if (isInitialMount.current) {
+     isInitialMount.current = false;
+  } else {
+    setChanged(true);
+    console.log(changed)
+  }
+}, [figureState]);
+
+useEffect(() => {
+  if(changed === true) {
+    setUpdateStyle(updateStyles.changed)
+  } else if (changed === false && saved === true) {
+    setUpdateStyle(updateStyles.saved)
+  }
+}, [changed, saved])
 
   useEffect(() => {
    if (validValue === true && validStock === true && validHeld === true && validDmg === true && validDmgHeld === true) {
       setDisabled(false);
     }
   }, [validValue, validStock, validHeld, validDmg, validDmgHeld])
+
+
 
   function handleChange(event) {
     const { name, value } = event.target;
@@ -89,11 +115,12 @@ export default function FigureCard(figure) {
 
   async function handleUpdateClick() {
     
-   
       updateFigure({
         variables: {...figureState}
-      }).then((data)=>{
-        console.log(data);
+      }).then(({data})=>{
+        setSaved(true);
+        setChanged(false);
+        setUpdatedDate(dateFormat(+data.updateFigure.updatedAt, {monthLength: "digit", dateSuffix: false}))
       })
      
     
@@ -165,8 +192,8 @@ export default function FigureCard(figure) {
         <li>{figure.character.name}</li>
         <li>{figure.character.gender.toUpperCase()}</li>
       </ul>
-      <span>{}</span>
-      <button className={`${disabled && btnStyles.disabledBtn}  ${btnStyles.btn}`} style={{ float: 'right', borderRadius: "5px"}} onClick={handleUpdateClick} disabled={disabled}>
+      <span className={`${updateStyle}`}>{updatedDate}</span>
+      <button className={`${disabled && btnStyles.disabledBtn}  ${btnStyles.btn}`} style={{ float: 'right', borderRadius: "5px"}} onClick={() => {handleUpdateClick ()}} disabled={disabled}>
         Update
       </button>
     </div>

@@ -40,6 +40,7 @@ export const UPDATE_FIGURE = gql`
       damaged
       held
       dmgHeld
+      updatedAt
     }
   }
 `;
@@ -75,6 +76,7 @@ export const UPDATE_ACCESSORY = gql`
       acceptable      
       value
       stock
+      updatedAt
     }
   }
 `;

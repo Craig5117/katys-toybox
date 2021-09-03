@@ -1,8 +1,10 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { useMutation } from '@apollo/client';
 import { UPDATE_ACCESSORY } from '../../graphql/mutations';
 import styles from '../../styles/FigureList.module.css';
 import btnStyles from '../../styles/Button.module.css';
+import updateStyles from '../../styles/UpdateStyles.module.css'
+import dateFormat from '../../utils/dateFormat';
 
 export default function AccessoryCard(acc) {
   const [updateAcc, { error }] = useMutation(UPDATE_ACCESSORY);
@@ -21,6 +23,31 @@ export default function AccessoryCard(acc) {
   const [validAcceptable, setValidAcceptable] = useState(true);
   const [validGood, setValidGood] = useState(true);
   const [validExcellent, setValidExcellent] = useState(true);
+  const [updatedDate, setUpdatedDate] = useState(dateFormat(+acc.updatedAt, {monthLength: "digit", dateSuffix: false}));
+  const [changed, setChanged] = useState(false);
+  const [saved, setSaved] = useState(false);
+  const [updateStyle, setUpdateStyle] = useState("");
+
+
+  const isInitialMount = useRef(true);
+
+useEffect(() => {
+  if (isInitialMount.current) {
+     isInitialMount.current = false;
+  } else {
+    setChanged(true);
+    console.log(changed)
+  }
+}, [accState]);
+
+useEffect(() => {
+  if(changed === true) {
+    setUpdateStyle(updateStyles.changed)
+  } else if (changed === false && saved === true) {
+    setUpdateStyle(updateStyles.saved)
+  }
+}, [changed, saved])
+
 
   useEffect(() => {
    if (validValue === true && validStock === true && validAcceptable === true && validGood === true && validExcellent === true) {
@@ -91,6 +118,10 @@ export default function AccessoryCard(acc) {
    
       updateAcc({
         variables: {...accState}
+      }).then(({data})=>{
+        setSaved(true);
+        setChanged(false);
+        setUpdatedDate(dateFormat(+data.updateAcc.updatedAt, {monthLength: "digit", dateSuffix: false}))
       })
      
     
@@ -158,6 +189,7 @@ export default function AccessoryCard(acc) {
         {acc.set && <li>Set: {acc.set.setName}</li>}
         {acc.modelNo && <li>Model: {acc.modelNo}</li>}
       </ul>
+      <span className={`${updateStyle}`}>{updatedDate}</span>
       <button className={`${disabled && btnStyles.disabledBtn}  ${btnStyles.btn}`} style={{ float: 'right', borderRadius: "5px"}} onClick={handleUpdateClick} disabled={disabled}>
         Update
       </button>
