@@ -18,7 +18,7 @@ const addDateSuffix = date => {
   };
   
   // function to format a timestamp, accepts the timestamp and an `options` object as optional parameters
-  export default (
+  const dateFormat = (
     timestamp,
     { monthLength = 'short', dateSuffix = true } = {}) => {
     let months;
@@ -124,4 +124,6 @@ const addDateSuffix = date => {
     }
     return formattedTimeStamp;
   };
+
+  export default dateFormat
   

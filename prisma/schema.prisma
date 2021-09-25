@@ -78,3 +78,11 @@ model Accessory {
   stock Int @default(value: 0)
   updatedAt DateTime? @updatedAt
 }
+
+model User {
+  id String @id @default(cuid())
+  username String @unique @db.VarChar(30)
+  email String @unique
+  password String
+  admin Boolean @default(value: false)
+}

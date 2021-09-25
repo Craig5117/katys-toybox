@@ -63,6 +63,14 @@ export const typeDefs = gql`
         updatedAt: String
     }
 
+    type User {
+        id: ID
+        username: String!
+        email: String!
+        password: String!
+        admin: Boolean
+    }
+
     type Query {
         games: [Game]
         game (title: String!): Game
@@ -77,6 +85,7 @@ export const typeDefs = gql`
         addFigure(figName: String!, characterId: Int!, elementId: Int, gameId: Int, setId: Int, type: String, variation: String, img: String, rare: Boolean, value: Int, stock: Int, damaged: Int, held: Int, dmgHeld: Int): Figure
         updateFigure(id: ID!, value: Int, stock: Int, held: Int, damaged: Int, dmgHeld: Int): Figure
         updateAcc(id: ID!, value: Int, stock: Int, acceptable: Int, good: Int, excellent: Int): Accessory
+        addUser(username: String!, email: String!, password: String!): User
         # updateAccValue(id: ID!, value: Int): Accessory
         # updateAccStock(id: ID!, stock: Int): Accessory
         # updateAccExcellent(id: ID!, excellent: Int): Accessory
