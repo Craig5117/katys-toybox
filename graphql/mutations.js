@@ -73,10 +73,31 @@ export const UPDATE_ACCESSORY = gql`
       modelNo
       excellent
       good
-      acceptable      
+      acceptable
       value
       stock
       updatedAt
+    }
+  }
+`;
+
+export const ADD_USER = gql`
+  mutation addUser(
+  $username: String!, 
+  $email: String!, 
+  $password: String!
+  ) {
+    addUser(
+    username: $username, 
+    email: $email, 
+    password: $password
+    ) {
+      token
+      user {
+        username
+        email
+        admin
+      }
     }
   }
 `;

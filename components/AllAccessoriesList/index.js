@@ -18,27 +18,27 @@ export default function AllAccessoriesList () {
     const [nextDisabled, setNextDisabled] = useState(false)
     const [prevDisabled, setPrevDisabled] = useState(true)
     
-    useEffect(() => {
+    useEffect(function handleInitialData () {
         if (data?.accessories.length) {
           setFilteredAcc(data?.accessories);
           console.log(filteredAcc);
         }
       }, [data]);
 
-      useEffect(() => {
+      useEffect(function clearSearchFilter() {
         if (searchType === '') {
           setFilteredAcc(data?.accessories);
         }
       });
 
-      useEffect(() => {
+      useEffect(function handlePageTotal() {
         if (filteredAcc?.length) {
           setPageTotal(Math.ceil(filteredAcc.length / 20));
           console.log(pageTotal);
         }
       }, [filteredAcc]);
 
-      useEffect(() => {
+      useEffect(function generatePageLinks() {
         const pageLinks = [];
         for (let i = 0; i < pageTotal; i++) {
           pageLinks.push(
@@ -48,7 +48,7 @@ export default function AllAccessoriesList () {
         setPageLinksArr(pageLinks);
       }, [pageTotal]);
 
-      useEffect(() => {
+      useEffect(function handlePaginationDisable() {
         if(filteredAcc?.length) {
           if (startingIndex + 21 > filteredAcc.length) {
             setNextDisabled(true)

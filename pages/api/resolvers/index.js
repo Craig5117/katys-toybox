@@ -1,7 +1,8 @@
 import prisma from '../../../db';
-import {Prisma} from '@prisma/client'
+import { Prisma } from '@prisma/client'
 import { hash } from 'bcrypt';
 import { UserInputError } from 'apollo-server-errors';
+const { signToken } = require('../../../utils/backendAuth');
 
 export const resolvers = {
   Query: {
@@ -126,7 +127,8 @@ export const resolvers = {
         },
           
         });
-        return user;
+        const token = signToken(user)
+        return {token, user};
         // hash(args.password, 10, async function (err, hash) {
         //   const user = await prisma.user.create({
         //     data: {
