@@ -1,8 +1,12 @@
 import prisma from '../../../db';
 import { Prisma } from '@prisma/client'
-import { hash } from 'bcrypt';
-import { UserInputError } from 'apollo-server-errors';
+import bcrypt, { hash } from 'bcrypt';
+import { UserInputError, AuthenticationError } from 'apollo-server-errors';
 const { signToken } = require('../../../utils/backendAuth');
+
+async function isCorrectPassword (password, user) {
+  return bcrypt.compare(password, user.password);
+};
 
 export const resolvers = {
   Query: {
@@ -153,6 +157,27 @@ export const resolvers = {
         // ;
       }
     },
+    // Logging in
+    login: async (parent, { username, password }) => {
+      const user = await prisma.user.findUnique({ 
+        where: {
+          username: username,
+        }});
+
+      // if (!user) {
+      //   throw new AuthenticationError('Incorrect credentials');
+      // }
+
+      const correctPw = isCorrectPassword(password, user);
+      
+
+      if (!correctPw) {
+        throw new AuthenticationError('Incorrect credentials');
+      }
+
+      const token = signToken(user);
+      return { token, user };
+      },
   },
 };
 

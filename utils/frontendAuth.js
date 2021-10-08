@@ -12,7 +12,17 @@ class AuthService {
       // Checks if there is a saved token and it's still valid
       const token = this.getToken();
       // use type coersion to check if token is NOT undefined and the token is NOT expired
+      if (!token || this.isTokenExpired(token)) {
+        return window.location.assign('/Login');
+      }
       return !!token && !this.isTokenExpired(token);
+    }
+
+    isAdmin() {
+      // Checks if the user is Admin
+      const token = this.getToken();
+      const decoded = decode(token);
+      return decoded.data.admin;
     }
   
     // check if the token has expired
@@ -42,7 +52,7 @@ class AuthService {
       // Saves user token to localStorage
       localStorage.setItem('id_token', idToken);
   
-      window.location.assign('/profile');
+      window.location.assign('/');
      
      // this is slow and requires two clicks
       // return  <Redirect to="/profile" />
@@ -54,7 +64,7 @@ class AuthService {
       // Clear user token and profile data from localStorage
       localStorage.removeItem('id_token');
       // this will reload the page and reset the state of the application
-      window.location.assign('/');
+      window.location.assign('/Login');
     }
   }
 

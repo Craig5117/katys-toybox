@@ -6,7 +6,8 @@ import { useEffect, useState } from 'react';
 import AccessoryCard from '../AccessoryCard';
 import PaginationButton from '../PaginationButton';
 
-export default function AllAccessoriesList () {
+export default function AllAccessoriesList (props) {
+    const { admin } = props;
     const [searchType, setSearchType] = useState('');
     const [searchTerm, setSearchTerm] = useState('');
     const { loading, error, data } = useQuery(QUERY_ACCESSORIES);
@@ -18,6 +19,7 @@ export default function AllAccessoriesList () {
     const [nextDisabled, setNextDisabled] = useState(false)
     const [prevDisabled, setPrevDisabled] = useState(true)
     
+
     useEffect(function handleInitialData () {
         if (data?.accessories.length) {
           setFilteredAcc(data?.accessories);
@@ -151,7 +153,7 @@ export default function AllAccessoriesList () {
             {filteredAcc
               ?.slice(startingIndex, startingIndex + 20)
               .map((accessory) => (
-                <AccessoryCard {...accessory} key={accessory.id} />
+                <AccessoryCard acc={accessory} key={accessory.id} admin={admin} />
               ))}
           </div>
           {pageLinksArr.length ? (

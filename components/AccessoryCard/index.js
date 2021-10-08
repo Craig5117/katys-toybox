@@ -6,7 +6,8 @@ import btnStyles from '../../styles/Button.module.css';
 import updateStyles from '../../styles/UpdateStyles.module.css'
 import dateFormat from '../../utils/dateFormat';
 
-export default function AccessoryCard(acc) {
+export default function AccessoryCard(props) {
+  const {acc, admin} = props;
   const [updateAcc, { error }] = useMutation(UPDATE_ACCESSORY);
 
   const [accState, setAccState] = useState({
@@ -130,7 +131,10 @@ useEffect(() => {
 
   return (
     <div key={acc.id} className={styles.figListItem}>
-      <div className={styles.figListStats}>
+      {admin? (
+        <>
+        <p></p>
+        <div className={styles.figListStats}>
         <label htmlFor="stock">Stock: </label>
         <input
           className={styles.listInput}
@@ -193,6 +197,27 @@ useEffect(() => {
       <button className={`${disabled && btnStyles.disabledBtn}  ${btnStyles.btn}`} style={{ float: 'right'}} onClick={handleUpdateClick} disabled={disabled}>
         Update
       </button>
+      </>
+      ) : (
+        <>
+        <p style={{width: "12em", overflow: "hidden", whiteSpace: "nowrap",
+    textOverflow: "ellipsis"}}>{acc.accName}</p>
+    <ul>
+        <li>{acc.gameTitle.title}</li>
+        {acc.set && <li>Set: {acc.set.setName}</li>}
+        {acc.modelNo && <li>Model: {acc.modelNo}</li>}
+      </ul>
+        <div className={styles.figListStatsNotAdmin}>
+        <p>Stock: {acc.stock}</p>
+        <p>Acceptable: {acc.acceptable}</p>
+        <p>Good: {acc.good}</p>
+        <p>Excellent: {acc.excellent}</p>
+        <p>Value: {(acc.value / 100).toFixed(2)}</p>        
+      </div>
+      
+      </>
+      )}
+      
     </div>
   );
 }

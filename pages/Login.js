@@ -1,17 +1,16 @@
 import {useState} from 'react'
 import { useMutation } from '@apollo/client';
-import { ADD_USER } from '../graphql/mutations';
+import { LOGIN_USER } from '../graphql/mutations';
 import frontendAuth from '../utils/frontendAuth';
 import btnStyles from '../styles/Button.module.css';
 import signUpStyles from '../styles/SignUp.module.css';
 
-export default function CreateUser () {
+export default function Login () {
     const [formState, setFormState] = useState({
-        email: '',
         username: '',
         password: '',
       });
-      const [addUser, { error }] = useMutation(ADD_USER);
+      const [login, { error }] = useMutation(LOGIN_USER);
 
       const handleChange = (event) => {
         const { name, value } = event.target;
@@ -30,12 +29,13 @@ export default function CreateUser () {
         //     event.stopPropagation();
         //   }
         //   setValidated(true);
-          const { data } = await addUser({
+        console.log(formState)
+          const { data } = await login({
             variables: { ...formState },
           });
-          frontendAuth.login(data.addUser.token);
+          frontendAuth.login(data.login.token);
           // console.log(formState)
-          console.log(data.addUser.user)
+          console.log(data.login.user)
         } catch (e) {
           console.error(e);
         }
@@ -46,11 +46,7 @@ export default function CreateUser () {
                 <div>
                     <label className={signUpStyles.signUpLabel} htmlFor="username">Username</label>
                     <input className={signUpStyles.signUpInput} name="username" id="username" type="text" onChange={handleChange}/>
-                </div>
-                <div>
-                    <label className={signUpStyles.signUpLabel} htmlFor="email">Email</label>
-                    <input className={signUpStyles.signUpInput} name="email" id="email" type="text" onChange={handleChange}/>                    
-                </div>
+                </div>                
                 <div>
                     <label className={signUpStyles.signUpLabel} htmlFor="password">Password</label>
                     <input className={signUpStyles.signUpInput} name="password" id="password" type="text" onChange={handleChange}/>                    
