@@ -94,6 +94,11 @@ export default function AllAccessoriesList () {
         setStartingIndex(0);
       };
 
+      const handlePaginationClick = (event) => {
+          const target = event.target;
+          setStartingIndex((parseInt(target.textContent)-1)*20);
+          setCurrentPage(parseInt(target.textContent));
+      }
       return (
         <div>
           <label htmlFor="search-by-game">
@@ -153,6 +158,7 @@ export default function AllAccessoriesList () {
             <div style={{display: "flex", justifyContent: "center"}}>
               <span style={{borderRadius: "5px", overflow: "hidden"}}>
               <button className={`${prevDisabled && btnStyles.disabledBtn}  ${btnStyles.btn}`} style={{borderRadius: "5px 0 0 5px"}} onClick={()=>{setStartingIndex(startingIndex - 20); setCurrentPage(currentPage-1)}} disabled={prevDisabled}>Previous</button>
+              <div style={{display: 'inline'}} onClick={handlePaginationClick}>
               {pageLinksArr.map((item, i) => 
                 <PaginationButton
                   setStartingIndex={setStartingIndex}
@@ -162,6 +168,7 @@ export default function AllAccessoriesList () {
                   key={i}
                 ></PaginationButton>
               )}
+              </div>
               <button className={`${nextDisabled && btnStyles.disabledBtn}  ${btnStyles.btn}`} style={{borderRadius: "0 5px 5px 0"}} onClick={()=>{setStartingIndex(startingIndex + 20); setCurrentPage(currentPage+1)}} disabled={nextDisabled}>Next</button>
               </span>
             </div>

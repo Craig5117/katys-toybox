@@ -15,8 +15,8 @@ export default function AllFigureList({}) {
   const [pageTotal, setPageTotal] = useState(0);
   const [pageLinksArr, setPageLinksArr] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const [nextDisabled, setNextDisabled] = useState(false)
-  const [prevDisabled, setPrevDisabled] = useState(true)
+  const [nextDisabled, setNextDisabled] = useState(false);
+  const [prevDisabled, setPrevDisabled] = useState(true);
 
   useEffect(() => {
     if (data?.figures.length) {
@@ -41,31 +41,29 @@ export default function AllFigureList({}) {
   useEffect(() => {
     const pageLinks = [];
     for (let i = 0; i < pageTotal; i++) {
-      pageLinks.push(
-        {pageNumber: (i+1)}
-      );
+      pageLinks.push({ pageNumber: i + 1 });
     }
     setPageLinksArr(pageLinks);
   }, [pageTotal]);
 
   useEffect(() => {
-    if(filteredFigures?.length) {
+    if (filteredFigures?.length) {
       if (startingIndex + 21 > filteredFigures.length) {
-        setNextDisabled(true)
+        setNextDisabled(true);
       } else if (startingIndex + 21 < filteredFigures.length) {
-        setNextDisabled(false)
+        setNextDisabled(false);
       }
     }
     if (startingIndex === 0) {
-      setPrevDisabled(true)
-    } else if(startingIndex !== 0) {
-      setPrevDisabled(false)
+      setPrevDisabled(true);
+    } else if (startingIndex !== 0) {
+      setPrevDisabled(false);
     }
-  }, [startingIndex])
+  }, [startingIndex]);
 
-  useEffect(()=>{
-    console.log(currentPage)
-  }, [currentPage])
+  useEffect(() => {
+    console.log(currentPage);
+  }, [currentPage]);
   const handleChange = (event) => {
     setSearchTerm(event.target.value);
     console.log(event.target.value);
@@ -128,6 +126,12 @@ export default function AllFigureList({}) {
         break;
     }
     setStartingIndex(0);
+  };
+
+  const handlePaginationClick = (event) => {
+    const target = event.target;
+    setStartingIndex((parseInt(target.textContent) - 1) * 20);
+    setCurrentPage(parseInt(target.textContent));
   };
 
   return (
@@ -234,19 +238,44 @@ export default function AllFigureList({}) {
           ))}
       </div>
       {pageLinksArr.length ? (
-        <div style={{display: "flex", justifyContent: "center"}}>
-          <span style={{borderRadius: "5px", overflow: "hidden"}}>
-          <button className={`${prevDisabled && btnStyles.disabledBtn}  ${btnStyles.btn}`} style={{borderRadius: "5px 0 0 5px"}} onClick={()=>{setStartingIndex(startingIndex - 20); setCurrentPage(currentPage-1)}} disabled={prevDisabled}>Previous</button>
-          {pageLinksArr.map((item, i) => 
-            <PaginationButton
-              setStartingIndex={setStartingIndex}
-              setCurrentPage={setCurrentPage}
-              currentPage={currentPage}
-              pageNumber={item.pageNumber}
-              key={i}
-            ></PaginationButton>
-          )}
-          <button className={`${nextDisabled && btnStyles.disabledBtn}  ${btnStyles.btn}`} style={{borderRadius: "0 5px 5px 0"}} onClick={()=>{setStartingIndex(startingIndex + 20); setCurrentPage(currentPage+1)}} disabled={nextDisabled}>Next</button>
+        <div style={{ display: 'flex', justifyContent: 'center' }}>
+          <span style={{ borderRadius: '5px', overflow: 'hidden' }}>
+            <button
+              className={`${prevDisabled && btnStyles.disabledBtn}  ${
+                btnStyles.btn
+              }`}
+              style={{ borderRadius: '5px 0 0 5px' }}
+              onClick={() => {
+                setStartingIndex(startingIndex - 20);
+                setCurrentPage(currentPage - 1);
+              }}
+              disabled={prevDisabled}
+            >
+              Previous
+            </button>
+            <div style={{display: 'inline'}} onClick={handlePaginationClick}>
+            {pageLinksArr.map((item, i) => (
+              <PaginationButton
+                setStartingIndex={setStartingIndex}
+                setCurrentPage={setCurrentPage}
+                currentPage={currentPage}
+                pageNumber={item.pageNumber}
+                key={i}
+              ></PaginationButton>
+            ))}</div>
+            <button
+              className={`${nextDisabled && btnStyles.disabledBtn}  ${
+                btnStyles.btn
+              }`}
+              style={{ borderRadius: '0 5px 5px 0' }}
+              onClick={() => {
+                setStartingIndex(startingIndex + 20);
+                setCurrentPage(currentPage + 1);
+              }}
+              disabled={nextDisabled}
+            >
+              Next
+            </button>
           </span>
         </div>
       ) : (

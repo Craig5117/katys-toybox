@@ -190,7 +190,7 @@ useEffect(() => {
         {acc.modelNo && <li>Model: {acc.modelNo}</li>}
       </ul>
       <span className={`${updateStyle}`}>{updatedDate}</span>
-      <button className={`${disabled && btnStyles.disabledBtn}  ${btnStyles.btn}`} style={{ float: 'right', borderRadius: "5px"}} onClick={handleUpdateClick} disabled={disabled}>
+      <button className={`${disabled && btnStyles.disabledBtn}  ${btnStyles.btn}`} style={{ float: 'right'}} onClick={handleUpdateClick} disabled={disabled}>
         Update
       </button>
     </div>
