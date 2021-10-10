@@ -12,9 +12,9 @@ class AuthService {
       // Checks if there is a saved token and it's still valid
       const token = this.getToken();
       // use type coersion to check if token is NOT undefined and the token is NOT expired
-      if (!token || this.isTokenExpired(token)) {
-        return window.location.assign('/Login');
-      }
+      // if (!token || this.isTokenExpired(token)) {
+      //   return window.location.assign('/Login');
+      // }
       return !!token && !this.isTokenExpired(token);
     }
 

@@ -164,9 +164,9 @@ export const resolvers = {
           username: username,
         }});
 
-      // if (!user) {
-      //   throw new AuthenticationError('Incorrect credentials');
-      // }
+      if (!user) {
+        throw new AuthenticationError('Incorrect credentials');
+      }
 
       const correctPw = isCorrectPassword(password, user);
       

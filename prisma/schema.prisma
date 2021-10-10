@@ -85,4 +85,5 @@ model User {
   email String @unique
   password String
   admin Boolean @default(value: false)
+  permission String @default(value: "read")
 }
