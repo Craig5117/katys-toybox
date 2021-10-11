@@ -2,24 +2,24 @@ import Head from 'next/head';
 import Image from 'next/image';
 import styles from '../styles/Home.module.css';
 // import prisma from '../db';
-import Header from '../components/Header';
-import AllFigureList from '../components/AllFigureList';
-import AllAccessoriesList from '../components/AllAccessoriesList';
+import HomePage from '../components/HomePage';
+import Login from '../components/Login';
 import frontendAuth from '../utils/frontendAuth';
-
+import { useAuth } from '../utils/auth.js';
 import { ApolloProvider } from '@apollo/client';
 import { useState, useEffect } from 'react';
 
 
 
 export default function Home({}) {
-  const [showFigures, setShowFigures] = useState(true);
-  const [showAcc, setShowAcc] = useState(false);
+  const { isSignedIn } = useAuth();
   const [loggedIn, setLoggedin] = useState(false);
   const [admin, setAdmin] = useState(false);
   // const [canUpdate, setCanUpdate] = useState(false);
   // const [readOnly, setReadOnly] = useState(false);
-  
+  useEffect(()=>{
+    console.log(isSignedIn)
+  }, [isSignedIn])
 
  
   useEffect(() => {
@@ -50,27 +50,8 @@ export default function Home({}) {
             rel="stylesheet"
           />
         </Head>
-        <Header setShowFigures={setShowFigures} setShowAcc={setShowAcc}></Header>
-
-        <main className={styles.main}>
-          <div>
-            {showFigures && <AllFigureList admin={admin}></AllFigureList>}
-            {showAcc && <AllAccessoriesList admin={admin}></AllAccessoriesList>}
-          </div>
-        </main>
-
-        <footer className={styles.footer}>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Powered by{' '}
-            <span className={styles.logo}>
-              <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-            </span>
-          </a>
-        </footer>
+        {!isSignedIn() && <Login></Login>}
+        {isSignedIn() && <HomePage></HomePage>}
       </div>
     </div>
   );

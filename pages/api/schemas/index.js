@@ -91,7 +91,7 @@ export const typeDefs = gql`
         updateFigure(id: ID!, value: Int, stock: Int, held: Int, damaged: Int, dmgHeld: Int): Figure
         updateAcc(id: ID!, value: Int, stock: Int, acceptable: Int, good: Int, excellent: Int): Accessory
         addUser(username: String!, email: String!, password: String!): Auth
-        login(email: String!, password: String!): Auth
+        login(username: String!, password: String!): Auth
         # updateAccValue(id: ID!, value: Int): Accessory
         # updateAccStock(id: ID!, stock: Int): Accessory
         # updateAccExcellent(id: ID!, excellent: Int): Accessory

@@ -153,7 +153,7 @@ export default function AllAccessoriesList (props) {
             {filteredAcc
               ?.slice(startingIndex, startingIndex + 20)
               .map((accessory) => (
-                <AccessoryCard acc={accessory} key={accessory.id} admin={admin} />
+                <AccessoryCard acc={accessory} key={accessory.id} />
               ))}
           </div>
           {pageLinksArr.length ? (

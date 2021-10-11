@@ -7,7 +7,7 @@ import updateStyles from '../../styles/UpdateStyles.module.css'
 import dateFormat from '../../utils/dateFormat';
 
 export default function AccessoryCard(props) {
-  const {acc, admin} = props;
+  const {acc} = props;
   const [updateAcc, { error }] = useMutation(UPDATE_ACCESSORY);
 
   const [accState, setAccState] = useState({
@@ -131,7 +131,7 @@ useEffect(() => {
 
   return (
     <div key={acc.id} className={styles.figListItem}>
-      {admin? (
+     
         <>
         <p></p>
         <div className={styles.figListStats}>
@@ -198,8 +198,8 @@ useEffect(() => {
         Update
       </button>
       </>
-      ) : (
-        <>
+      
+        {/* <>
         <p style={{width: "12em", overflow: "hidden", whiteSpace: "nowrap",
     textOverflow: "ellipsis"}}>{acc.accName}</p>
     <ul>
@@ -215,8 +215,8 @@ useEffect(() => {
         <p>Value: {(acc.value / 100).toFixed(2)}</p>        
       </div>
       
-      </>
-      )}
+      </> */}
+      
       
     </div>
   );
