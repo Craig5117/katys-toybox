@@ -12,7 +12,7 @@ export default function HomePage() {
     <>
       <Header setShowFigures={setShowFigures} setShowAcc={setShowAcc}></Header>
 
-      <main className={styles.main}>
+      <main className={styles.main} style={{minHeight: 1000}}>
         <div>
           {showFigures && <AllFigureList ></AllFigureList>}
           {showAcc && <AllAccessoriesList ></AllAccessoriesList>}

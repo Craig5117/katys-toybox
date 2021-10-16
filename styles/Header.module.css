@@ -6,6 +6,7 @@
     -webkit-text-stroke: 2px white;
     margin: 0;
     border-bottom: solid 4px rgb(97, 0, 97);
+    padding-left: 1em;
 }
 
 .firstLetter {

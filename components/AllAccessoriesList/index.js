@@ -5,6 +5,8 @@ import btnStyles from '../../styles/Button.module.css';
 import { useEffect, useState } from 'react';
 import AccessoryCard from '../AccessoryCard';
 import PaginationButton from '../PaginationButton';
+import SearchBar from '../SearchBar';
+
 
 export default function AllAccessoriesList (props) {
     const { admin } = props;
@@ -140,15 +142,7 @@ export default function AllAccessoriesList (props) {
             />
             None
           </label>
-          <form onSubmit={handleSearch}>
-            <input
-              type="text"
-              placeholder="search for an accessory"
-              value={searchTerm}
-              onChange={handleChange}
-            />
-            <button type="submit">Search</button>
-          </form>
+          <SearchBar handleSearch={handleSearch} handleChange={handleChange} searchTerm={searchTerm}></SearchBar>
           <div className={styles.figureList}>
             {filteredAcc
               ?.slice(startingIndex, startingIndex + 20)

@@ -5,6 +5,7 @@ import btnStyles from '../../styles/Button.module.css';
 import { useEffect, useState } from 'react';
 import FigureCard from '../FigureCard';
 import PaginationButton from '../PaginationButton';
+import SearchBar from '../SearchBar';
 
 export default function AllFigureList({}) {
   const [filteredFigures, setFilteredFigures] = useState([]);
@@ -221,15 +222,7 @@ export default function AllFigureList({}) {
         />
         None
       </label>
-      <form onSubmit={handleSearch}>
-        <input
-          type="text"
-          placeholder="search for a figure"
-          value={searchTerm}
-          onChange={handleChange}
-        />
-        <button type="submit">Search</button>
-      </form>
+      <SearchBar handleSearch={handleSearch} handleChange={handleChange} searchTerm={searchTerm}></SearchBar>
       <div className={styles.figureList}>
         {filteredFigures
           ?.slice(startingIndex, startingIndex + 20)
