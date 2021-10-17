@@ -1,4 +1,4 @@
-import {useState} from 'react'
+import {useEffect, useState, useRef} from 'react'
 import { useMutation } from '@apollo/client';
 import { LOGIN_USER } from '../../graphql/mutations';
 // import frontendAuth from '../../utils/frontendAuth';
@@ -12,8 +12,12 @@ export default function Login () {
         username: '',
         password: '',
       });
+    const [errMessage, setErrMessage] = useState('');
     //   const [login, { error }] = useMutation(LOGIN_USER);
-      const { signIn, signOut } = useAuth()
+      const { signIn, signOut } = useAuth();
+      const userEl = useRef(null);
+      const passEl = useRef(null);
+
       const handleChange = (event) => {
         const { name, value } = event.target;
         setFormState({
@@ -26,6 +30,13 @@ export default function Login () {
       const handleFormSubmit = async (event) => {
         event.preventDefault();
         const form = event.currentTarget;
+        if (formState.username === '' && formState.password === '') {
+          console.log("running")
+          const username = userEl.current.value;
+          const password = passEl.current.value;
+          return signIn({ username: username, password: password})
+        }
+
         try {
         //   if (form.checkValidity() === false) {
         //     event.stopPropagation();
@@ -39,25 +50,31 @@ export default function Login () {
           // console.log(formState)
           
         } catch (e) {
-          console.error(e);
+          console.log('error');
+          if (e === "Incorrect credentials") {
+            console.log('yep')
+          }
         }
       };
+    
+     
+
     return (
         <div className={signUpStyles.signUpArea}>
             <form className={signUpStyles.signUpForm} onSubmit={handleFormSubmit}>
                 <div>
                     <label className={signUpStyles.signUpLabel} htmlFor="username">Username</label>
-                    <input className={signUpStyles.signUpInput} name="username" id="username" type="text" onChange={handleChange}/>
+                    <input className={signUpStyles.signUpInput} name="username" id="username" type="text" onChange={handleChange} ref={userEl}/>
                 </div>                
                 <div>
                     <label className={signUpStyles.signUpLabel} htmlFor="password">Password</label>
-                    <input className={signUpStyles.signUpInput} name="password" id="password" type="text" onChange={handleChange}/>                    
+                    <input className={signUpStyles.signUpInput} name="password" id="password" type="text" onChange={handleChange} ref={passEl}/>                    
                 </div>                
                 <button className={`${btnStyles.btn} ${signUpStyles.signUpBtn}`} type="submit">Submit</button>
             </form>
-            <div>
+            {/* <div>
             <p>Message Here</p>
-            </div>
+            </div> */}
         </div>
     );
 }

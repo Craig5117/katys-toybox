@@ -17,9 +17,9 @@ export default function Home({}) {
   const [admin, setAdmin] = useState(false);
   // const [canUpdate, setCanUpdate] = useState(false);
   // const [readOnly, setReadOnly] = useState(false);
-  useEffect(()=>{
-    console.log(isSignedIn)
-  }, [isSignedIn])
+  // useEffect(()=>{
+  //   console.log(isSignedIn)
+  // }, [isSignedIn])
 
  
   useEffect(() => {

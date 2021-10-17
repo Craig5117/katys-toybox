@@ -6,11 +6,20 @@ import { useEffect, useState } from 'react';
 import FigureCard from '../FigureCard';
 import PaginationButton from '../PaginationButton';
 import SearchBar from '../SearchBar';
+import {
+  FormControl,
+  FormLabel,
+  RadioGroup,
+  FormControlLabel,
+  Radio,
+} from '@mui/material';
+import { ThemeProvider } from '@mui/material/styles';
+import theme from '../../utils/theme';
 
 export default function AllFigureList({}) {
   const [filteredFigures, setFilteredFigures] = useState([]);
   const { loading, error, data } = useQuery(QUERY_FIGURES);
-  const [searchType, setSearchType] = useState('');
+  const [searchType, setSearchType] = useState('none');
   const [searchTerm, setSearchTerm] = useState('');
   const [startingIndex, setStartingIndex] = useState(0);
   const [pageTotal, setPageTotal] = useState(0);
@@ -18,6 +27,7 @@ export default function AllFigureList({}) {
   const [currentPage, setCurrentPage] = useState(1);
   const [nextDisabled, setNextDisabled] = useState(false);
   const [prevDisabled, setPrevDisabled] = useState(true);
+  const [searchTypePlaceholder, setSearchTypePlaceholder] = useState('');
 
   useEffect(() => {
     if (data?.figures.length) {
@@ -65,9 +75,39 @@ export default function AllFigureList({}) {
   useEffect(() => {
     console.log(currentPage);
   }, [currentPage]);
+
   const handleChange = (event) => {
     setSearchTerm(event.target.value);
     console.log(event.target.value);
+  };
+
+  const handleRadioChange = (event) => {
+    switch (event.target.value) {
+      case 'game':
+        setSearchTypePlaceholder('Game Title');
+        break;
+      case 'character':
+      case 'rare':
+        setSearchTypePlaceholder('Character Name');
+        break;
+      case 'element':
+        setSearchTypePlaceholder('Element Type');
+        break;
+      case 'gender':
+        setSearchTypePlaceholder('Gender');
+        break;
+      case 'variant':
+        setSearchTypePlaceholder('Variation');
+        break;
+      default:
+        setSearchTypePlaceholder('');
+        break;
+    }
+    setSearchType(event.target.value);
+    if (event.target.value === 'none') {
+      setSearchTerm('');
+      setFilteredFigures(data?.figures);
+    }
   };
 
   const handleSearch = (event) => {
@@ -137,7 +177,44 @@ export default function AllFigureList({}) {
 
   return (
     <div>
-      <label htmlFor="search-by-game">
+      <ThemeProvider theme={theme}>
+        <FormControl component="fieldset">
+          {/* <FormLabel component="legend">View by</FormLabel> */}
+          <RadioGroup
+            row
+            aria-label="search-type"
+            name="row-radio-buttons-group"
+            onChange={handleRadioChange}
+            value={searchType}
+            style={{ paddingLeft: 20, paddingTop: 20 }}
+          >
+            <FormControlLabel value="game" control={<Radio />} label="Game" />
+            <FormControlLabel
+              value="character"
+              control={<Radio />}
+              label="Character"
+            />
+            <FormControlLabel
+              value="element"
+              control={<Radio />}
+              label="Element"
+            />
+            <FormControlLabel
+              value="gender"
+              control={<Radio />}
+              label="Gender"
+            />
+            <FormControlLabel
+              value="variant"
+              control={<Radio />}
+              label="Variant"
+            />
+            <FormControlLabel value="rare" control={<Radio />} label="Rare" />
+            <FormControlLabel value="none" control={<Radio />} label="All" />
+          </RadioGroup>
+        </FormControl>
+      </ThemeProvider>
+      {/* <label htmlFor="search-by-game">
         <input
           type="radio"
           name="search-toggle"
@@ -221,8 +298,17 @@ export default function AllFigureList({}) {
           }}
         />
         None
-      </label>
-      <SearchBar handleSearch={handleSearch} handleChange={handleChange} searchTerm={searchTerm}></SearchBar>
+      </label> */}
+      <div style={{ minHeight: 42 }}>
+        {searchType !== 'none' && (
+          <SearchBar
+            placeholder={searchTypePlaceholder}
+            handleSearch={handleSearch}
+            handleChange={handleChange}
+            searchTerm={searchTerm}
+          ></SearchBar>
+        )}
+      </div>
       <div className={styles.figureList}>
         {filteredFigures
           ?.slice(startingIndex, startingIndex + 20)
@@ -246,16 +332,17 @@ export default function AllFigureList({}) {
             >
               Previous
             </button>
-            <div style={{display: 'inline'}} onClick={handlePaginationClick}>
-            {pageLinksArr.map((item, i) => (
-              <PaginationButton
-                setStartingIndex={setStartingIndex}
-                setCurrentPage={setCurrentPage}
-                currentPage={currentPage}
-                pageNumber={item.pageNumber}
-                key={i}
-              ></PaginationButton>
-            ))}</div>
+            <div style={{ display: 'inline' }} onClick={handlePaginationClick}>
+              {pageLinksArr.map((item, i) => (
+                <PaginationButton
+                  setStartingIndex={setStartingIndex}
+                  setCurrentPage={setCurrentPage}
+                  currentPage={currentPage}
+                  pageNumber={item.pageNumber}
+                  key={i}
+                ></PaginationButton>
+              ))}
+            </div>
             <button
               className={`${nextDisabled && btnStyles.disabledBtn}  ${
                 btnStyles.btn

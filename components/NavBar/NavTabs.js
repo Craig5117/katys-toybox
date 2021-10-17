@@ -3,7 +3,7 @@ import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
 import { useEffect, useState } from 'react';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import { purple } from '@mui/material/colors';
+// import { purple } from '@mui/material/colors';
 export default function NavTabs(props) {
   const { setShowFigures, setShowAcc } = props;
   const [value, setValue] = useState('figures');
