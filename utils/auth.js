@@ -57,7 +57,7 @@ function useProvideAuth() {
 
   const createApolloClient = () => {
     const link = new HttpLink({
-      uri: 'https://katys-toybox.vercel.app/api/graphql',
+      uri: '/api/graphql',
       headers: getAuthHeaders(),
     })
 
