@@ -162,44 +162,7 @@ export default function AllAccessoriesList(props) {
             <FormControlLabel value="none" control={<Radio />} label="All" />
           </RadioGroup>
         </FormControl>
-      </ThemeProvider>
-      {/* <label htmlFor="search-by-game">
-            <input
-              type="radio"
-              name="search-toggle"
-              id="search-by-game"
-              value="game"
-              onClick={() => {
-                setSearchType('game');
-              }}
-            />
-            Game
-          </label>
-          <label htmlFor="search-by-accessory">
-            <input
-              type="radio"
-              name="search-toggle"
-              id="search-by-accessory"
-              value="accessory"
-              onClick={() => {
-                setSearchType('accessory');
-              }}
-            />
-            Accessory
-          </label>
-          <label htmlFor="search-by-none">
-            <input
-              type="radio"
-              name="search-toggle"
-              id="search-by-none"
-              value=""
-              onClick={() => {
-                setSearchType('');
-                setSearchTerm('');
-              }}
-            />
-            None
-          </label> */}
+      </ThemeProvider>      
       <div style={{ minHeight: 42 }}>
         {searchType !== 'none' && (
           <SearchBar  
