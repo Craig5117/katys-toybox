@@ -21,7 +21,7 @@ export default function HomePage() {
 
       <footer className={styles.footer}>
          <span className={styles.logo}>
-            Footer
+            Katy's ToyBox
           </span>        
       </footer>
     </>

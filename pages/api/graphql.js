@@ -14,7 +14,7 @@ const apolloServer = new ApolloServer({ typeDefs, resolvers, context: ({ req }) 
         const token = req.cookies;
     // const decoded = decode(token);
     // const currentUser = decoded.data.username;
-    console.log(token)
+    // console.log(token)
 } catch (e) {console.log(e)}
 } });
 

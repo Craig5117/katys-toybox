@@ -31,9 +31,9 @@ export default function Login () {
         event.preventDefault();
         const form = event.currentTarget;
         if (formState.username === '' && formState.password === '') {
-          console.log("running")
-          const username = userEl.current.value;
-          const password = passEl.current.value;
+          
+          const username = userEl.current.value.replace(/\W/g,"");;
+          const password = passEl.current.value.replace(/\W/g,"");;
           return signIn({ username: username, password: password})
         }
 
@@ -42,9 +42,9 @@ export default function Login () {
         //     event.stopPropagation();
         //   }
         //   setValidated(true);
-        console.log(formState)
+        // console.log(formState)
         signIn({
-            ...formState,
+            username: formState.username.replace(/\W/g,""), password: formState.password.replace(/\W/g,"")
           });
         //   frontendAuth.login(data.login.token);
           // console.log(formState)
@@ -68,7 +68,7 @@ export default function Login () {
                 </div>                
                 <div>
                     <label className={signUpStyles.signUpLabel} htmlFor="password">Password</label>
-                    <input className={signUpStyles.signUpInput} name="password" id="password" type="text" onChange={handleChange} ref={passEl}/>                    
+                    <input className={signUpStyles.signUpInput} name="password" id="password" type="password" onChange={handleChange} ref={passEl}/>                    
                 </div>                
                 <button className={`${btnStyles.btn} ${signUpStyles.signUpBtn}`} type="submit">Submit</button>
             </form>
