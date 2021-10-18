@@ -47,17 +47,17 @@ function useProvideAuth() {
     }
   }
 
-  let uriLink;
+  // let uriLink;
 
-  if (process.env.NODE_ENV === "development") {
-    uriLink = 'http://localhost:3000/api/graphql'
-  } else{
-    uriLink = 'https://katys-toybox.vercel.app/api/graphql'
-  }
+  // if (process.env.NODE_ENV === "development") {
+  //   uriLink = 'http://localhost:3000/api/graphql'
+  // } else{
+  //   uriLink = 'https://katys-toybox.vercel.app/api/graphql'
+  // }
 
   const createApolloClient = () => {
     const link = new HttpLink({
-      uri: uriLink,
+      uri: 'https://katys-toybox.vercel.app/api/graphql',
       headers: getAuthHeaders(),
     })
 
