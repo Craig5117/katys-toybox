@@ -38,11 +38,7 @@ export default function Login () {
         }
 
         try {
-        //   if (form.checkValidity() === false) {
-        //     event.stopPropagation();
-        //   }
-        //   setValidated(true);
-        // console.log(formState)
+     
         signIn({
             username: formState.username.replace(/\W/g,""), password: formState.password.replace(/\W/g,"")
           });
