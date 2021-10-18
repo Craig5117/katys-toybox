@@ -33,3 +33,9 @@
 .letterBlue {
     color: rgb(0, 153, 255)
 }
+
+@media screen and (max-width: 810px) {
+    .title {
+        font-size: 3em;
+    }
+}
