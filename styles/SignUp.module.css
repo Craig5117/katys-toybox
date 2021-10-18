@@ -21,6 +21,7 @@
 
 .signUpInput, .signUpLabel {
     display: block;
+    width: 100%
 }
 
 .signUpLabel {
