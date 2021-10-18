@@ -47,6 +47,14 @@ function useProvideAuth() {
     }
   }
 
+  let uriLink;
+
+  if (process.env.NODE_ENV === "development") {
+    uriLink = 'http://localhost:3000/api/graphql'
+  } else{
+    uriLink = 'https://katys-toybox.vercel.app/api/graphql'
+  }
+
   const createApolloClient = () => {
     const link = new HttpLink({
       uri: 'http://localhost:3000/api/graphql',
