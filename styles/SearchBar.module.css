@@ -1,0 +1,10 @@
+.searchBarForm {
+    margin-left: 3em;
+}
+
+@media screen and (max-width: 400px) {
+    .searchBarForm {
+        margin-left: 1em;
+        width: 90%;
+    }
+}

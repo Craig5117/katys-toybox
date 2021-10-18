@@ -1,6 +1,7 @@
 .figureList {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .figListItem {
@@ -12,6 +13,7 @@
 }
 
 .figListStats {
+    min-width: 19em;
    display: grid;
    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
@@ -25,5 +27,14 @@
     width: 4em;
     border: solid 1px rgb(97, 0, 97);
     border-radius: 2px;
+    margin-bottom: 8px;
 }
 
+@media screen and (max-width: 810px) {
+    .figureList {
+        justify-content: center;
+    }
+    .figListStats {
+        min-width: 15em;
+    }
+}

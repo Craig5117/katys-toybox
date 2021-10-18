@@ -2,6 +2,7 @@ import { ThemeProvider, Button } from '@mui/material';
 import TextField from '@mui/material/TextField';
 import theme from '../../utils/theme';
 import buttonStyles from '../../styles/Button.module.css';
+import searchStyles from '../../styles/SearchBar.module.css'
 
 export default function SearchBar(props) {
   // function myHandleSearch() {
@@ -12,7 +13,7 @@ export default function SearchBar(props) {
   // }
 
   return (
-    <form onSubmit={props.handleSearch} style={{ marginLeft: '3em' }}>
+    <form onSubmit={props.handleSearch} className={searchStyles.searchBarForm}>
       <ThemeProvider theme={theme}>
         <div style={{display: "flex", alignItems:"center"}}>
 
