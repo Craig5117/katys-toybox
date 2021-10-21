@@ -1,5 +1,7 @@
+const jwtSecretKey = process.env.JWT_SECRET_KEY;
+
 export default {
     jwt: {
-        JWT_SECRET: 'chicken-salt-pickles'
+        JWT_SECRET: jwtSecretKey
     },
 }
