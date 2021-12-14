@@ -19,8 +19,7 @@ import theme from '../../utils/theme';
 export default function AllFigureList(props) {
   const [filteredFigures, setFilteredFigures] = useState([]);
   const { loading, error, data } = useQuery(QUERY_FIGURES);
-  const [searchType, setSearchType] = useState('none');
-  const [searchTerm, setSearchTerm] = useState('');
+
   const [startingIndex, setStartingIndex] = useState(0);
   const [pageTotal, setPageTotal] = useState(0);
   const [pageLinksArr, setPageLinksArr] = useState([]);
@@ -28,7 +27,7 @@ export default function AllFigureList(props) {
   const [nextDisabled, setNextDisabled] = useState(false);
   const [prevDisabled, setPrevDisabled] = useState(true);
   const [searchTypePlaceholder, setSearchTypePlaceholder] = useState('');
-  const { currentPage, setCurrentPage } = props;
+  const { currentPage, setCurrentPage, searchTerm, setSearchTerm, searchType, setSearchType } = props;
 
   useEffect(() => {
     if (data?.figures.length) {

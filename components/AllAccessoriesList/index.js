@@ -17,9 +17,6 @@ import { ThemeProvider } from '@mui/material/styles';
 import theme from '../../utils/theme';
 
 export default function AllAccessoriesList(props) {
-
-  const [searchType, setSearchType] = useState('none');
-  const [searchTerm, setSearchTerm] = useState('');
   const { loading, error, data } = useQuery(QUERY_ACCESSORIES);
   const [filteredAcc, setFilteredAcc] = useState([]);
   const [startingIndex, setStartingIndex] = useState(0);
@@ -29,7 +26,7 @@ export default function AllAccessoriesList(props) {
   const [nextDisabled, setNextDisabled] = useState(false);
   const [prevDisabled, setPrevDisabled] = useState(true);
   const [searchTypePlaceholder, setSearchTypePlaceholder] = useState('');
-  const { currentPage, setCurrentPage } = props;
+  const { currentPage, setCurrentPage, searchTerm, setSearchTerm, searchType, setSearchType } = props;
 
   useEffect(
     function handleInitialData() {

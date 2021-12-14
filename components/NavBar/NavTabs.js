@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 // import { purple } from '@mui/material/colors';
 export default function NavTabs(props) {
-  const { setShowFigures, setShowAcc, setCurrentPage } = props;
+  const { setShowFigures, setShowAcc, setCurrentPage, setSearchType, setSearchTerm } = props;
   const [value, setValue] = useState('figures');
 
   useEffect(() => {
@@ -20,6 +20,8 @@ export default function NavTabs(props) {
         break;
     }
     setCurrentPage(1);
+    setSearchType('none');
+    setSearchTerm('');
   }, [value]);
 
   const theme = createTheme({

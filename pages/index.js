@@ -41,6 +41,7 @@ export default function Home({}) {
       <div className={styles.container}>
         <Head>
           <title>Katy's Toybox</title>          
+          <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
           <meta name="description" content="An inventory management app created using Prisma, NextJS and GraphQL." />
           <meta name="image" property="og:image" content="https://live.staticflickr.com/65535/51612888571_272d1e6dc1_k.jpg"/>
           <meta name="author" content="Craig Bennett" />
