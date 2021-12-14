@@ -24,7 +24,7 @@ export default function AllFigureList(props) {
   const [startingIndex, setStartingIndex] = useState(0);
   const [pageTotal, setPageTotal] = useState(0);
   const [pageLinksArr, setPageLinksArr] = useState([]);
-  // const [currentPage, setCurrentPage] = useState(1);
+  
   const [nextDisabled, setNextDisabled] = useState(false);
   const [prevDisabled, setPrevDisabled] = useState(true);
   const [searchTypePlaceholder, setSearchTypePlaceholder] = useState('');
