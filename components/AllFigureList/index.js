@@ -16,7 +16,7 @@ import {
 import { ThemeProvider } from '@mui/material/styles';
 import theme from '../../utils/theme';
 
-export default function AllFigureList({}) {
+export default function AllFigureList(props) {
   const [filteredFigures, setFilteredFigures] = useState([]);
   const { loading, error, data } = useQuery(QUERY_FIGURES);
   const [searchType, setSearchType] = useState('none');
@@ -24,10 +24,11 @@ export default function AllFigureList({}) {
   const [startingIndex, setStartingIndex] = useState(0);
   const [pageTotal, setPageTotal] = useState(0);
   const [pageLinksArr, setPageLinksArr] = useState([]);
-  const [currentPage, setCurrentPage] = useState(1);
+  // const [currentPage, setCurrentPage] = useState(1);
   const [nextDisabled, setNextDisabled] = useState(false);
   const [prevDisabled, setPrevDisabled] = useState(true);
   const [searchTypePlaceholder, setSearchTypePlaceholder] = useState('');
+  const { currentPage, setCurrentPage } = props;
 
   useEffect(() => {
     if (data?.figures.length) {

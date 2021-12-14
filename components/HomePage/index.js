@@ -7,15 +7,16 @@ import { useState, useEffect } from 'react';
 export default function HomePage() {
   const [showFigures, setShowFigures] = useState(true);
   const [showAcc, setShowAcc] = useState(false);
+  const [currentPage, setCurrentPage] = useState(1);
   
   return (
     <>
-      <Header setShowFigures={setShowFigures} setShowAcc={setShowAcc}></Header>
+      <Header setCurrentPage={setCurrentPage} setShowFigures={setShowFigures} setShowAcc={setShowAcc}></Header>
 
       <main className={styles.main} style={{minHeight: 1000}}>
         <div>
-          {showFigures && <AllFigureList ></AllFigureList>}
-          {showAcc && <AllAccessoriesList ></AllAccessoriesList>}
+          {showFigures && <AllFigureList currentPage={currentPage} setCurrentPage={setCurrentPage}></AllFigureList>}
+          {showAcc && <AllAccessoriesList currentPage={currentPage} setCurrentPage={setCurrentPage}></AllAccessoriesList>}
         </div>
       </main>
 
