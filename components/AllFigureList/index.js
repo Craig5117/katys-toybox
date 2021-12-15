@@ -29,91 +29,7 @@ export default function AllFigureList(props) {
   const [searchTypePlaceholder, setSearchTypePlaceholder] = useState('');
   const { currentPage, setCurrentPage, searchTerm, setSearchTerm, searchType, setSearchType } = props;
 
-  useEffect(() => {
-    if (data?.figures.length) {
-      setFilteredFigures(data?.figures);
-      console.log(filteredFigures);
-    }
-  }, [data]);
-
-  useEffect(() => {
-    if (searchType === '') {
-      setFilteredFigures(data?.figures);
-    }
-  });
-
-  useEffect(() => {
-    if (filteredFigures?.length) {
-      setPageTotal(Math.ceil(filteredFigures.length / 20));
-      console.log(pageTotal);
-    }
-  }, [filteredFigures]);
-
-  useEffect(() => {
-    const pageLinks = [];
-    for (let i = 0; i < pageTotal; i++) {
-      pageLinks.push({ pageNumber: i + 1 });
-    }
-    setPageLinksArr(pageLinks);
-  }, [pageTotal]);
-
-  useEffect(() => {
-    if (filteredFigures?.length) {
-      if (startingIndex + 21 > filteredFigures.length) {
-        setNextDisabled(true);
-      } else if (startingIndex + 21 < filteredFigures.length) {
-        setNextDisabled(false);
-      }
-    }
-    if (startingIndex === 0) {
-      setPrevDisabled(true);
-    } else if (startingIndex !== 0) {
-      setPrevDisabled(false);
-    }
-  }, [startingIndex]);
-
-  useEffect(() => {
-    console.log(currentPage);
-  }, [currentPage]);
-
-  const handleChange = (event) => {
-    setSearchTerm(event.target.value);
-    console.log(event.target.value);
-  };
-
-  const handleRadioChange = (event) => {
-    switch (event.target.value) {
-      case 'game':
-        setSearchTypePlaceholder('Game Title');
-        break;
-      case 'character':
-      case 'rare':
-        setSearchTypePlaceholder('Character Name');
-        break;
-      case 'element':
-        setSearchTypePlaceholder('Element Type');
-        break;
-      case 'gender':
-        setSearchTypePlaceholder('Gender');
-        break;
-      case 'variant':
-        setSearchTypePlaceholder('Variation');
-        break;
-      default:
-        setSearchTypePlaceholder('');
-        break;
-    }
-    setSearchType(event.target.value);
-    if (event.target.value === 'none') {
-      setSearchTerm('');
-      setFilteredFigures(data?.figures);
-    }
-  };
-
-  const handleSearch = (event) => {
-    event.preventDefault();
-    console.log(searchTerm);
-    console.log(searchType);
+  const filterSwitch = () => {
     switch (searchType) {
       case 'game':
         setFilteredFigures(
@@ -166,6 +82,97 @@ export default function AllFigureList(props) {
         setFilteredFigures(data?.figures);
         break;
     }
+  }
+
+  useEffect(() => {
+    if (data?.figures.length) {
+      // setFilteredFigures(data?.figures);
+      // console.log(filteredFigures);
+      filterSwitch();
+    }
+  }, [data]);
+
+  useEffect(() => {
+    if (searchType === '') {
+      setFilteredFigures(data?.figures);
+    }
+  });
+
+  useEffect(() => {
+    if (filteredFigures?.length) {
+      setPageTotal(Math.ceil(filteredFigures.length / 20));
+      console.log(pageTotal);
+    }
+  }, [filteredFigures]);
+
+  useEffect(() => {
+    const pageLinks = [];
+    for (let i = 0; i < pageTotal; i++) {
+      pageLinks.push({ pageNumber: i + 1 });
+    }
+    setPageLinksArr(pageLinks);
+  }, [pageTotal]);
+
+  useEffect(() => {
+    if (filteredFigures?.length) {
+      if (startingIndex + 21 > filteredFigures.length) {
+        setNextDisabled(true);
+      } else if (startingIndex + 21 < filteredFigures.length) {
+        setNextDisabled(false);
+      }
+    }
+    if (startingIndex === 0) {
+      setPrevDisabled(true);
+    } else if (startingIndex !== 0) {
+      setPrevDisabled(false);
+    }
+  }, [startingIndex]);
+
+  useEffect(() => {
+    console.log(currentPage);
+  }, [currentPage]);
+
+  
+  
+  const handleChange = (event) => {
+    setSearchTerm(event.target.value);
+    console.log(event.target.value);
+  };
+
+  const handleRadioChange = (event) => {
+    switch (event.target.value) {
+      case 'game':
+        setSearchTypePlaceholder('Game Title');
+        break;
+      case 'character':
+      case 'rare':
+        setSearchTypePlaceholder('Character Name');
+        break;
+      case 'element':
+        setSearchTypePlaceholder('Element Type');
+        break;
+      case 'gender':
+        setSearchTypePlaceholder('Gender');
+        break;
+      case 'variant':
+        setSearchTypePlaceholder('Variation');
+        break;
+      default:
+        setSearchTypePlaceholder('');
+        break;
+    }
+    setSearchType(event.target.value);
+    if (event.target.value === 'none') {
+      setSearchTerm('');
+      setFilteredFigures(data?.figures);
+    }
+  };
+
+  const handleSearch = (event) => {
+    event.preventDefault();
+    console.log(searchTerm);
+    console.log(searchType);
+    filterSwitch();
     setStartingIndex(0);
   };
 

@@ -17,6 +17,7 @@ import { ThemeProvider } from '@mui/material/styles';
 import theme from '../../utils/theme';
 
 export default function AllAccessoriesList(props) {
+
   const { loading, error, data } = useQuery(QUERY_ACCESSORIES);
   const [filteredAcc, setFilteredAcc] = useState([]);
   const [startingIndex, setStartingIndex] = useState(0);
@@ -28,11 +29,36 @@ export default function AllAccessoriesList(props) {
   const [searchTypePlaceholder, setSearchTypePlaceholder] = useState('');
   const { currentPage, setCurrentPage, searchTerm, setSearchTerm, searchType, setSearchType } = props;
 
+  // originally, first useEffect was reseting data to the full unfiltered data on every update
+  // separating this switch out, we can run the date object through the filter before render updates
+  const filterSwitch = () => {
+    switch (searchType) {
+      case 'game':
+        setFilteredAcc(
+          data?.accessories.filter((a) =>
+            a.gameTitle.title.toLowerCase().includes(searchTerm.toLowerCase())
+          )
+        );
+        break;
+      case 'accessory':
+        setFilteredAcc(
+          data?.accessories.filter((a) =>
+            a.accName.toLowerCase().includes(searchTerm.toLowerCase())
+          )
+        );
+        break;
+      default:
+        setFilteredAcc(data?.accessories);
+        break;
+    }
+  }
+
   useEffect(
     function handleInitialData() {
       if (data?.accessories.length) {
-        setFilteredAcc(data?.accessories);
-        console.log(filteredAcc);
+        // setFilteredAcc(data?.accessories);
+        // console.log(filteredAcc);\
+        filterSwitch();
       }
     },
     [data]
@@ -111,25 +137,7 @@ export default function AllAccessoriesList(props) {
     event.preventDefault();
     console.log(searchTerm);
     console.log(searchType);
-    switch (searchType) {
-      case 'game':
-        setFilteredAcc(
-          data?.accessories.filter((a) =>
-            a.gameTitle.title.toLowerCase().includes(searchTerm.toLowerCase())
-          )
-        );
-        break;
-      case 'accessory':
-        setFilteredAcc(
-          data?.accessories.filter((a) =>
-            a.accName.toLowerCase().includes(searchTerm.toLowerCase())
-          )
-        );
-        break;
-      default:
-        setFilteredAcc(data?.accessories);
-        break;
-    }
+    filterSwitch();
     setStartingIndex(0);
   };
 

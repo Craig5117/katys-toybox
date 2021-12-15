@@ -10,22 +10,50 @@ export default function HomePage() {
   const [currentPage, setCurrentPage] = useState(1);
   const [searchType, setSearchType] = useState('none');
   const [searchTerm, setSearchTerm] = useState('');
-  
+  const [filteredItems, setFilteredItems] = useState([]);
+  const [resetFilter, setResetFilter] = useState(false);
+
   return (
     <>
-      <Header setCurrentPage={setCurrentPage} setShowFigures={setShowFigures} setShowAcc={setShowAcc} setSearchTerm={setSearchTerm} setSearchType={setSearchType}></Header>
+      <Header
+        setCurrentPage={setCurrentPage}
+        setShowFigures={setShowFigures}
+        setShowAcc={setShowAcc}
+        setSearchTerm={setSearchTerm}
+        setSearchType={setSearchType}
+      ></Header>
 
-      <main className={styles.main} style={{minHeight: 1000}}>
+      <main className={styles.main} style={{ minHeight: 1000 }}>
         <div>
-          {showFigures && <AllFigureList currentPage={currentPage} setCurrentPage={setCurrentPage} searchTerm={searchTerm} setSearchTerm={setSearchTerm} searchType={searchType} setSearchType={setSearchType}></AllFigureList>}
-          {showAcc && <AllAccessoriesList currentPage={currentPage} setCurrentPage={setCurrentPage} searchTerm={searchTerm} setSearchTerm={setSearchTerm} searchType={searchType} setSearchType={setSearchType}></AllAccessoriesList>}
+          {showFigures && (
+            <AllFigureList
+              currentPage={currentPage}
+              setCurrentPage={setCurrentPage}
+              searchTerm={searchTerm}
+              setSearchTerm={setSearchTerm}
+              searchType={searchType}
+              setSearchType={setSearchType}
+              filteredItems={filteredItems}
+              setFilteredItems={setFilteredItems}
+            ></AllFigureList>
+          )}
+          {showAcc && (
+            <AllAccessoriesList
+              currentPage={currentPage}
+              setCurrentPage={setCurrentPage}
+              searchTerm={searchTerm}
+              setSearchTerm={setSearchTerm}
+              searchType={searchType}
+              setSearchType={setSearchType}
+              filteredItems={filteredItems}
+              setFilteredItems={setFilteredItems}
+            ></AllAccessoriesList>
+          )}
         </div>
       </main>
 
       <footer className={styles.footer}>
-         <span className={styles.logo}>
-            Katy's ToyBox
-          </span>        
+        <span className={styles.logo}>Katy's ToyBox</span>
       </footer>
     </>
   );
