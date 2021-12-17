@@ -6,6 +6,7 @@ import { useEffect, useState } from 'react';
 import FigureCard from '../FigureCard';
 import PaginationButton from '../PaginationButton';
 import SearchBar from '../SearchBar';
+import TypeFilter from '../TypeFilter';
 import {
   FormControl,
   FormLabel,
@@ -27,6 +28,7 @@ export default function AllFigureList(props) {
   const [nextDisabled, setNextDisabled] = useState(false);
   const [prevDisabled, setPrevDisabled] = useState(true);
   const [searchTypePlaceholder, setSearchTypePlaceholder] = useState('');
+  const [figTypeFilter, setFigTypeFilter] = useState('standard');
   const { currentPage, setCurrentPage, searchTerm, setSearchTerm, searchType, setSearchType } = props;
 
   const filterSwitch = () => {
@@ -78,6 +80,15 @@ export default function AllFigureList(props) {
           )
         );
         break;
+        case 'type':
+          setFilteredFigures(
+            data?.figures.filter(
+              (f) =>
+                f.type === figTypeFilter &&
+                f.element.element.toLowerCase().includes(searchTerm.toLowerCase())
+            )
+          );
+          break;
       default:
         setFilteredFigures(data?.figures);
         break;
@@ -98,6 +109,13 @@ export default function AllFigureList(props) {
       setFilteredFigures(data?.figures);
     }
   });
+
+  useEffect(() => {
+    setFilteredFigures(data?.figures.filter(
+      (f) =>
+        f.type === figTypeFilter
+    ))
+  }, [figTypeFilter])
 
   useEffect(() => {
     if (filteredFigures?.length) {
@@ -150,6 +168,7 @@ export default function AllFigureList(props) {
         setSearchTypePlaceholder('Character Name');
         break;
       case 'element':
+      case 'type':
         setSearchTypePlaceholder('Element Type');
         break;
       case 'gender':
@@ -208,6 +227,11 @@ export default function AllFigureList(props) {
               label="Element"
             />
             <FormControlLabel
+              value="type"
+              control={<Radio />}
+              label="Type"
+            />
+            <FormControlLabel
               value="gender"
               control={<Radio />}
               label="Gender"
@@ -223,6 +247,10 @@ export default function AllFigureList(props) {
         </FormControl>
       </ThemeProvider>      
       <div style={{ minHeight: 42 }}>
+        {searchType === 'type' && (
+          <TypeFilter figTypeFilter={figTypeFilter} setFigTypeFilter={setFigTypeFilter}>
+          </TypeFilter>
+        )}
         {searchType !== 'none' && (
           <SearchBar
             placeholder={searchTypePlaceholder}
