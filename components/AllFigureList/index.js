@@ -89,6 +89,7 @@ export default function AllFigureList(props) {
       // setFilteredFigures(data?.figures);
       // console.log(filteredFigures);
       filterSwitch();
+      console.log(data);
     }
   }, [data]);
 

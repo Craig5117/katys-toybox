@@ -18,6 +18,7 @@ export const QUERY_FIGURES = gql`
       set {
         setName
       }
+      type
       variation
       img
       rare
